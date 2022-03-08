@@ -22,1163 +22,6 @@
   </head>
   <body>
 
-    <!-- MODALS -->
-    <!-- Modal: Members -->
-    <div class="modal fade" id="modalMembers" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-card card" data-list='{"valueNames": ["name"]}'>
-            <div class="card-header">
-    
-              <!-- Title -->
-              <h4 class="card-header-title" id="exampleModalCenterTitle">
-                Add a member
-              </h4>
-    
-              <!-- Close -->
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    
-            </div>
-            <div class="card-header">
-    
-              <!-- Form -->
-              <form>
-                <div class="input-group input-group-flush input-group-merge input-group-reverse">
-                  <input class="form-control list-search" type="search" placeholder="Search">
-                  <div class="input-group-text">
-                    <span class="fe fe-search"></span>
-                  </div>
-                </div>
-              </form>
-    
-            </div>
-            <div class="card-body">
-    
-              <!-- List group -->
-              <ul class="list-group list-group-flush list my-n3">
-                <li class="list-group-item">
-                  <div class="row align-items-center">
-                    <div class="col-auto">
-    
-                      <!-- Avatar -->
-                      <a href="./profile-posts.html" class="avatar">
-                        <img src="./assets/img/avatars/profiles/avatar-5.jpg" alt="..." class="avatar-img rounded-circle">
-                      </a>
-    
-                    </div>
-                    <div class="col ms-n2">
-    
-                      <!-- Title -->
-                      <h4 class="mb-1 name">
-                        <a href="./profile-posts.html">Miyah Myles</a>
-                      </h4>
-    
-                      <!-- Time -->
-                      <p class="small mb-0">
-                        <span class="text-success">●</span> Online
-                      </p>
-    
-                    </div>
-                    <div class="col-auto">
-    
-                      <!-- Button -->
-                      <a href="#!" class="btn btn-sm btn-white">
-                        Add
-                      </a>
-    
-                    </div>
-                  </div> <!-- / .row -->
-                </li>
-                <li class="list-group-item">
-                  <div class="row align-items-center">
-                    <div class="col-auto">
-    
-                      <!-- Avatar -->
-                      <a href="./profile-posts.html" class="avatar">
-                        <img src="./assets/img/avatars/profiles/avatar-6.jpg" alt="..." class="avatar-img rounded-circle">
-                      </a>
-    
-                    </div>
-                    <div class="col ms-n2">
-    
-                      <!-- Title -->
-                      <h4 class="mb-1 name">
-                        <a href="./profile-posts.html">Ryu Duke</a>
-                      </h4>
-    
-                      <!-- Time -->
-                      <p class="small mb-0">
-                        <span class="text-success">●</span> Online
-                      </p>
-    
-                    </div>
-                    <div class="col-auto">
-    
-                      <!-- Button -->
-                      <a href="#!" class="btn btn-sm btn-white">
-                        Add
-                      </a>
-    
-                    </div>
-                  </div> <!-- / .row -->
-                </li>
-                <li class="list-group-item">
-                  <div class="row align-items-center">
-                    <div class="col-auto">
-    
-                      <!-- Avatar -->
-                      <a href="./profile-posts.html" class="avatar">
-                        <img src="./assets/img/avatars/profiles/avatar-7.jpg" alt="..." class="avatar-img rounded-circle">
-                      </a>
-    
-                    </div>
-                    <div class="col ms-n2">
-    
-                      <!-- Title -->
-                      <h4 class="mb-1 name">
-                        <a href="./profile-posts.html">Glen Rouse</a>
-                      </h4>
-    
-                      <!-- Time -->
-                      <p class="small mb-0">
-                        <span class="text-warning">●</span> Busy
-                      </p>
-    
-                    </div>
-                    <div class="col-auto">
-    
-                      <!-- Button -->
-                      <a href="#!" class="btn btn-sm btn-white">
-                        Add
-                      </a>
-    
-                    </div>
-                  </div> <!-- / .row -->
-                </li>
-                <li class="list-group-item">
-                  <div class="row align-items-center">
-                    <div class="col-auto">
-    
-                      <!-- Avatar -->
-                      <a href="./profile-posts.html" class="avatar">
-                        <img src="./assets/img/avatars/profiles/avatar-8.jpg" alt="..." class="avatar-img rounded-circle">
-                      </a>
-    
-                    </div>
-                    <div class="col ms-n2">
-    
-                      <!-- Title -->
-                      <h4 class="mb-1 name">
-                        <a href="./profile-posts.html">Grace Gross</a>
-                      </h4>
-    
-                      <!-- Time -->
-                      <p class="small mb-0">
-                        <span class="text-danger">●</span> Offline
-                      </p>
-    
-                    </div>
-                    <div class="col-auto">
-    
-                      <!-- Button -->
-                      <a href="#!" class="btn btn-sm btn-white">
-                        Add
-                      </a>
-    
-                    </div>
-                  </div> <!-- / .row -->
-                </li>
-              </ul>
-    
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- OFFCANVAS -->
-    
-    <!-- Offcanvas: Search -->
-    <div class="offcanvas offcanvas-start" id="sidebarOffcanvasSearch" tabindex="-1">
-      <div class="offcanvas-body" data-list='{"valueNames": ["name"]}'>
-    
-        <!-- Form -->
-        <form class="mb-4">
-          <div class="input-group input-group-merge input-group-rounded input-group-reverse">
-            <input class="form-control list-search" type="search" placeholder="Search">
-            <div class="input-group-text">
-              <span class="fe fe-search"></span>
-            </div>
-          </div>
-        </form>
-    
-        <!-- List group -->
-        <div class="my-n3">
-          <div class="list-group list-group-flush list-group-focus list">
-            <a class="list-group-item" href="./team-overview.html">
-              <div class="row align-items-center">
-                <div class="col-auto">
-    
-                  <!-- Avatar -->
-                  <div class="avatar">
-                    <img src="./assets/img/avatars/teams/team-logo-1.jpg" alt="..." class="avatar-img rounded">
-                  </div>
-    
-                </div>
-                <div class="col ms-n2">
-    
-                  <!-- Title -->
-                  <h4 class="text-body text-focus mb-1 name">
-                    Airbnb
-                  </h4>
-    
-                  <!-- Time -->
-                  <p class="small text-muted mb-0">
-                    <span class="fe fe-clock"></span> <time datetime="2018-05-24">Updated 2hr ago</time>
-                  </p>
-    
-                </div>
-              </div> <!-- / .row -->
-            </a>
-            <a class="list-group-item" href="./team-overview.html">
-              <div class="row align-items-center">
-                <div class="col-auto">
-    
-                  <!-- Avatar -->
-                  <div class="avatar">
-                    <img src="./assets/img/avatars/teams/team-logo-2.jpg" alt="..." class="avatar-img rounded">
-                  </div>
-    
-                </div>
-                <div class="col ms-n2">
-    
-                  <!-- Title -->
-                  <h4 class="text-body text-focus mb-1 name">
-                    Medium Corporation
-                  </h4>
-    
-                  <!-- Time -->
-                  <p class="small text-muted mb-0">
-                    <span class="fe fe-clock"></span> <time datetime="2018-05-24">Updated 2hr ago</time>
-                  </p>
-    
-                </div>
-              </div> <!-- / .row -->
-            </a>
-            <a class="list-group-item" href="./project-overview.html">
-              <div class="row align-items-center">
-                <div class="col-auto">
-    
-                  <!-- Avatar -->
-                  <div class="avatar avatar-4by3">
-                    <img src="./assets/img/avatars/projects/project-1.jpg" alt="..." class="avatar-img rounded">
-                  </div>
-    
-                </div>
-                <div class="col ms-n2">
-    
-                  <!-- Title -->
-                  <h4 class="text-body text-focus mb-1 name">
-                    Homepage Redesign
-                  </h4>
-    
-                  <!-- Time -->
-                  <p class="small text-muted mb-0">
-                    <span class="fe fe-clock"></span> <time datetime="2018-05-24">Updated 4hr ago</time>
-                  </p>
-    
-                </div>
-              </div> <!-- / .row -->
-            </a>
-            <a class="list-group-item" href="./project-overview.html">
-              <div class="row align-items-center">
-                <div class="col-auto">
-    
-                  <!-- Avatar -->
-                  <div class="avatar avatar-4by3">
-                    <img src="./assets/img/avatars/projects/project-2.jpg" alt="..." class="avatar-img rounded">
-                  </div>
-    
-                </div>
-                <div class="col ms-n2">
-    
-                  <!-- Title -->
-                  <h4 class="text-body text-focus mb-1 name">
-                    Travels & Time
-                  </h4>
-    
-                  <!-- Time -->
-                  <p class="small text-muted mb-0">
-                    <span class="fe fe-clock"></span> <time datetime="2018-05-24">Updated 4hr ago</time>
-                  </p>
-    
-                </div>
-              </div> <!-- / .row -->
-            </a>
-            <a class="list-group-item" href="./project-overview.html">
-              <div class="row align-items-center">
-                <div class="col-auto">
-    
-                  <!-- Avatar -->
-                  <div class="avatar avatar-4by3">
-                    <img src="./assets/img/avatars/projects/project-3.jpg" alt="..." class="avatar-img rounded">
-                  </div>
-    
-                </div>
-                <div class="col ms-n2">
-    
-                  <!-- Title -->
-                  <h4 class="text-body text-focus mb-1 name">
-                    Safari Exploration
-                  </h4>
-    
-                  <!-- Time -->
-                  <p class="small text-muted mb-0">
-                    <span class="fe fe-clock"></span> <time datetime="2018-05-24">Updated 4hr ago</time>
-                  </p>
-    
-                </div>
-              </div> <!-- / .row -->
-            </a>
-            <a class="list-group-item" href="./profile-posts.html">
-              <div class="row align-items-center">
-                <div class="col-auto">
-    
-                  <!-- Avatar -->
-                  <div class="avatar">
-                    <img src="./assets/img/avatars/profiles/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
-                  </div>
-    
-                </div>
-                <div class="col ms-n2">
-    
-                  <!-- Title -->
-                  <h4 class="text-body text-focus mb-1 name">
-                    Dianna Smiley
-                  </h4>
-    
-                  <!-- Status -->
-                  <p class="text-body small mb-0">
-                    <span class="text-success">●</span> Online
-                  </p>
-    
-                </div>
-              </div> <!-- / .row -->
-            </a>
-            <a class="list-group-item" href="./profile-posts.html">
-              <div class="row align-items-center">
-                <div class="col-auto">
-    
-                  <!-- Avatar -->
-                  <div class="avatar">
-                    <img src="./assets/img/avatars/profiles/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
-                  </div>
-    
-                </div>
-                <div class="col ms-n2">
-    
-                  <!-- Title -->
-                  <h4 class="text-body text-focus mb-1 name">
-                    Ab Hadley
-                  </h4>
-    
-                  <!-- Status -->
-                  <p class="text-body small mb-0">
-                    <span class="text-danger">●</span> Offline
-                  </p>
-    
-                </div>
-              </div> <!-- / .row -->
-            </a>
-          </div>
-        </div>
-    
-      </div>
-    </div>
-    
-    <!-- Offcanvas: Activity -->
-    <div class="offcanvas offcanvas-start" id="sidebarOffcanvasActivity" tabindex="-1">
-      <div class="offcanvas-header">
-    
-        <!-- Title -->
-        <h4 class="offcanvas-title">
-          Notifications
-        </h4>
-    
-        <!-- Navs -->
-        <ul class="nav nav-tabs nav-tabs-sm modal-header-tabs">
-          <li class="nav-item">
-            <a class="nav-link active" data-bs-toggle="tab" href="#modalActivityAction">Action</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" href="#modalActivityUser">User</a>
-          </li>
-        </ul>
-    
-      </div>
-      <div class="offcanvas-body">
-        <div class="tab-content">
-          <div class="tab-pane fade show active" id="modalActivityAction">
-    
-            <!-- List group -->
-            <div class="list-group list-group-flush list-group-activity my-n3">
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-    
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <div class="avatar-title fs-lg bg-primary-soft rounded-circle text-primary">
-                        <i class="fe fe-mail"></i>
-                      </div>
-                    </div>
-    
-                  </div>
-                  <div class="col ms-n2">
-    
-                    <!-- Heading -->
-                    <h5 class="mb-1">
-                      Launchday 1.4.0 update email sent
-                    </h5>
-    
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Sent to all 1,851 subscribers over a 24 hour period
-                    </p>
-    
-                    <!-- Time -->
-                    <small class="text-muted">
-                      2m ago
-                    </small>
-    
-                  </div>
-                </div> <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-    
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <div class="avatar-title fs-lg bg-primary-soft rounded-circle text-primary">
-                        <i class="fe fe-archive"></i>
-                      </div>
-                    </div>
-    
-                  </div>
-                  <div class="col ms-n2">
-    
-                    <!-- Heading -->
-                    <h5 class="mb-1">
-                      New project "Goodkit" created
-                    </h5>
-    
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Looks like there might be a new theme soon.
-                    </p>
-    
-                    <!-- Time -->
-                    <small class="text-muted">
-                      2h ago
-                    </small>
-    
-                  </div>
-                </div> <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-    
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <div class="avatar-title fs-lg bg-primary-soft rounded-circle text-primary">
-                        <i class="fe fe-code"></i>
-                      </div>
-                    </div>
-    
-                  </div>
-                  <div class="col ms-n2">
-    
-                    <!-- Heading -->
-                    <h5 class="mb-1">
-                      Dashkit 1.5.0 was deployed.
-                    </h5>
-    
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      A successful to deploy to production was executed.
-                    </p>
-    
-                    <!-- Time -->
-                    <small class="text-muted">
-                      2m ago
-                    </small>
-    
-                  </div>
-                </div> <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-    
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <div class="avatar-title fs-lg bg-primary-soft rounded-circle text-primary">
-                        <i class="fe fe-git-branch"></i>
-                      </div>
-                    </div>
-    
-                  </div>
-                  <div class="col ms-n2">
-    
-                    <!-- Heading -->
-                    <h5 class="mb-1">
-                      "Update Dependencies" branch was created.
-                    </h5>
-    
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      This branch was created off of the "master" branch.
-                    </p>
-    
-                    <!-- Time -->
-                    <small class="text-muted">
-                      2m ago
-                    </small>
-    
-                  </div>
-                </div> <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-    
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <div class="avatar-title fs-lg bg-primary-soft rounded-circle text-primary">
-                        <i class="fe fe-mail"></i>
-                      </div>
-                    </div>
-    
-                  </div>
-                  <div class="col ms-n2">
-    
-                    <!-- Heading -->
-                    <h5 class="mb-1">
-                      Launchday 1.4.0 update email sent
-                    </h5>
-    
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Sent to all 1,851 subscribers over a 24 hour period
-                    </p>
-    
-                    <!-- Time -->
-                    <small class="text-muted">
-                      2m ago
-                    </small>
-    
-                  </div>
-                </div> <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-    
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <div class="avatar-title fs-lg bg-primary-soft rounded-circle text-primary">
-                        <i class="fe fe-archive"></i>
-                      </div>
-                    </div>
-    
-                  </div>
-                  <div class="col ms-n2">
-    
-                    <!-- Heading -->
-                    <h5 class="mb-1">
-                      New project "Goodkit" created
-                    </h5>
-    
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Looks like there might be a new theme soon.
-                    </p>
-    
-                    <!-- Time -->
-                    <small class="text-muted">
-                      2h ago
-                    </small>
-    
-                  </div>
-                </div> <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-    
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <div class="avatar-title fs-lg bg-primary-soft rounded-circle text-primary">
-                        <i class="fe fe-code"></i>
-                      </div>
-                    </div>
-    
-                  </div>
-                  <div class="col ms-n2">
-    
-                    <!-- Heading -->
-                    <h5 class="mb-1">
-                      Dashkit 1.5.0 was deployed.
-                    </h5>
-    
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      A successful to deploy to production was executed.
-                    </p>
-    
-                    <!-- Time -->
-                    <small class="text-muted">
-                      2m ago
-                    </small>
-    
-                  </div>
-                </div> <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-    
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <div class="avatar-title fs-lg bg-primary-soft rounded-circle text-primary">
-                        <i class="fe fe-git-branch"></i>
-                      </div>
-                    </div>
-    
-                  </div>
-                  <div class="col ms-n2">
-    
-                    <!-- Heading -->
-                    <h5 class="mb-1">
-                      "Update Dependencies" branch was created.
-                    </h5>
-    
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      This branch was created off of the "master" branch.
-                    </p>
-    
-                    <!-- Time -->
-                    <small class="text-muted">
-                      2m ago
-                    </small>
-    
-                  </div>
-                </div> <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-    
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <div class="avatar-title fs-lg bg-primary-soft rounded-circle text-primary">
-                        <i class="fe fe-mail"></i>
-                      </div>
-                    </div>
-    
-                  </div>
-                  <div class="col ms-n2">
-    
-                    <!-- Heading -->
-                    <h5 class="mb-1">
-                      Launchday 1.4.0 update email sent
-                    </h5>
-    
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Sent to all 1,851 subscribers over a 24 hour period
-                    </p>
-    
-                    <!-- Time -->
-                    <small class="text-muted">
-                      2m ago
-                    </small>
-    
-                  </div>
-                </div> <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-    
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <div class="avatar-title fs-lg bg-primary-soft rounded-circle text-primary">
-                        <i class="fe fe-archive"></i>
-                      </div>
-                    </div>
-    
-                  </div>
-                  <div class="col ms-n2">
-    
-                    <!-- Heading -->
-                    <h5 class="mb-1">
-                      New project "Goodkit" created
-                    </h5>
-    
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Looks like there might be a new theme soon.
-                    </p>
-    
-                    <!-- Time -->
-                    <small class="text-muted">
-                      2h ago
-                    </small>
-    
-                  </div>
-                </div> <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-    
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <div class="avatar-title fs-lg bg-primary-soft rounded-circle text-primary">
-                        <i class="fe fe-code"></i>
-                      </div>
-                    </div>
-    
-                  </div>
-                  <div class="col ms-n2">
-    
-                    <!-- Heading -->
-                    <h5 class="mb-1">
-                      Dashkit 1.5.0 was deployed.
-                    </h5>
-    
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      A successful to deploy to production was executed.
-                    </p>
-    
-                    <!-- Time -->
-                    <small class="text-muted">
-                      2m ago
-                    </small>
-    
-                  </div>
-                </div> <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-    
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <div class="avatar-title fs-lg bg-primary-soft rounded-circle text-primary">
-                        <i class="fe fe-git-branch"></i>
-                      </div>
-                    </div>
-    
-                  </div>
-                  <div class="col ms-n2">
-    
-                    <!-- Heading -->
-                    <h5 class="mb-1">
-                      "Update Dependencies" branch was created.
-                    </h5>
-    
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      This branch was created off of the "master" branch.
-                    </p>
-    
-                    <!-- Time -->
-                    <small class="text-muted">
-                      2m ago
-                    </small>
-    
-                  </div>
-                </div> <!-- / .row -->
-              </a>
-            </div>
-    
-          </div>
-          <div class="tab-pane fade" id="modalActivityUser">
-    
-            <!-- List group -->
-            <div class="list-group list-group-flush list-group-activity my-n3">
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-    
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm avatar-online">
-                      <img class="avatar-img rounded-circle" src="./assets/img/avatars/profiles/avatar-1.jpg" alt="..." />
-                    </div>
-    
-                  </div>
-                  <div class="col ms-n2">
-    
-                    <!-- Heading -->
-                    <h5 class="mb-1">
-                      Dianna Smiley
-                    </h5>
-    
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Uploaded the files "Launchday Logo" and "New Design".
-                    </p>
-    
-                    <!-- Time -->
-                    <small class="text-muted">
-                      2m ago
-                    </small>
-    
-                  </div>
-                </div> <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-    
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm avatar-online">
-                      <img class="avatar-img rounded-circle" src="./assets/img/avatars/profiles/avatar-2.jpg" alt="..." />
-                    </div>
-    
-                  </div>
-                  <div class="col ms-n2">
-    
-                    <!-- Heading -->
-                    <h5 class="mb-1">
-                      Ab Hadley
-                    </h5>
-    
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Shared the "Why Dashkit?" post with 124 subscribers.
-                    </p>
-    
-                    <!-- Time -->
-                    <small class="text-muted">
-                      1h ago
-                    </small>
-    
-                  </div>
-                </div> <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-    
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm avatar-offline">
-                      <img class="avatar-img rounded-circle" src="./assets/img/avatars/profiles/avatar-3.jpg" alt="..." />
-                    </div>
-    
-                  </div>
-                  <div class="col ms-n2">
-    
-                    <!-- Heading -->
-                    <h5 class="mb-1">
-                      Adolfo Hess
-                    </h5>
-    
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Exported sales data from Launchday's subscriber data.
-                    </p>
-    
-                    <!-- Time -->
-                    <small class="text-muted">
-                      3h ago
-                    </small>
-    
-                  </div>
-                </div> <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-    
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm avatar-online">
-                      <img class="avatar-img rounded-circle" src="./assets/img/avatars/profiles/avatar-1.jpg" alt="..." />
-                    </div>
-    
-                  </div>
-                  <div class="col ms-n2">
-    
-                    <!-- Heading -->
-                    <h5 class="mb-1">
-                      Dianna Smiley
-                    </h5>
-    
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Uploaded the files "Launchday Logo" and "New Design".
-                    </p>
-    
-                    <!-- Time -->
-                    <small class="text-muted">
-                      2m ago
-                    </small>
-    
-                  </div>
-                </div> <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-    
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm avatar-online">
-                      <img class="avatar-img rounded-circle" src="./assets/img/avatars/profiles/avatar-2.jpg" alt="..." />
-                    </div>
-    
-                  </div>
-                  <div class="col ms-n2">
-    
-                    <!-- Heading -->
-                    <h5 class="mb-1">
-                      Ab Hadley
-                    </h5>
-    
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Shared the "Why Dashkit?" post with 124 subscribers.
-                    </p>
-    
-                    <!-- Time -->
-                    <small class="text-muted">
-                      1h ago
-                    </small>
-    
-                  </div>
-                </div> <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-    
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm avatar-offline">
-                      <img class="avatar-img rounded-circle" src="./assets/img/avatars/profiles/avatar-3.jpg" alt="..." />
-                    </div>
-    
-                  </div>
-                  <div class="col ms-n2">
-    
-                    <!-- Heading -->
-                    <h5 class="mb-1">
-                      Adolfo Hess
-                    </h5>
-    
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Exported sales data from Launchday's subscriber data.
-                    </p>
-    
-                    <!-- Time -->
-                    <small class="text-muted">
-                      3h ago
-                    </small>
-    
-                  </div>
-                </div> <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-    
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm avatar-online">
-                      <img class="avatar-img rounded-circle" src="./assets/img/avatars/profiles/avatar-1.jpg" alt="..." />
-                    </div>
-    
-                  </div>
-                  <div class="col ms-n2">
-    
-                    <!-- Heading -->
-                    <h5 class="mb-1">
-                      Dianna Smiley
-                    </h5>
-    
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Uploaded the files "Launchday Logo" and "New Design".
-                    </p>
-    
-                    <!-- Time -->
-                    <small class="text-muted">
-                      2m ago
-                    </small>
-    
-                  </div>
-                </div> <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-    
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm avatar-online">
-                      <img class="avatar-img rounded-circle" src="./assets/img/avatars/profiles/avatar-2.jpg" alt="..." />
-                    </div>
-    
-                  </div>
-                  <div class="col ms-n2">
-    
-                    <!-- Heading -->
-                    <h5 class="mb-1">
-                      Ab Hadley
-                    </h5>
-    
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Shared the "Why Dashkit?" post with 124 subscribers.
-                    </p>
-    
-                    <!-- Time -->
-                    <small class="text-muted">
-                      1h ago
-                    </small>
-    
-                  </div>
-                </div> <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-    
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm avatar-offline">
-                      <img class="avatar-img rounded-circle" src="./assets/img/avatars/profiles/avatar-3.jpg" alt="..." />
-                    </div>
-    
-                  </div>
-                  <div class="col ms-n2">
-    
-                    <!-- Heading -->
-                    <h5 class="mb-1">
-                      Adolfo Hess
-                    </h5>
-    
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Exported sales data from Launchday's subscriber data.
-                    </p>
-    
-                    <!-- Time -->
-                    <small class="text-muted">
-                      3h ago
-                    </small>
-    
-                  </div>
-                </div> <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-    
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm avatar-online">
-                      <img class="avatar-img rounded-circle" src="./assets/img/avatars/profiles/avatar-1.jpg" alt="..." />
-                    </div>
-    
-                  </div>
-                  <div class="col ms-n2">
-    
-                    <!-- Heading -->
-                    <h5 class="mb-1">
-                      Dianna Smiley
-                    </h5>
-    
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Uploaded the files "Launchday Logo" and "New Design".
-                    </p>
-    
-                    <!-- Time -->
-                    <small class="text-muted">
-                      2m ago
-                    </small>
-    
-                  </div>
-                </div> <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-    
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm avatar-online">
-                      <img class="avatar-img rounded-circle" src="./assets/img/avatars/profiles/avatar-2.jpg" alt="..." />
-                    </div>
-    
-                  </div>
-                  <div class="col ms-n2">
-    
-                    <!-- Heading -->
-                    <h5 class="mb-1">
-                      Ab Hadley
-                    </h5>
-    
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Shared the "Why Dashkit?" post with 124 subscribers.
-                    </p>
-    
-                    <!-- Time -->
-                    <small class="text-muted">
-                      1h ago
-                    </small>
-    
-                  </div>
-                </div> <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-    
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm avatar-offline">
-                      <img class="avatar-img rounded-circle" src="./assets/img/avatars/profiles/avatar-3.jpg" alt="..." />
-                    </div>
-    
-                  </div>
-                  <div class="col ms-n2">
-    
-                    <!-- Heading -->
-                    <h5 class="mb-1">
-                      Adolfo Hess
-                    </h5>
-    
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Exported sales data from Launchday's subscriber data.
-                    </p>
-    
-                    <!-- Time -->
-                    <small class="text-muted">
-                      3h ago
-                    </small>
-    
-                  </div>
-                </div> <!-- / .row -->
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- NAVIGATION -->
     <nav class="navbar navbar-vertical fixed-start navbar-expand-md navbar-light" id="sidebar">
       <div class="container-fluid">
@@ -1242,18 +85,18 @@
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
                     <a href="#sidebarAccount" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebarAccount">
-                      Account
+                      Proxycurl API
                     </a>
                     <div class="collapse show" id="sidebarAccount">
                       <ul class="nav nav-sm flex-column">
                         <li class="nav-item">
-                          <a href="./account-general.html" class="nav-link">
-                            General
+                          <a href="./index.html" class="nav-link">
+                            API Key and Billing
                           </a>
                         </li>
                         <li class="nav-item">
-                          <a href="./account-billing.html" class="nav-link">
-                            Billing
+                          <a href="./account-work.html" class="nav-link">
+                            Work Email Lookup Logs
                           </a>
                         </li>
                         <li class="nav-item">
@@ -1262,52 +105,20 @@
                           </a>
                         </li>
                         <li class="nav-item">
-                          <a href="./account-security.html" class="nav-link ">
+                          <a href="./account-security.html" class="nav-link">
                             Security
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#!" class="nav-link">
+                            Docs
                           </a>
                         </li>
                       </ul>
                     </div>
                   </li>
-                  <li class="nav-item">
-                    <a href="./orders.html" class="nav-link ">
-                      Orders
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="./pricing.html" class="nav-link ">
-                      Pricing
-                    </a>
-                  </li>
                 </ul>
               </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="./widgets.html">
-                <i class="fe fe-grid"></i> Widgets
-              </a>
-            </li>
-            <li class="nav-item d-md-none">
-              <a class="nav-link" data-bs-toggle="offcanvas" href="#sidebarOffcanvasActivity" aria-contrtols="sidebarOffcanvasActivity">
-                <span class="fe fe-bell"></span> Notifications
-              </a>
-            </li>
-          </ul>
-    
-          <!-- Divider -->
-          <hr class="navbar-divider my-3">
-    
-          <!-- Heading -->
-          <h6 class="navbar-heading">
-            Documentation
-          </h6>
-    
-          <!-- Navigation -->
-          <ul class="navbar-nav mb-md-4">
-            <li class="nav-item">
-              <a class="nav-link " href="changelog.html">
-                <i class="fe fe-git-branch"></i> Changelog <span class="badge bg-primary ms-auto">v2.1.0</span>
-              </a>
             </li>
           </ul>
     
@@ -1382,6 +193,11 @@
                       Account
                     </h1>
 
+                    <!-- User email -->
+                    <p class="lead">
+                      example@nubela.co
+                    </p>
+
                   </div>
                 </div> <!-- / .row -->
                 <div class="row align-items-center">
@@ -1390,13 +206,13 @@
                     <!-- Nav -->
                     <ul class="nav nav-tabs nav-overflow header-tabs">
                       <li class="nav-item">
-                        <a href="account-general.html" class="nav-link">
-                          General
+                        <a href="index.html" class="nav-link">
+                          API Key and Billing
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a href="account-billing.html" class="nav-link">
-                          Billing
+                        <a href="account-work.html" class="nav-link">
+                          Work Email Lookup Logs
                         </a>
                       </li>
                       <li class="nav-item">
@@ -1409,11 +225,6 @@
                           Security
                         </a>
                       </li>
-                      <li class="nav-item">
-                        <a href="account-notifications.html" class="nav-link">
-                          Notifications
-                        </a>
-                      </li>
                     </ul>
 
                   </div>
@@ -1421,70 +232,11 @@
               </div>
             </div>
 
-            <div class="row">
-              <div class="col-12 col-md-6">
-
-                <!-- Card -->
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row align-items-center">
-                      <div class="col">
-
-                        <!-- Title -->
-                        <h6 class="text-uppercase text-muted mb-2">
-                          Seats used
-                        </h6>
-
-                        <!-- Heading -->
-                        <span class="h2 mb-0">
-                          4 out of 6
-                        </span>
-
-                      </div>
-                      <div class="col-auto">
-
-                        <!-- Icon -->
-                        <a class="btn btn-sm btn-outline-primary" href="#!">Upgrade</a>
-
-                      </div>
-                    </div> <!-- / .row -->
-
-                  </div>
-                </div>
-
-              </div>
-              <div class="col-12 col-md-6">
-
-                <!-- Card -->
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row align-items-center">
-                      <div class="col">
-
-                        <!-- Title -->
-                        <h6 class="text-uppercase text-muted mb-2">
-                          Default role
-                        </h6>
-
-                        <!-- Heading -->
-                        <span class="h2 mb-0">
-                          Staff
-                        </span>
-
-                      </div>
-                      <div class="col-auto">
-
-                        <!-- Icon -->
-                        <a class="btn btn-sm btn-white" href="#!">Change</a>
-
-                      </div>
-                    </div> <!-- / .row -->
-
-                  </div>
-                </div>
-
-              </div>
-            </div> <!-- / .row -->
+            <!-- Alert
+            <div class="alert alert-danger">
+              <i class="fe fe-info me-1"></i> You are near your API limits.
+            </div>
+            -->
 
             <!-- Card -->
             <div class="card">
@@ -1508,27 +260,6 @@
                         Invite a member
                       </h4>
 
-                      <!-- Badge -->
-                      <span class="badge bg-primary-soft">2 seats left</span>
-
-                    </div>
-                    <div class="card-header">
-                      <div class="row g-0 align-items-center">
-                        <div class="col-3">
-
-                          <!-- Label -->
-                          <label class="mb-0" for="inviteMemberName">
-                            Name
-                          </label>
-
-                        </div>
-                        <div class="col">
-
-                          <!-- Input -->
-                          <input class="form-control form-control-flush" id="inviteMemberName" type="text" placeholder="Full name">
-
-                        </div>
-                      </div> <!-- / .row -->
                     </div>
                     <div class="card-header">
                       <div class="row g-0 align-items-center">
@@ -1566,25 +297,31 @@
                 <div class="list-group list-group-flush my-n3">
                   <div class="list-group-item">
                     <div class="row align-items-center">
-                      <div class="col-auto">
-
-                        <!-- Avatar -->
-                        <a href="profile-posts.html" class="avatar">
-                          <img src="assets/img/avatars/profiles/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
-                        </a>
-
-                      </div>
-                      <div class="col-5 ms-n2">
+                      <div class="col-5">
 
                         <!-- Title -->
-                        <h4 class="mb-1">
-                          <a href="profile-posts.html">Dianna Smiley</a>
+                        <h4>
+                          example@nubela.co
                         </h4>
 
-                        <!-- Email -->
-                        <p class="small text-muted mb-0">
-                          <a class="d-block text-reset text-truncate" href="mailt:dianna.smiley@company.com">dianna.smiley@company.com</a>
-                        </p>
+                      </div>
+                      <div class="col-auto ms-auto">
+
+                        <span class="badge bg-success">
+                          Team leader
+                        </span>
+
+                      </div>
+                    </div> <!-- / .row -->
+                  </div>
+                  <div class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col-5">
+
+                        <!-- Title -->
+                        <h4>
+                          slimshady@nubela.co
+                        </h4>
 
                       </div>
                       <div class="col-auto ms-auto me-n3">
@@ -1622,25 +359,12 @@
                   </div>
                   <div class="list-group-item">
                     <div class="row align-items-center">
-                      <div class="col-auto">
-
-                        <!-- Avatar -->
-                        <a href="profile-posts.html" class="avatar">
-                          <img src="assets/img/avatars/profiles/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
-                        </a>
-
-                      </div>
-                      <div class="col-5 ms-n2">
+                      <div class="col-5">
 
                         <!-- Title -->
-                        <h4 class="mb-1">
-                          <a href="profile-posts.html">Ab Hadley</a>
+                        <h4>
+                          ayamsuwir@nubela.co
                         </h4>
-
-                        <!-- Email -->
-                        <p class="small text-muted mb-0">
-                          <a class="d-block text-reset text-truncate" href="mailt:ab.hadley@company.com">ab.hadleyompany.com</a>
-                        </p>
 
                       </div>
                       <div class="col-auto ms-auto me-n3">
@@ -1678,81 +402,12 @@
                   </div>
                   <div class="list-group-item">
                     <div class="row align-items-center">
-                      <div class="col-auto">
-
-                        <!-- Avatar -->
-                        <a href="profile-posts.html" class="avatar">
-                          <img src="assets/img/avatars/profiles/avatar-3.jpg" alt="..." class="avatar-img rounded-circle">
-                        </a>
-
-                      </div>
-                      <div class="col-5 ms-n2">
+                      <div class="col-5">
 
                         <!-- Title -->
-                        <h4 class="mb-1">
-                          <a href="profile-posts.html">Adolfo Hess</a>
+                        <h4>
+                          luhut@nubela.co
                         </h4>
-
-                        <!-- Email -->
-                        <p class="small text-muted mb-0">
-                          <a class="d-block text-reset text-truncate" href="mailt:adolfo.hess@company.com">adolfo.hess@company.com</a>
-                        </p>
-
-                      </div>
-                      <div class="col-auto ms-auto me-n3">
-
-                        <!-- Select -->
-                        <select class="form-select form-select-sm" data-choices='{"searchEnabled": false}'>
-                          <option>Admin</option>
-                          <option>Staff</option>
-                          <option>Custom</option>
-                        </select>
-
-                      </div>
-                      <div class="col-auto">
-
-                        <!-- Dropdown -->
-                        <div class="dropdown">
-                          <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fe fe-more-vertical"></i>
-                          </a>
-                          <div class="dropdown-menu dropdown-menu-end">
-                            <a class="dropdown-item" href="#!">
-                              Action
-                            </a>
-                            <a class="dropdown-item" href="#!">
-                              Another action
-                            </a>
-                            <a class="dropdown-item" href="#!">
-                              Something else here
-                            </a>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div> <!-- / .row -->
-                  </div>
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-
-                        <!-- Avatar -->
-                        <a href="profile-posts.html" class="avatar">
-                          <img src="assets/img/avatars/profiles/avatar-4.jpg" alt="..." class="avatar-img rounded-circle">
-                        </a>
-
-                      </div>
-                      <div class="col-5 ms-n2">
-
-                        <!-- Title -->
-                        <h4 class="mb-1">
-                          <a href="profile-posts.html">Daniela Dewitt</a>
-                        </h4>
-
-                        <!-- Email -->
-                        <p class="small text-muted mb-0">
-                          <a class="d-block text-reset text-truncate" href="mailt:daniela.dewitt@company.com">daniela.dewitt@company.com</a>
-                        </p>
 
                       </div>
                       <div class="col-auto ms-auto me-n3">

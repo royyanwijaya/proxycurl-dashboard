@@ -13,6 +13,7 @@
     
     <!-- Libs CSS -->
     <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.5.0/css/neu.min.css">
     
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
@@ -1242,18 +1243,18 @@
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
                     <a href="#sidebarAccount" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebarAccount">
-                      Account
+                      Proxycurl API
                     </a>
                     <div class="collapse show" id="sidebarAccount">
                       <ul class="nav nav-sm flex-column">
                         <li class="nav-item">
-                          <a href="./account-general.html" class="nav-link">
-                            General
+                          <a href="./index.html" class="nav-link">
+                            API Key and Billing
                           </a>
                         </li>
                         <li class="nav-item">
-                          <a href="./account-billing.html" class="nav-link active">
-                            API Key and Billing
+                          <a href="./account-work.html" class="nav-link active">
+                            Work Email Lookup Logs
                           </a>
                         </li>
                         <li class="nav-item">
@@ -1262,22 +1263,17 @@
                           </a>
                         </li>
                         <li class="nav-item">
-                          <a href="./account-security.html" class="nav-link ">
+                          <a href="./account-security.html" class="nav-link">
                             Security
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#!" class="nav-link">
+                            Docs
                           </a>
                         </li>
                       </ul>
                     </div>
-                  </li>
-                  <li class="nav-item">
-                    <a href="./orders.html" class="nav-link ">
-                      Orders
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="./pricing.html" class="nav-link ">
-                      Pricing
-                    </a>
                   </li>
                 </ul>
               </div>
@@ -1379,8 +1375,13 @@
 
                     <!-- Title -->
                     <h1 class="header-title">
-                      Account for example@nubela.co
+                      Account
                     </h1>
+
+                    <!-- User email -->
+                    <p class="lead">
+                      example@nubela.co
+                    </p>
 
                   </div>
                 </div> <!-- / .row -->
@@ -1390,13 +1391,13 @@
                     <!-- Nav -->
                     <ul class="nav nav-tabs nav-overflow header-tabs">
                       <li class="nav-item">
-                        <a href="account-general.html" class="nav-link">
-                          General
+                        <a href="index.html" class="nav-link">
+                          API Key and Billing
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a href="account-billing.html" class="nav-link active">
-                          API Key and Billing
+                        <a href="account-work.html" class="nav-link active">
+                          Work Email Lookup Logs
                         </a>
                       </li>
                       <li class="nav-item">
@@ -1407,11 +1408,6 @@
                       <li class="nav-item">
                         <a href="account-security.html" class="nav-link">
                           Security
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="account-notifications.html" class="nav-link">
-                          Notifications
                         </a>
                       </li>
                     </ul>
@@ -1427,155 +1423,16 @@
             </div>
             -->
 
-            <div class="row">
-
-              <div class="col-12 col-md-6">
-
-                <!-- Card -->
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row align-items-center">
-                      <div class="col">
-
-                        <!-- Title -->
-                        <h6 class="text-uppercase text-muted mb-2">
-                          Bearer Token (API Key)
-                        </h6>
-
-                        <!-- Heading -->
-                        <span class="h2 mb-0">
-                          23837419
-                        </span>
-
-                      </div>
-                    </div> <!-- / .row -->
-
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="col-12 col-md-6">
-
-                <!-- Card -->
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row align-items-center">
-                      <div class="col">
-
-                        <!-- Title -->
-                        <h6 class="text-uppercase text-muted mb-2">
-                          LinkDB SQL Connection String
-                        </h6>
-
-                        <!-- Heading -->
-                        <span class="h2 mb-0">
-                          23837419
-                        </span>
-
-                      </div>
-                      <div class="col-auto">
-
-                        <span class="badge bg-warning">
-                          beta
-                        </span>
-
-                      </div>
-                    </div> <!-- / .row -->
-
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-
-            <!-- Credits -->
-            <digitv class="card">
-              <div class="card-header">
-                <div class="row align-items-center">
-                  <div class="col">
-
-                    <!-- Title -->
-                    <h4 class="card-header-title">
-                      Credits
-                    </h4>
-
-                  </div>
-                </div>
-              </div>
-
-              <div class="card-body">
-
-                <div class="row justify-content-center">
-
-                  <div class="col-12">
-
-                    <div class="form-group">
-  
-                      <!-- Label -->
-                      <label for="name" class="mb-2">
-                        Balance
-                      </label>
-  
-                      <!-- Input -->
-                      <input id="name" type="text" value="16259" readonly class="form-control mb-1">
-  
-                      <small class="text-muted">
-                        Your current balance will be added once you made a top-up
-                      </small>
-
-                    </div>
-  
-                  </div>
-
-                  <div class="col-12 col-md-5">
-
-                    <div class="form-group">
-                      <label class="mb-2">
-                        <i class="neu-dollar"></i> Top-up amount
-                      </label>
-                      <input id="name" type="text" placeholder="10" data-parsley-min="10" name="amount" required="" class="form-control">
-                    </div>
-
-                  </div>
-
-                  <div class="col-12 col-md-2">
-
-                    <div class="text-center align-items-center">
-                      <div class="d-flex align-items-center justify-content-center mt-7">
-                        <i class="neu-compare text-primary" style="font-size: 24px;"></i>
-                      </div>
-                    </div>
-
-                  </div>
-
-                  <div class="col-12 col-md-5">
-
-                    <div class="form-group">
-                      <label for="name" class="mb-2">
-                        <i class="neu-coin"></i> Top-up Credits
-                      </label>
-                      <input id="name" type="text" value="0" readonly="" class="form-control">
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-
             <!-- Card -->
             <div class="card">
+
               <div class="card-header">
                 <div class="row align-items-center">
                   <div class="col">
 
                     <!-- Title -->
                     <h4 class="card-header-title">
-                      Payment methods
+                      Work Email Lookup Logs
                     </h4>
 
                   </div>
@@ -1583,172 +1440,105 @@
 
                     <!-- Button -->
                     <a class="btn btn-sm btn-primary" href="#!">
-                      Add method
+                      Download as CSV
                     </a>
 
                   </div>
                 </div>
               </div>
-              <div class="card-body">
 
-                <!-- List group -->
-                <div class="list-group list-group-flush my-n3">
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-
-                        <!-- Image -->
-                        <img class="img-fluid" src="assets/img/payment-methods/visa.svg" alt="..." style="max-width: 38px;">
-
-                      </div>
-                      <div class="col ms-n2">
-
-                        <!-- Heading -->
-                        <h4 class="mb-1">
-                          Visa ending in 1234
-                        </h4>
-
-                        <!-- Text -->
-                        <small class="text-muted">
-                          Expires 3/2024
-                        </small>
-
-                      </div>
-                      <div class="col-auto me-n3">
-
-                        <!-- Badge -->
-                        <span class="badge bg-light">
-                          Default
-                        </span>
-
-                      </div>
-                    </div> <!-- / .row -->
-                  </div>
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-
-                        <!-- Image -->
-                        <img class="img-fluid" src="assets/img/payment-methods/mastercard.svg" alt="..." style="max-width: 38px;">
-
-                      </div>
-                      <div class="col ms-n2">
-
-                        <!-- Heading -->
-                        <h4 class="mb-1">
-                          Mastercard ending in 1234
-                        </h4>
-
-                        <!-- Text -->
-                        <small class="text-muted">
-                          Expires 3/2024
-                        </small>
-
-                      </div>
-
-                      <div class="col-auto me-n3">
-
-                        <button class="btn btn-sm btn-outline-primary">
-                          Make default
-                        </button>
-
-                      </div>
-
-                    </div> <!-- / .row -->
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            <!-- Card -->
-            <div class="card">
-              <div class="card-header">
-
-                <!-- Title -->
-                <h4 class="card-header-title">
-                  Invoices
-                </h4>
-
-              </div>
               <div class="table-responsive">
                 <table class="table table-sm table-nowrap card-table">
                   <thead>
                     <tr>
-                      <th>Invoice ID</th>
-                      <th>Date</th>
-                      <th>Amount</th>
-                      <th>Download</th>
+                      <th>Date/Time requested</th>
+                      <th>LinkedIn Profile URL</th>
+                      <th>Status</th>
+                      <th>Email address</th>
                     </tr>
                   </thead>
                   <tbody class="fs-base">
                     <tr>
                       <td>
-                        <a href="invoice.html">Invoice #10395</a>
+                        20 Jan 2022, 14:50
                       </td>
                       <td>
-                        <time datetime="2020-04-24">Apr. 24, 2020</time>
+                        linkedin.com/billgates
                       </td>
                       <td>
-                        $29.00
+                        <span class="badge bg-primary-soft">
+                          email_found
+                        </span>
                       </td>
                       <td>
-                        <button class="btn btn-sm btn-primary">
-                          Download
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <a href="invoice.html">Invoice #10244</a>
-                      </td>
-                      <td>
-                        <time datetime="2020-03-24">Mar. 24, 2020</time>
-                      </td>
-                      <td>
-                        $29.00
-                      </td>
-                      <td>
-                        <button class="btn btn-sm btn-primary">
-                          Download
-                        </button>
+                        gates@microsoft.com
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <a href="invoice.html">Invoice #10119</a>
+                        20 Jan 2022, 14:42
                       </td>
                       <td>
-                        <time datetime="2020-02-24">Feb. 24, 2020</time>
+                        linkedin.com/gomugomuno
                       </td>
                       <td>
-                        $29.00
+                        <span class="badge bg-danger-soft">
+                          email_not_found
+                        </span>
                       </td>
                       <td>
-                        <button class="btn btn-sm btn-primary">
-                          Download
-                        </button>
+                        gomu@gomu.no
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <a href="invoice.html">Invoice #10062</a>
+                        20 Jan 2022, 14:40
                       </td>
                       <td>
-                        <time datetime="2020-01-24">Jan. 24, 2020</time>
+                        linkedin.com/kanebohijau
                       </td>
                       <td>
-                        $29.00
+                        <span class="badge bg-danger-soft">
+                          email_not_found
+                        </span>
                       </td>
                       <td>
-                        <button class="btn btn-sm btn-primary">
-                          Download
-                        </button>
+                        tokenasix@kanebo.hijau
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        20 Jan 2022, 14:32
+                      </td>
+                      <td>
+                        linkedin.com/anjaymabar
+                      </td>
+                      <td>
+                        <span class="badge bg-primary-soft">
+                          email_found
+                        </span>
+                      </td>
+                      <td>
+                        anjay@mabar.com
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
+
+              <div class="card-body">
+                <nav aria-label="Page navigation">
+                  <ul class="pagination">
+                    <li class="page-item"><a class="page-link bg-light" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                  </ul>
+                </nav>
+              </div>
+
             </div>
 
             <br>
