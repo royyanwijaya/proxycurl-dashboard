@@ -13,7 +13,6 @@
     
     <!-- Libs CSS -->
     <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.5.0/css/neu.min.css">
     
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
@@ -45,8 +44,8 @@
     
             <!-- Toggle -->
             <a href="#" id="sidebarIcon" class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <div class="avatar avatar-sm avatar-online">
-                <img src="./assets/img/avatars/profiles/avatar-1.jpg" class="avatar-img rounded-circle" alt="...">
+              <div class="avatar">
+                <span class="avatar-title rounded-circle">UY</span>
               </div>
             </a>
     
@@ -80,43 +79,34 @@
 
             <li class="nav-item">
               <a class="nav-link" href="#sidebarPages" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebarPages">
-                <i class="fe fe-file"></i> Pages
+                <i class="fe fe-file"></i> Proxycurl API
               </a>
               <div class="collapse show" id="sidebarPages">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="#sidebarAccount" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebarAccount">
-                      Proxycurl API
+                    <a href="./index.html" class="nav-link active">
+                      Account
                     </a>
-                    <div class="collapse show" id="sidebarAccount">
-                      <ul class="nav nav-sm flex-column">
-                        <li class="nav-item">
-                          <a href="./index.html" class="nav-link active">
-                            API Key and Billing
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="./account-work.html" class="nav-link">
-                            Work Email Lookup Logs
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="./account-members.html" class="nav-link">
-                            Members
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="./account-security.html" class="nav-link">
-                            Security
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="#!" class="nav-link">
-                            Docs
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./account-api.html" class="nav-link">
+                      API Key and Billing
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./account-work.html" class="nav-link">
+                      Work Email Lookup Logs
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./account-members.html" class="nav-link">
+                      Members
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#!" class="nav-link">
+                      Docs
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -125,7 +115,6 @@
     
           <!-- Push content down -->
           <div class="mt-auto"></div>
-    
     
             <!-- User (md) -->
             <div class="navbar-user d-none d-md-flex" id="sidebarUser">
@@ -158,7 +147,7 @@
     </nav>
 
     <!-- MAIN CONTENT -->
-    <div class="main-content">
+    <div class="main-content">      
 
       <div class="container-fluid">
         <div class="row justify-content-center">
@@ -193,7 +182,12 @@
                     <!-- Nav -->
                     <ul class="nav nav-tabs nav-overflow header-tabs">
                       <li class="nav-item">
-                        <a href="account-billing.html" class="nav-link active">
+                        <a href="index.html" class="nav-link active">
+                          Account
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="account-api.html" class="nav-link">
                           API Key and Billing
                         </a>
                       </li>
@@ -205,11 +199,6 @@
                       <li class="nav-item">
                         <a href="account-members.html" class="nav-link">
                           Members
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="account-security.html" class="nav-link">
-                          Security
                         </a>
                       </li>
                     </ul>
@@ -225,176 +214,263 @@
             </div>
             -->
 
-            <!-- Token -->
-            <div class="row">
+            <div class="row justify-content-between align-items-center mb-5">
+              <div class="col-12 col-md-9 col-xl-7">
 
-              <div class="col-12 col-md-6">
+                <!-- Heading -->
+                <h2 class="mb-2">
+                  Two factor security
+                </h2>
 
-                <!-- Card -->
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row align-items-center">
-                      <div class="col">
-
-                        <!-- Title -->
-                        <h6 class="text-uppercase text-muted mb-3">
-                          Bearer Token (API Key)
-                        </h6>
-
-                        <!-- Heading -->
-                        <span class="h2 mb-0">
-                          23837419
-                        </span>
-
-                      </div>
-                    </div> <!-- / .row -->
-
-                  </div>
-                </div>
+                <!-- Text -->
+                <p class="text-muted mb-md-0">
+                  Two-factor authentication adds an additional layer of security to your account by requiring more than just a password to log in.
+                </p>
 
               </div>
+              <div class="col-12 col-md-auto">
 
-              <div class="col-12 col-md-6">
+                <!-- Button -->
+                <button class="btn btn-primary">
+                  Enable
+                </button>
 
-                <!-- Card -->
-                <div class="card">
-                  <div class="card-body">
+              </div>
+            </div> <!-- / .row -->
+
+            <!-- Card -->
+            <div class="card">
+              <div class="card-body">
+
+                <!-- List group -->
+                <div class="list-group list-group-flush my-n3">
+                  <div class="list-group-item">
                     <div class="row align-items-center">
                       <div class="col">
 
-                        <!-- Title -->
-                        <h6 class="text-uppercase text-muted mb-3">
-                          LinkDB SQL Connection String
-                        </h6>
-
                         <!-- Heading -->
-                        <span class="h2 mb-0">
-                          23837419
-                        </span>
+                        <h4 class="mb-1">
+                          Authenticator app
+                        </h4>
 
-                        <!-- LinkDB Docs btn -->
-                        <small>
-                          <a href="#!">
-                            View LinkDB documentation
-                          </a>
+                        <!-- Text -->
+                        <small class="text-muted">
+                          Google auth or 1Password
                         </small>
 
                       </div>
                       <div class="col-auto">
 
-                        <span class="badge bg-warning">
-                          beta
-                        </span>
+                        <!-- Button -->
+                        <button class="btn btn-sm btn-white">
+                          Setup
+                        </button>
 
                       </div>
                     </div> <!-- / .row -->
-
                   </div>
-                </div>
+                  <div class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col">
 
-              </div>
+                        <!-- Heading -->
+                        <h4 class="mb-1">
+                          SMS Recovery <i class="fe fe-info text-muted ms-1" data-bs-toggle="tooltip" data-title="We use the the phone number you provide in General"></i>
+                        </h4>
 
-            </div>
+                        <!-- Text -->
+                        <small class="text-muted">
+                          Standard messaging rates apply
+                        </small>
 
-            <!-- Credits -->
-            <div class="card">
-              <div class="card-header">
-                <div class="row align-items-center">
-                  <div class="col">
-
-                    <!-- Title -->
-                    <h4 class="card-header-title">
-                      Credits
-                    </h4>
-
-                  </div>
-                </div>
-              </div>
-
-              <div class="card-body">
-
-                <div class="row justify-content-center">
-
-                  <div class="col-12">
-
-                    <div class="form-group">
-  
-                      <!-- Label -->
-                      <label for="name" class="mb-2">
-                        Balance
-                      </label>
-  
-                      <!-- Input -->
-                      <input id="name" type="text" value="16259" readonly class="form-control mb-1 bg-light">
-  
-                      <small class="text-muted">
-                        Your current balance will be added once you made a top-up
-                      </small>
-
-                    </div>
-  
-                  </div>
-
-                  <div class="col-12 col-md-5">
-
-                    <div class="form-group">
-                      <label class="mb-2">
-                        <i class="neu-dollar"></i> Top-up amount
-                      </label>
-                      <input id="name" type="text" placeholder="10" data-parsley-min="10" name="amount" required="" class="form-control">
-                    </div>
-
-                  </div>
-
-                  <div class="col-12 col-md-2">
-
-                    <div class="text-center align-items-center">
-                      <div class="d-flex align-items-center justify-content-center mt-md-5 mb-2">
-                        <i class="neu-compare text-primary" style="font-size: 24px;"></i>
                       </div>
-                    </div>
+                      <div class="col-auto">
 
+                        <!-- Button -->
+                        <button class="btn btn-sm btn-danger">
+                          Disable
+                        </button>
+
+                      </div>
+                    </div> <!-- / .row -->
                   </div>
+                  <div class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col">
 
-                  <div class="col-12 col-md-5">
+                        <!-- Heading -->
+                        <h4 class="mb-1">
+                          Recovery codes <i class="fe fe-info text-muted ms-1" data-bs-toggle="tooltip" data-title="We use the the phone number you provide in General"></i>
+                        </h4>
 
-                    <div class="form-group">
-                      <label for="name" class="mb-2">
-                        <i class="neu-coin"></i> Top-up Credits
-                      </label>
-                      <input id="name" type="text" value="0" readonly="" class="form-control bg-light">
-                    </div>
+                        <!-- Text -->
+                        <small class="text-muted">
+                          Standard messaging rates apply
+                        </small>
 
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Button -->
+                        <button class="btn btn-sm btn-white">
+                          Reveal
+                        </button>
+
+                      </div>
+                    </div> <!-- / .row -->
                   </div>
-
                 </div>
 
               </div>
-
             </div>
+
+            <!-- Divider -->
+            <hr class="my-5">
+
+            <div class="row justify-content-between align-items-center mb-5">
+              <div class="col-12 col-md-9 col-xl-7">
+
+                <!-- Heading -->
+                <h2 class="mb-2">
+                  Change your password
+                </h2>
+
+                <!-- Text -->
+                <p class="text-muted mb-xl-0">
+                  We will email you a confirmation when changing your password, so please expect that email after submitting.
+                </p>
+
+              </div>
+              <div class="col-12 col-xl-auto">
+
+                <!-- Button -->
+                <button class="btn btn-white">
+                  Forgot your password?
+                </button>
+
+              </div>
+            </div> <!-- / .row -->
+
+            <div class="row">
+              <div class="col-12 col-md-6 order-md-2">
+
+                <!-- Card -->
+                <div class="card bg-light border ms-md-4">
+                  <div class="card-body">
+
+                    <!-- Text -->
+                    <p class="mb-2">
+                      Password requirements
+                    </p>
+
+                    <!-- Text -->
+                    <p class="small text-muted mb-2">
+                      To create a new password, you have to meet all of the following requirements:
+                    </p>
+
+                    <!-- List group -->
+                    <ul class="small text-muted ps-4 mb-0">
+                      <li>
+                        Minimum 8 character
+                      </li>
+                      <li>
+                        At least one special character
+                      </li>
+                      <li>
+                        At least one number
+                      </li>
+                      <li>
+                        Can’t be the same as a previous password
+                      </li>
+                    </ul>
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12 col-md-6">
+
+                <!-- Form -->
+                <form>
+
+                  <!-- Password -->
+                  <div class="form-group">
+
+                    <!-- Label -->
+                    <label class="form-label">
+                      Current password
+                    </label>
+
+                    <!-- Input -->
+                    <input type="password" class="form-control">
+
+                  </div>
+
+                  <!-- New password -->
+                  <div class="form-group">
+
+                    <!-- Label -->
+                    <label class="form-label">
+                      New password
+                    </label>
+
+                    <!-- Input -->
+                    <input type="password" class="form-control">
+
+                  </div>
+
+                  <!-- Confirm new password -->
+                  <div class="form-group">
+
+                    <!-- Label -->
+                    <label class="form-label">
+                      Confirm new password
+                    </label>
+
+                    <!-- Input -->
+                    <input type="password" class="form-control">
+
+                  </div>
+
+                  <!-- Submit -->
+                  <button class="btn w-100 btn-primary lift" type="submit">
+                    Update password
+                  </button>
+
+                </form>
+
+              </div>
+            </div> <!-- / .row -->
+
+            <!-- Divider -->
+            <hr class="my-5">
+
+            <div class="row justify-content-between align-items-center mb-5">
+              <div class="col-12 col-md-9 col-xl-7">
+
+                <!-- Heading -->
+                <h2 class="mb-2">
+                  Device History
+                </h2>
+
+                <!-- Text -->
+                <p class="text-muted mb-xl-0">
+                  If you see a device here that you believe wasn’t you, please contact our account <a href="#!">fraud department</a> immediately.
+                </p>
+
+              </div>
+              <div class="col-12 col-xl-auto">
+
+                <!-- Button -->
+                <button class="btn btn-white">
+                  Log out all devices
+                </button>
+
+              </div>
+            </div> <!-- / .row -->
 
             <!-- Card -->
             <div class="card">
-              <div class="card-header">
-                <div class="row align-items-center">
-                  <div class="col">
-
-                    <!-- Title -->
-                    <h4 class="card-header-title">
-                      Payment methods
-                    </h4>
-
-                  </div>
-                  <div class="col-auto">
-
-                    <!-- Button -->
-                    <a class="btn btn-sm btn-primary" href="#!">
-                      Add method
-                    </a>
-
-                  </div>
-                </div>
-              </div>
               <div class="card-body">
 
                 <!-- List group -->
@@ -403,157 +479,128 @@
                     <div class="row align-items-center">
                       <div class="col-auto">
 
-                        <!-- Image -->
-                        <img class="img-fluid" src="assets/img/payment-methods/visa.svg" alt="..." style="max-width: 38px;">
+                        <!-- Icon -->
+                        <i class="fe fe-smartphone h1"></i>
 
                       </div>
                       <div class="col ms-n2">
 
                         <!-- Heading -->
                         <h4 class="mb-1">
-                          Visa ending in 1234
+                          iPhone 11
                         </h4>
 
                         <!-- Text -->
                         <small class="text-muted">
-                          Expires 3/2024
+                          Los Angeles, CA · <time datetime="2020-04-20T16:16">April 20 at 4:16pm</time>
                         </small>
 
                       </div>
-                      <div class="col-auto me-n3">
+                      <div class="col-auto">
 
-                        <!-- Badge -->
-                        <span class="badge bg-light">
-                          Default
-                        </span>
+                        <!-- Button -->
+                        <button class="btn btn-sm btn-white">
+                          Log out
+                        </button>
 
                       </div>
-                    </div> <!-- / .row -->
+                    </div>
                   </div>
                   <div class="list-group-item">
                     <div class="row align-items-center">
                       <div class="col-auto">
 
-                        <!-- Image -->
-                        <img class="img-fluid" src="assets/img/payment-methods/mastercard.svg" alt="..." style="max-width: 38px;">
+                        <!-- Icon -->
+                        <i class="fe fe-monitor h1"></i>
 
                       </div>
                       <div class="col ms-n2">
 
                         <!-- Heading -->
                         <h4 class="mb-1">
-                          Mastercard ending in 1234
+                          iMac OSX · <span class="fw-normal">Safari 10.2</span>
                         </h4>
 
                         <!-- Text -->
                         <small class="text-muted">
-                          Expires 3/2024
+                          Los Angeles, CA · <time datetime="2020-04-20T16:16">April 20 at 4:16pm</time>
                         </small>
 
                       </div>
+                      <div class="col-auto">
 
-                      <div class="col-auto me-n3">
-
-                        <button class="btn btn-sm btn-outline-primary">
-                          Make default
+                        <!-- Button -->
+                        <button class="btn btn-sm btn-white">
+                          Log out
                         </button>
 
                       </div>
+                    </div>
+                  </div>
+                  <div class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
 
-                    </div> <!-- / .row -->
+                        <!-- Icon -->
+                        <i class="fe fe-smartphone h1"></i>
+
+                      </div>
+                      <div class="col ms-n2">
+
+                        <!-- Heading -->
+                        <h4 class="mb-1">
+                          iPhone 11
+                        </h4>
+
+                        <!-- Text -->
+                        <small class="text-muted">
+                          Los Angeles, CA · <time datetime="2020-04-20T16:16">April 20 at 4:16pm</time>
+                        </small>
+
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Button -->
+                        <button class="btn btn-sm btn-white">
+                          Log out
+                        </button>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+
+                        <!-- Icon -->
+                        <i class="fe fe-monitor h1"></i>
+
+                      </div>
+                      <div class="col ms-n2">
+
+                        <!-- Heading -->
+                        <h4 class="mb-1">
+                          iMac OSX · <span class="fw-normal">Safari 10.2</span>
+                        </h4>
+
+                        <!-- Text -->
+                        <small class="text-muted">
+                          Los Angeles, CA · <time datetime="2020-04-20T16:16">April 20 at 4:16pm</time>
+                        </small>
+
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Button -->
+                        <button class="btn btn-sm btn-white">
+                          Log out
+                        </button>
+
+                      </div>
+                    </div>
                   </div>
                 </div>
 
-              </div>
-            </div>
-
-            <!-- Card -->
-            <div class="card">
-              <div class="card-header">
-
-                <!-- Title -->
-                <h4 class="card-header-title">
-                  Invoices
-                </h4>
-
-              </div>
-              <div class="table-responsive">
-                <table class="table table-sm table-nowrap card-table">
-                  <thead>
-                    <tr>
-                      <th>Invoice ID</th>
-                      <th>Date</th>
-                      <th>Amount</th>
-                      <th>Download</th>
-                    </tr>
-                  </thead>
-                  <tbody class="fs-base">
-                    <tr>
-                      <td>
-                        <a href="invoice.html">Invoice #10395</a>
-                      </td>
-                      <td>
-                        <time datetime="2020-04-24">Apr. 24, 2020</time>
-                      </td>
-                      <td>
-                        $29.00
-                      </td>
-                      <td>
-                        <button class="btn btn-sm btn-primary">
-                          Download
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <a href="invoice.html">Invoice #10244</a>
-                      </td>
-                      <td>
-                        <time datetime="2020-03-24">Mar. 24, 2020</time>
-                      </td>
-                      <td>
-                        $29.00
-                      </td>
-                      <td>
-                        <button class="btn btn-sm btn-primary">
-                          Download
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <a href="invoice.html">Invoice #10119</a>
-                      </td>
-                      <td>
-                        <time datetime="2020-02-24">Feb. 24, 2020</time>
-                      </td>
-                      <td>
-                        $29.00
-                      </td>
-                      <td>
-                        <button class="btn btn-sm btn-primary">
-                          Download
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <a href="invoice.html">Invoice #10062</a>
-                      </td>
-                      <td>
-                        <time datetime="2020-01-24">Jan. 24, 2020</time>
-                      </td>
-                      <td>
-                        $29.00
-                      </td>
-                      <td>
-                        <button class="btn btn-sm btn-primary">
-                          Download
-                        </button>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
               </div>
             </div>
 

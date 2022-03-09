@@ -44,8 +44,8 @@
     
             <!-- Toggle -->
             <a href="#" id="sidebarIcon" class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <div class="avatar avatar-sm avatar-online">
-                <img src="./assets/img/avatars/profiles/avatar-1.jpg" class="avatar-img rounded-circle" alt="...">
+              <div class="avatar">
+                <span class="avatar-title rounded-circle">UY</span>
               </div>
             </a>
     
@@ -79,43 +79,34 @@
 
             <li class="nav-item">
               <a class="nav-link" href="#sidebarPages" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebarPages">
-                <i class="fe fe-file"></i> Pages
+                <i class="fe fe-file"></i> Proxycurl API
               </a>
               <div class="collapse show" id="sidebarPages">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="#sidebarAccount" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebarAccount">
-                      Proxycurl API
+                    <a href="./index.html" class="nav-link">
+                      Account
                     </a>
-                    <div class="collapse show" id="sidebarAccount">
-                      <ul class="nav nav-sm flex-column">
-                        <li class="nav-item">
-                          <a href="./index.html" class="nav-link">
-                            API Key and Billing
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="./account-work.html" class="nav-link">
-                            Work Email Lookup Logs
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="./account-members.html" class="nav-link active">
-                            Members
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="./account-security.html" class="nav-link">
-                            Security
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="#!" class="nav-link">
-                            Docs
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./account-api.html" class="nav-link">
+                      API Key and Billing
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./account-work.html" class="nav-link">
+                      Work Email Lookup Logs
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./account-members.html" class="nav-link active">
+                      Members
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#!" class="nav-link">
+                      Docs
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -125,24 +116,16 @@
           <!-- Push content down -->
           <div class="mt-auto"></div>
     
-    
             <!-- User (md) -->
             <div class="navbar-user d-none d-md-flex" id="sidebarUser">
-    
-              <!-- Icon -->
-              <a class="navbar-user-link" data-bs-toggle="offcanvas" href="#sidebarOffcanvasActivity" aria-controls="sidebarOffcanvasActivity">
-                <span class="icon">
-                  <i class="fe fe-bell"></i>
-                </span>
-              </a>
-    
+
               <!-- Dropup -->
               <div class="dropup">
     
                 <!-- Toggle -->
                 <a href="#" id="sidebarIconCopy" class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <div class="avatar avatar-sm avatar-online">
-                    <img src="./assets/img/avatars/profiles/avatar-1.jpg" class="avatar-img rounded-circle" alt="...">
+                  <div class="avatar">
+                    <span class="avatar-title rounded-circle">UY</span>
                   </div>
                 </a>
     
@@ -155,13 +138,6 @@
                 </div>
     
               </div>
-    
-              <!-- Icon -->
-              <a class="navbar-user-link" data-bs-toggle="offcanvas" href="#sidebarOffcanvasSearch" aria-controls="sidebarOffcanvasSearch">
-                <span class="icon">
-                  <i class="fe fe-search"></i>
-                </span>
-              </a>
     
             </div>
     
@@ -207,6 +183,11 @@
                     <ul class="nav nav-tabs nav-overflow header-tabs">
                       <li class="nav-item">
                         <a href="index.html" class="nav-link">
+                          Account
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="account-api.html" class="nav-link">
                           API Key and Billing
                         </a>
                       </li>
@@ -218,11 +199,6 @@
                       <li class="nav-item">
                         <a href="account-members.html" class="nav-link active">
                           Members
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="account-security.html" class="nav-link">
-                          Security
                         </a>
                       </li>
                     </ul>
@@ -307,8 +283,8 @@
                       </div>
                       <div class="col-auto ms-auto">
 
-                        <span class="badge bg-success">
-                          Team leader
+                        <span class="badge bg-warning">
+                          Admin
                         </span>
 
                       </div>
@@ -326,12 +302,9 @@
                       </div>
                       <div class="col-auto ms-auto me-n3">
 
-                        <!-- Select -->
-                        <select class="form-select form-select-sm" data-choices='{"searchEnabled": false}'>
-                          <option>Admin</option>
-                          <option>Staff</option>
-                          <option>Custom</option>
-                        </select>
+                        <span class="badge bg-info">
+                          Member
+                        </span>
 
                       </div>
                       <div class="col-auto">
@@ -343,13 +316,7 @@
                           </a>
                           <div class="dropdown-menu dropdown-menu-end">
                             <a class="dropdown-item" href="#!">
-                              Action
-                            </a>
-                            <a class="dropdown-item" href="#!">
-                              Another action
-                            </a>
-                            <a class="dropdown-item" href="#!">
-                              Something else here
+                              Remove user
                             </a>
                           </div>
                         </div>
@@ -369,12 +336,9 @@
                       </div>
                       <div class="col-auto ms-auto me-n3">
 
-                        <!-- Select -->
-                        <select class="form-select form-select-sm" data-choices='{"searchEnabled": false}'>
-                          <option>Admin</option>
-                          <option>Staff</option>
-                          <option>Custom</option>
-                        </select>
+                        <span class="badge bg-info">
+                          Member
+                        </span>
 
                       </div>
                       <div class="col-auto">
@@ -386,13 +350,7 @@
                           </a>
                           <div class="dropdown-menu dropdown-menu-end">
                             <a class="dropdown-item" href="#!">
-                              Action
-                            </a>
-                            <a class="dropdown-item" href="#!">
-                              Another action
-                            </a>
-                            <a class="dropdown-item" href="#!">
-                              Something else here
+                              Remove user
                             </a>
                           </div>
                         </div>
@@ -412,12 +370,9 @@
                       </div>
                       <div class="col-auto ms-auto me-n3">
 
-                        <!-- Select -->
-                        <select class="form-select form-select-sm" data-choices='{"searchEnabled": false}'>
-                          <option>Admin</option>
-                          <option>Staff</option>
-                          <option>Custom</option>
-                        </select>
+                        <span class="badge bg-info">
+                          Member
+                        </span>
 
                       </div>
                       <div class="col-auto">
@@ -429,13 +384,7 @@
                           </a>
                           <div class="dropdown-menu dropdown-menu-end">
                             <a class="dropdown-item" href="#!">
-                              Action
-                            </a>
-                            <a class="dropdown-item" href="#!">
-                              Another action
-                            </a>
-                            <a class="dropdown-item" href="#!">
-                              Something else here
+                              Remove user
                             </a>
                           </div>
                         </div>
