@@ -37,27 +37,11 @@
         </a>
     
         <!-- User (xs) -->
-        <div class="navbar-user d-md-none">
+        <div class="navbar-user d-md-none mt-3">
     
-          <!-- Dropdown -->
-          <div class="dropdown">
-    
-            <!-- Toggle -->
-            <a href="#" id="sidebarIcon" class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <div class="avatar">
-                <span class="avatar-title rounded-circle">UY</span>
-              </div>
-            </a>
-    
-            <!-- Menu -->
-            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="sidebarIcon">
-              <a href="./profile-posts.html" class="dropdown-item">Profile</a>
-              <a href="./account-general.html" class="dropdown-item">Settings</a>
-              <hr class="dropdown-divider">
-              <a href="./sign-in.html" class="dropdown-item">Logout</a>
-            </div>
-    
-          </div>
+          <p class="text-muted">
+            example@nubela.co
+          </p>
     
         </div>
     
@@ -84,11 +68,6 @@
               <div class="collapse show" id="sidebarPages">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="./index.html" class="nav-link active">
-                      Account
-                    </a>
-                  </li>
-                  <li class="nav-item">
                     <a href="./account-api.html" class="nav-link">
                       API Key and Billing
                     </a>
@@ -111,6 +90,40 @@
                 </ul>
               </div>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sidebarDwarf" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebarDwarf">
+                <i class="fe fe-file"></i> Dwarf Forms API
+              </a>
+              <div class="collapse show" id="sidebarDwarf">
+                <ul class="nav nav-sm flex-column">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      API Key and Billing
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#!" class="nav-link">
+                      Docs
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">
+                <i class="fe fe-user"></i> Account
+              </a>
+            </li>
+            
+            <!-- Divider -->
+            <hr class="my-4">
+
+            <li class="nav-item">
+              <a class="nav-link mb-3" href="index.html">
+                <i class="fe fe-log-out"></i> Log out 
+              </a>
+            </li>
+
           </ul>
     
           <!-- Push content down -->
@@ -119,25 +132,9 @@
             <!-- User (md) -->
             <div class="navbar-user d-none d-md-flex" id="sidebarUser">
 
-              <!-- Dropup -->
-              <div class="dropup">
-    
-                <!-- Toggle -->
-                <a href="#" id="sidebarIconCopy" class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <div class="avatar">
-                    <span class="avatar-title rounded-circle">UY</span>
-                  </div>
-                </a>
-    
-                <!-- Menu -->
-                <div class="dropdown-menu" aria-labelledby="sidebarIconCopy">
-                  <a href="./profile-posts.html" class="dropdown-item">Profile</a>
-                  <a href="./account-general.html" class="dropdown-item">Settings</a>
-                  <hr class="dropdown-divider">
-                  <a href="./sign-in.html" class="dropdown-item">Logout</a>
-                </div>
-    
-              </div>
+              <p class="text-muted">
+                example@nubela.co
+              </p>
     
             </div>
     
@@ -176,35 +173,6 @@
 
                   </div>
                 </div> <!-- / .row -->
-                <div class="row align-items-center">
-                  <div class="col">
-
-                    <!-- Nav -->
-                    <ul class="nav nav-tabs nav-overflow header-tabs">
-                      <li class="nav-item">
-                        <a href="index.html" class="nav-link active">
-                          Account
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="account-api.html" class="nav-link">
-                          API Key and Billing
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="account-work.html" class="nav-link">
-                          Work Email Lookup Logs
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="account-members.html" class="nav-link">
-                          Members
-                        </a>
-                      </li>
-                    </ul>
-
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -213,6 +181,82 @@
               <i class="fe fe-info me-1"></i> You are near your API limits.
             </div>
             -->
+
+            <div class="row justify-content-between align-items-center mb-5">
+              <div class="col-12">
+
+                <!-- Heading -->
+                <h2 class="mb-2">
+                  Change your email
+                </h2>
+
+                <!-- Text -->
+                <p class="text-muted mb-xl-0">
+                  We will email you a confirmation when changing your email, so please expect that email after submitting.
+                </p>
+
+              </div>
+            </div> <!-- / .row -->
+
+            <div class="row">
+
+              <div class="col-12">
+
+                <!-- Form -->
+                <form>
+
+                  <!-- Password -->
+                  <div class="form-group">
+
+                    <!-- Label -->
+                    <label class="form-label">
+                      Current email
+                    </label>
+
+                    <!-- Input -->
+                    <input type="email" class="form-control">
+
+                  </div>
+
+                  <!-- New password -->
+                  <div class="form-group">
+
+                    <!-- Label -->
+                    <label class="form-label">
+                      New email
+                    </label>
+
+                    <!-- Input -->
+                    <input type="email" class="form-control">
+
+                  </div>
+
+                  <!-- Confirm new password -->
+                  <div class="form-group">
+
+                    <!-- Label -->
+                    <label class="form-label">
+                      Current password
+                    </label>
+
+                    <!-- Input -->
+                    <input type="password" class="form-control">
+
+                  </div>
+
+                  <!-- Submit -->
+                  <button class="btn w-100 btn-primary lift" type="submit">
+                    Update email
+                  </button>
+
+                </form>
+
+              </div>
+
+            </div> <!-- / .row -->
+
+            <!-- Divider -->
+            <hr class="my-5">
 
             <div class="row justify-content-between align-items-center mb-5">
               <div class="col-12 col-md-9 col-xl-7">

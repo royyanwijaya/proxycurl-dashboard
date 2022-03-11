@@ -37,27 +37,11 @@
         </a>
     
         <!-- User (xs) -->
-        <div class="navbar-user d-md-none">
+        <div class="navbar-user d-md-none mt-3">
     
-          <!-- Dropdown -->
-          <div class="dropdown">
-    
-            <!-- Toggle -->
-            <a href="#" id="sidebarIcon" class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <div class="avatar">
-                <span class="avatar-title rounded-circle">UY</span>
-              </div>
-            </a>
-    
-            <!-- Menu -->
-            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="sidebarIcon">
-              <a href="./profile-posts.html" class="dropdown-item">Profile</a>
-              <a href="./account-general.html" class="dropdown-item">Settings</a>
-              <hr class="dropdown-divider">
-              <a href="./sign-in.html" class="dropdown-item">Logout</a>
-            </div>
-    
-          </div>
+          <p class="text-muted">
+            example@nubela.co
+          </p>
     
         </div>
     
@@ -84,11 +68,6 @@
               <div class="collapse show" id="sidebarPages">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="./index.html" class="nav-link">
-                      Account
-                    </a>
-                  </li>
-                  <li class="nav-item">
                     <a href="./account-api.html" class="nav-link">
                       API Key and Billing
                     </a>
@@ -111,6 +90,40 @@
                 </ul>
               </div>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sidebarDwarf" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebarDwarf">
+                <i class="fe fe-file"></i> Dwarf Forms API
+              </a>
+              <div class="collapse show" id="sidebarDwarf">
+                <ul class="nav nav-sm flex-column">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      API Key and Billing
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#!" class="nav-link">
+                      Docs
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <i class="fe fe-user"></i> Account
+              </a>
+            </li>
+            
+            <!-- Divider -->
+            <hr class="my-4">
+
+            <li class="nav-item">
+              <a class="nav-link mb-3" href="index.html">
+                <i class="fe fe-log-out"></i> Log out 
+              </a>
+            </li>
+
           </ul>
     
           <!-- Push content down -->
@@ -119,25 +132,9 @@
             <!-- User (md) -->
             <div class="navbar-user d-none d-md-flex" id="sidebarUser">
 
-              <!-- Dropup -->
-              <div class="dropup">
-    
-                <!-- Toggle -->
-                <a href="#" id="sidebarIconCopy" class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <div class="avatar">
-                    <span class="avatar-title rounded-circle">UY</span>
-                  </div>
-                </a>
-    
-                <!-- Menu -->
-                <div class="dropdown-menu" aria-labelledby="sidebarIconCopy">
-                  <a href="./profile-posts.html" class="dropdown-item">Profile</a>
-                  <a href="./account-general.html" class="dropdown-item">Settings</a>
-                  <hr class="dropdown-divider">
-                  <a href="./sign-in.html" class="dropdown-item">Logout</a>
-                </div>
-    
-              </div>
+              <p class="text-muted">
+                example@nubela.co
+              </p>
     
             </div>
     
@@ -181,11 +178,6 @@
 
                     <!-- Nav -->
                     <ul class="nav nav-tabs nav-overflow header-tabs">
-                      <li class="nav-item">
-                        <a href="index.html" class="nav-link">
-                          Account
-                        </a>
-                      </li>
                       <li class="nav-item">
                         <a href="account-api.html" class="nav-link">
                           API Key and Billing
