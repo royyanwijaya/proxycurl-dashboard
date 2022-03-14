@@ -164,7 +164,7 @@
 
                     <!-- Title -->
                     <h1 class="header-title">
-                      Account
+                      Proxycurl API
                     </h1>
 
                     <!-- User email -->
@@ -425,8 +425,298 @@
 
                 </div>
 
+                <button class="btn btn-primary">
+                  Top up Credits
+                </button>
+
               </div>
 
+            </div>
+
+            <!-- Auto top up -->
+            <div class="card">
+              <div class="card-header">
+
+                <!-- Title -->
+                <h4 class="card-header-title">
+                  Auto top up
+                  <span class="badge bg-success text-uppercase">
+                    on
+                  </span>
+                  <span class="badge bg-light text-uppercase border">
+                    off
+                  </span>
+                </h4>
+
+                <!-- Switch -->
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" id="cardToggle" data-toggle="chart" data-target="#conversionsChart" data-trigger="change" data-action="add" data-dataset="1" />
+                  <label class="form-check-label" for="cardToggle"></label>
+                </div>
+
+              </div>
+
+              <div class="card-body">
+
+                <!-- Top up forms -->
+                <div class="row">
+                  <div class="col-12 col-md-6">
+
+                    <!-- Form -->
+                    <form>
+    
+                      <!-- Top up -->
+                      <div class="form-group">
+    
+                        <!-- Label -->
+                        <label class="form-label">
+                          Top up
+                        </label>
+    
+                        <!-- Input -->
+                        <div class="input-group input-group-merge input-group-reverse mb-3">
+                          <input class="form-control" placeholder="10" type="number" aria-label="Input group reverse" aria-describedby="inputGroupReverse">
+                          <div class="input-group-text" id="inputGroupReverse">
+                            <span class="neu-dollar"></span>
+                          </div>
+                        </div>
+    
+                      </div>
+    
+                    </form>
+    
+                  </div>
+
+                  <div class="col-12 col-md-6">
+
+                    <!-- Form -->
+                    <form>
+    
+                      <!-- When my credits -->
+                      <div class="form-group">
+
+                        <!-- Label -->
+                        <label class="form-label">
+                          When my credits fall below
+                        </label>
+    
+                        <!-- Input -->
+                        <input type="number" placeholder="1000" class="form-control">
+    
+                      </div>
+    
+                    </form>
+    
+                  </div>
+                </div>
+
+                <!-- Top up forms OFF -->
+                <div class="row">
+                  <div class="col-12 col-md-6">
+
+                    <!-- Form -->
+                    <form>
+    
+                      <!-- Top up -->
+                      <div class="form-group">
+    
+                        <!-- Label -->
+                        <label class="form-label">
+                          Top up (Off)
+                        </label>
+    
+                        <!-- Input -->
+                        <div class="input-group input-group-merge input-group-reverse mb-3">
+                          <input class="form-control bg-light" readonly placeholder="10" type="number" aria-label="Input group reverse" aria-describedby="inputGroupReverse">
+                          <div class="input-group-text bg-light" id="inputGroupReverse">
+                            <span class="neu-dollar"></span>
+                          </div>
+                        </div>
+    
+                      </div>
+    
+                    </form>
+    
+                  </div>
+
+                  <div class="col-12 col-md-6">
+
+                    <!-- Form -->
+                    <form>
+    
+                      <!-- When my credits -->
+                      <div class="form-group">
+
+                        <!-- Label -->
+                        <label class="form-label">
+                          When my credits fall below (Off)
+                        </label>
+    
+                        <!-- Input -->
+                        <input type="number" readonly placeholder="1000" class="form-control bg-light">
+    
+                      </div>
+    
+                    </form>
+    
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- EXAMPLE OF Auto top up on -->
+            <div class="card">
+              <div class="card-header">
+
+                <!-- Title -->
+                <h4 class="card-header-title">
+                  <span class="text-info">EXAMPLE OF</span> Auto top up
+                  <span class="badge bg-success text-uppercase">
+                    on
+                  </span>
+                </h4>
+
+                <!-- Switch -->
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" id="cardToggle" checked/>
+                  <label class="form-check-label" for="cardToggle"></label>
+                </div>
+
+              </div>
+
+              <div class="card-body">
+
+                <!-- Top up forms -->
+                <div class="row">
+                  <div class="col-12 col-md-6">
+
+                    <!-- Form -->
+                    <form>
+    
+                      <!-- Top up -->
+                      <div class="form-group">
+    
+                        <!-- Label -->
+                        <label class="form-label">
+                          Top up
+                        </label>
+    
+                        <!-- Input -->
+                        <div class="input-group input-group-merge input-group-reverse mb-3">
+                          <input class="form-control" placeholder="10" type="number" aria-label="Input group reverse" aria-describedby="inputGroupReverse">
+                          <div class="input-group-text" id="inputGroupReverse">
+                            <span class="neu-dollar"></span>
+                          </div>
+                        </div>
+    
+                      </div>
+    
+                    </form>
+    
+                  </div>
+
+                  <div class="col-12 col-md-6">
+
+                    <!-- Form -->
+                    <form>
+    
+                      <!-- When my credits -->
+                      <div class="form-group">
+
+                        <!-- Label -->
+                        <label class="form-label">
+                          When my credits fall below
+                        </label>
+    
+                        <!-- Input -->
+                        <input type="number" placeholder="1000" class="form-control">
+    
+                      </div>
+    
+                    </form>
+    
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- EXAMPLE OF Auto top up on -->
+            <div class="card">
+              <div class="card-header">
+
+                <!-- Title -->
+                <h4 class="card-header-title">
+                  <span class="text-info">EXAMPLE OF</span> Auto top up
+                  <span class="badge bg-light text-uppercase border">
+                    off
+                  </span>
+                </h4>
+
+                <!-- Switch -->
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" id="cardToggle"/>
+                  <label class="form-check-label" for="cardToggle"></label>
+                </div>
+
+              </div>
+
+              <div class="card-body">
+
+                <!-- Top up forms -->
+                <div class="row">
+                  <div class="col-12 col-md-6">
+
+                    <!-- Form -->
+                    <form>
+    
+                      <!-- Top up -->
+                      <div class="form-group">
+    
+                        <!-- Label -->
+                        <label class="form-label">
+                          Top up (Off)
+                        </label>
+    
+                        <!-- Input -->
+                        <div class="input-group input-group-merge input-group-reverse mb-3">
+                          <input class="form-control bg-light" readonly placeholder="10" type="number" aria-label="Input group reverse" aria-describedby="inputGroupReverse">
+                          <div class="input-group-text bg-light" id="inputGroupReverse">
+                            <span class="neu-dollar"></span>
+                          </div>
+                        </div>
+    
+                      </div>
+    
+                    </form>
+    
+                  </div>
+
+                  <div class="col-12 col-md-6">
+
+                    <!-- Form -->
+                    <form>
+    
+                      <!-- When my credits -->
+                      <div class="form-group">
+
+                        <!-- Label -->
+                        <label class="form-label">
+                          When my credits fall below (Off)
+                        </label>
+    
+                        <!-- Input -->
+                        <input type="number" readonly placeholder="1000" class="form-control bg-light">
+    
+                      </div>
+    
+                    </form>
+    
+                  </div>
+                </div>
+
+              </div>
             </div>
 
             <!-- Card -->
