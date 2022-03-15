@@ -78,8 +78,13 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./account-members.html" class="nav-link">
-                      Members
+                    <a href="./account-invoices.html" class="nav-link">
+                      Invoices
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./account-pricing.html" class="nav-link">
+                      Pricing
                     </a>
                   </li>
                   <li class="nav-item">
@@ -110,8 +115,32 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">
+              <a class="nav-link" href="#sidebarAccount" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebarAccount">
                 <i class="fe fe-user"></i> Account
+              </a>
+              <div class="collapse show" id="sidebarAccount">
+                <ul class="nav nav-sm flex-column">
+                  <li class="nav-item">
+                    <a href="index.html" class="nav-link active">
+                      Change email
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="account-change-password.html" class="nav-link">
+                      Change password
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="account-2fa.html" class="nav-link">
+                      Two factor security
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="account-team.html">
+                <i class="fe fe-users"></i> Team
               </a>
             </li>
             
@@ -173,6 +202,30 @@
 
                   </div>
                 </div> <!-- / .row -->
+                <div class="row align-items-center">
+                  <div class="col">
+
+                    <!-- Nav -->
+                    <ul class="nav nav-tabs nav-overflow header-tabs">
+                      <li class="nav-item">
+                        <a href="index.html" class="nav-link active">
+                          Change email
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="account-change-password.html" class="nav-link">
+                          Change password
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="account-2fa.html" class="nav-link">
+                          Two factor security
+                        </a>
+                      </li>
+                    </ul>
+
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -254,401 +307,6 @@
               </div>
 
             </div> <!-- / .row -->
-
-            <!-- Divider -->
-            <hr class="my-5">
-
-            <div class="row justify-content-between align-items-center mb-5">
-              <div class="col-12 col-md-9 col-xl-7">
-
-                <!-- Heading -->
-                <h2 class="mb-2">
-                  Change your password
-                </h2>
-
-                <!-- Text -->
-                <p class="text-muted mb-xl-0">
-                  We will email you a confirmation when changing your password, so please expect that email after submitting.
-                </p>
-
-              </div>
-              <div class="col-12 col-xl-auto">
-
-                <!-- Button -->
-                <button class="btn btn-white">
-                  Forgot your password?
-                </button>
-
-              </div>
-            </div> <!-- / .row -->
-
-            <div class="row">
-              <div class="col-12 col-md-6 order-md-2">
-
-                <!-- Card -->
-                <div class="card bg-light border ms-md-4">
-                  <div class="card-body">
-
-                    <!-- Text -->
-                    <p class="mb-2">
-                      Password requirements
-                    </p>
-
-                    <!-- Text -->
-                    <p class="small text-muted mb-2">
-                      To create a new password, you have to meet all of the following requirements:
-                    </p>
-
-                    <!-- List group -->
-                    <ul class="small text-muted ps-4 mb-0">
-                      <li>
-                        Minimum 8 character
-                      </li>
-                      <li>
-                        At least one special character
-                      </li>
-                      <li>
-                        At least one number
-                      </li>
-                      <li>
-                        Can’t be the same as a previous password
-                      </li>
-                    </ul>
-
-                  </div>
-                </div>
-
-              </div>
-              <div class="col-12 col-md-6">
-
-                <!-- Form -->
-                <form>
-
-                  <!-- Password -->
-                  <div class="form-group">
-
-                    <!-- Label -->
-                    <label class="form-label">
-                      Current password
-                    </label>
-
-                    <!-- Input -->
-                    <input type="password" class="form-control">
-
-                  </div>
-
-                  <!-- New password -->
-                  <div class="form-group">
-
-                    <!-- Label -->
-                    <label class="form-label">
-                      New password
-                    </label>
-
-                    <!-- Input -->
-                    <input type="password" class="form-control">
-
-                  </div>
-
-                  <!-- Confirm new password -->
-                  <div class="form-group">
-
-                    <!-- Label -->
-                    <label class="form-label">
-                      Confirm new password
-                    </label>
-
-                    <!-- Input -->
-                    <input type="password" class="form-control">
-
-                  </div>
-
-                  <!-- Submit -->
-                  <button class="btn w-100 btn-primary lift" type="submit">
-                    Update password
-                  </button>
-
-                </form>
-
-              </div>
-            </div> <!-- / .row -->
-
-            <!-- Divider -->
-            <hr class="my-5">
-
-            <div class="row justify-content-between align-items-center mb-5">
-              <div class="col-12 col-md-9 col-xl-7">
-
-                <!-- Heading -->
-                <h2 class="mb-2">
-                  Two factor security
-                </h2>
-
-                <!-- Text -->
-                <p class="text-muted mb-md-0">
-                  Two-factor authentication adds an additional layer of security to your account by requiring more than just a password to log in.
-                </p>
-
-              </div>
-              <div class="col-12 col-md-auto">
-
-                <!-- Button -->
-                <button class="btn btn-primary">
-                  Enable
-                </button>
-
-              </div>
-            </div> <!-- / .row -->
-
-            <!-- Card -->
-            <div class="card">
-              <div class="card-body">
-
-                <!-- List group -->
-                <div class="list-group list-group-flush my-n3">
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col">
-
-                        <!-- Heading -->
-                        <h4 class="mb-1">
-                          Authenticator app
-                        </h4>
-
-                        <!-- Text -->
-                        <small class="text-muted">
-                          Google auth or 1Password
-                        </small>
-
-                      </div>
-                      <div class="col-auto">
-
-                        <!-- Button -->
-                        <button class="btn btn-sm btn-white">
-                          Setup
-                        </button>
-
-                      </div>
-                    </div> <!-- / .row -->
-                  </div>
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col">
-
-                        <!-- Heading -->
-                        <h4 class="mb-1">
-                          SMS Recovery <i class="fe fe-info text-muted ms-1" data-bs-toggle="tooltip" data-title="We use the the phone number you provide in General"></i>
-                        </h4>
-
-                        <!-- Text -->
-                        <small class="text-muted">
-                          Standard messaging rates apply
-                        </small>
-
-                      </div>
-                      <div class="col-auto">
-
-                        <!-- Button -->
-                        <button class="btn btn-sm btn-danger">
-                          Disable
-                        </button>
-
-                      </div>
-                    </div> <!-- / .row -->
-                  </div>
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col">
-
-                        <!-- Heading -->
-                        <h4 class="mb-1">
-                          Recovery codes <i class="fe fe-info text-muted ms-1" data-bs-toggle="tooltip" data-title="We use the the phone number you provide in General"></i>
-                        </h4>
-
-                        <!-- Text -->
-                        <small class="text-muted">
-                          Standard messaging rates apply
-                        </small>
-
-                      </div>
-                      <div class="col-auto">
-
-                        <!-- Button -->
-                        <button class="btn btn-sm btn-white">
-                          Reveal
-                        </button>
-
-                      </div>
-                    </div> <!-- / .row -->
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            <!-- Divider -->
-            <hr class="my-5">
-
-            <div class="row justify-content-between align-items-center mb-5">
-              <div class="col-12 col-md-9 col-xl-7">
-
-                <!-- Heading -->
-                <h2 class="mb-2">
-                  Device History
-                </h2>
-
-                <!-- Text -->
-                <p class="text-muted mb-xl-0">
-                  If you see a device here that you believe wasn’t you, please contact our account <a href="#!">fraud department</a> immediately.
-                </p>
-
-              </div>
-              <div class="col-12 col-xl-auto">
-
-                <!-- Button -->
-                <button class="btn btn-white">
-                  Log out all devices
-                </button>
-
-              </div>
-            </div> <!-- / .row -->
-
-            <!-- Card -->
-            <div class="card">
-              <div class="card-body">
-
-                <!-- List group -->
-                <div class="list-group list-group-flush my-n3">
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-
-                        <!-- Icon -->
-                        <i class="fe fe-smartphone h1"></i>
-
-                      </div>
-                      <div class="col ms-n2">
-
-                        <!-- Heading -->
-                        <h4 class="mb-1">
-                          iPhone 11
-                        </h4>
-
-                        <!-- Text -->
-                        <small class="text-muted">
-                          Los Angeles, CA · <time datetime="2020-04-20T16:16">April 20 at 4:16pm</time>
-                        </small>
-
-                      </div>
-                      <div class="col-auto">
-
-                        <!-- Button -->
-                        <button class="btn btn-sm btn-white">
-                          Log out
-                        </button>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-
-                        <!-- Icon -->
-                        <i class="fe fe-monitor h1"></i>
-
-                      </div>
-                      <div class="col ms-n2">
-
-                        <!-- Heading -->
-                        <h4 class="mb-1">
-                          iMac OSX · <span class="fw-normal">Safari 10.2</span>
-                        </h4>
-
-                        <!-- Text -->
-                        <small class="text-muted">
-                          Los Angeles, CA · <time datetime="2020-04-20T16:16">April 20 at 4:16pm</time>
-                        </small>
-
-                      </div>
-                      <div class="col-auto">
-
-                        <!-- Button -->
-                        <button class="btn btn-sm btn-white">
-                          Log out
-                        </button>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-
-                        <!-- Icon -->
-                        <i class="fe fe-smartphone h1"></i>
-
-                      </div>
-                      <div class="col ms-n2">
-
-                        <!-- Heading -->
-                        <h4 class="mb-1">
-                          iPhone 11
-                        </h4>
-
-                        <!-- Text -->
-                        <small class="text-muted">
-                          Los Angeles, CA · <time datetime="2020-04-20T16:16">April 20 at 4:16pm</time>
-                        </small>
-
-                      </div>
-                      <div class="col-auto">
-
-                        <!-- Button -->
-                        <button class="btn btn-sm btn-white">
-                          Log out
-                        </button>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-
-                        <!-- Icon -->
-                        <i class="fe fe-monitor h1"></i>
-
-                      </div>
-                      <div class="col ms-n2">
-
-                        <!-- Heading -->
-                        <h4 class="mb-1">
-                          iMac OSX · <span class="fw-normal">Safari 10.2</span>
-                        </h4>
-
-                        <!-- Text -->
-                        <small class="text-muted">
-                          Los Angeles, CA · <time datetime="2020-04-20T16:16">April 20 at 4:16pm</time>
-                        </small>
-
-                      </div>
-                      <div class="col-auto">
-
-                        <!-- Button -->
-                        <button class="btn btn-sm btn-white">
-                          Log out
-                        </button>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            <br>
 
           </div>
         </div> <!-- / .row -->

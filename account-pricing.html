@@ -13,7 +13,6 @@
     
     <!-- Libs CSS -->
     <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.5.0/css/neu.min.css">
     
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
@@ -74,13 +73,18 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./account-work.html" class="nav-link active">
+                    <a href="./account-work.html" class="nav-link">
                       Work Email Lookup Logs
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="./account-invoices.html" class="nav-link">
                       Invoices
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./account-pricing.html" class="nav-link active">
+                      Pricing
                     </a>
                   </li>
                   <li class="nav-item">
@@ -133,6 +137,11 @@
                   </li>
                 </ul>
               </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="account-team.html">
+                <i class="fe fe-users"></i> Team
+              </a>
             </li>
             
             <!-- Divider -->
@@ -204,13 +213,18 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a href="account-work.html" class="nav-link active">
+                        <a href="account-work.html" class="nav-link">
                           Work Email Lookup Logs
                         </a>
                       </li>
                       <li class="nav-item">
                         <a href="account-invoices.html" class="nav-link">
                           Invoices
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="account-pricing.html" class="nav-link active">
+                          Pricing
                         </a>
                       </li>
                     </ul>
@@ -226,120 +240,85 @@
             </div>
             -->
 
+            <!-- Card tabs -->
+
             <!-- Card -->
             <div class="card">
 
-              <div class="card-header">
+              <div class="card-body">
                 <div class="row align-items-center">
-                  <div class="col">
+                  <div class="col-12 col-md-9">
 
-                    <!-- Title -->
-                    <h4 class="card-header-title">
-                      Work Email Lookup Logs
-                    </h4>
+                    <!-- Nav -->
+                    <ul class="nav nav-tabs">
+                      <li class="nav-item">
+                        <a href="account-api.html" class="nav-link active">
+                          Pay-as-you-go
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="account-work.html" class="nav-link">
+                          Month plan
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="account-invoices.html" class="nav-link">
+                          Annual plan
+                        </a>
+                      </li>
+                    </ul>
+
+                    <p class="my-4">
+                      Credits do not expire
+                    </p>
+
+                    <div class="table-responsive">
+                      <table class="table table-sm table-nowrap card-table table-hover">
+
+                        <tbody class="fs-base">
+                          <tr>
+                            <td>
+                              100 credits (0.1/credit)
+                            </td>
+                            <td>
+                              $10
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              600 credits (0.08166/credit)
+                            </td>
+                            <td>
+                              $49
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              6000 credits (0.06/credit)
+                            </td>
+                            <td>
+                              $299
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              18000 credits (0.05/credit)
+                            </td>
+                            <td>
+                              $899
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
 
                   </div>
-                  <div class="col-auto">
-
-                    <!-- Button -->
-                    <a class="btn btn-sm btn-primary" href="#!">
-                      Download as CSV
-                    </a>
-
+                  <div class="col-12 col-md-auto">
+                    <p class="text-center">
+                      araara
+                    </p>
                   </div>
                 </div>
-              </div>
-
-              <div class="table-responsive">
-                <table class="table table-sm table-nowrap card-table">
-                  <thead>
-                    <tr>
-                      <th>Date/Time requested</th>
-                      <th>LinkedIn Profile URL</th>
-                      <th>Status</th>
-                      <th>Email address</th>
-                    </tr>
-                  </thead>
-                  <tbody class="fs-base">
-                    <tr>
-                      <td>
-                        20 Jan 2022, 14:50
-                      </td>
-                      <td>
-                        linkedin.com/billgates
-                      </td>
-                      <td>
-                        <span class="badge bg-primary-soft">
-                          email_found
-                        </span>
-                      </td>
-                      <td>
-                        gates@microsoft.com
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        20 Jan 2022, 14:42
-                      </td>
-                      <td>
-                        linkedin.com/gomugomuno
-                      </td>
-                      <td>
-                        <span class="badge bg-danger-soft">
-                          email_not_found
-                        </span>
-                      </td>
-                      <td>
-                        gomu@gomu.no
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        20 Jan 2022, 14:40
-                      </td>
-                      <td>
-                        linkedin.com/kanebohijau
-                      </td>
-                      <td>
-                        <span class="badge bg-danger-soft">
-                          email_not_found
-                        </span>
-                      </td>
-                      <td>
-                        tokenasix@kanebo.hijau
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        20 Jan 2022, 14:32
-                      </td>
-                      <td>
-                        linkedin.com/anjaymabar
-                      </td>
-                      <td>
-                        <span class="badge bg-primary-soft">
-                          email_found
-                        </span>
-                      </td>
-                      <td>
-                        anjay@mabar.com
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
-              <div class="card-body">
-                <nav aria-label="Page navigation">
-                  <ul class="pagination">
-                    <li class="page-item"><a class="page-link bg-light" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">4</a></li>
-                    <li class="page-item"><a class="page-link" href="#">5</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                  </ul>
-                </nav>
               </div>
 
             </div>

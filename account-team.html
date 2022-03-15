@@ -13,7 +13,6 @@
     
     <!-- Libs CSS -->
     <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.5.0/css/neu.min.css">
     
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
@@ -69,7 +68,7 @@
               <div class="collapse show" id="sidebarPages">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="./account-api.html" class="nav-link active">
+                    <a href="./account-api.html" class="nav-link">
                       API Key and Billing
                     </a>
                   </li>
@@ -79,7 +78,7 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="account-invoices.html" class="nav-link">
+                    <a href="./account-invoices.html" class="nav-link">
                       Invoices
                     </a>
                   </li>
@@ -134,6 +133,11 @@
                 </ul>
               </div>
             </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="account-team.html">
+                <i class="fe fe-users"></i> Team
+              </a>
+            </li>
             
             <!-- Divider -->
             <hr class="my-4">
@@ -183,7 +187,7 @@
 
                     <!-- Title -->
                     <h1 class="header-title">
-                      Proxycurl API
+                      Team
                     </h1>
 
                     <!-- User email -->
@@ -193,30 +197,6 @@
 
                   </div>
                 </div> <!-- / .row -->
-                <div class="row align-items-center">
-                  <div class="col">
-
-                    <!-- Nav -->
-                    <ul class="nav nav-tabs nav-overflow header-tabs">
-                      <li class="nav-item">
-                        <a href="account-api.html" class="nav-link active">
-                          API Key and Billing
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="account-work.html" class="nav-link">
-                          Work Email Lookup Logs
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="account-invoices.html" class="nav-link">
-                          Invoices
-                        </a>
-                      </li>
-                    </ul>
-
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -226,253 +206,58 @@
             </div>
             -->
 
-            <!-- Token -->
-            <div class="row">
-
-              <div class="col-12 col-md-6">
-
-                <!-- Card -->
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row align-items-center">
-                      <div class="col-6 mb-md-0 mb-2">
-
-                        <!-- Title -->
-                        <h6 class="text-uppercase text-muted mb-3">
-                          Bearer Token (API Key)
-                        </h6>
-
-                        <!-- Heading -->
-                        <span class="h2 mb-0">
-                          23837419
-                        </span>
-
-                      </div>
-
-                      <div class="col-auto ms-auto me-n3">
-
-                        <span class="badge bg-primary-soft">
-                          devs
-                        </span>
-
-                      </div>
-
-                      <div class="col-auto">
-
-                        <!-- Dropdown -->
-                        <div class="dropdown">
-                          <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fe fe-more-vertical"></i>
-                          </a>
-                          <div class="dropdown-menu dropdown-menu-end">
-                            <a class="dropdown-item" href="#!">
-                              Remove API key
-                            </a>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div> <!-- / .row -->
-
-                  </div>
-                </div>
-
-                <!-- Card -->
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row align-items-center">
-                      <div class="col-6 mb-md-0 mb-2">
-
-                        <!-- Title -->
-                        <h6 class="text-uppercase text-muted mb-3">
-                          Bearer Token (API Key)
-                        </h6>
-
-                        <!-- Heading -->
-                        <span class="h2 mb-0">
-                          92481230
-                        </span>
-
-                      </div>
-
-                      <div class="col-auto ms-auto me-n3">
-
-                        <span class="badge bg-primary-soft">
-                          marketing
-                        </span>
-
-                      </div>
-
-                      <div class="col-auto">
-
-                        <!-- Dropdown -->
-                        <div class="dropdown">
-                          <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fe fe-more-vertical"></i>
-                          </a>
-                          <div class="dropdown-menu dropdown-menu-end">
-                            <a class="dropdown-item" href="#!">
-                              Remove API key
-                            </a>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div> <!-- / .row -->
-
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="col-12 col-md-6 order-md-2">
-
-                <!-- Card -->
-                <div class="card bg-light border ms-md-4">
-                  <div class="card-body">
-
-                    <!-- Text -->
-                    <p class="mb-2 lead">
-                      Add new API
-                    </p>
-
-                    <!-- Text -->
-                    <p class="small text-muted mb-4">
-                      Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua.
-                    </p>
-
-                    <!-- Form group -->
-                    <form>
-    
-                      <!-- Label -->
-                      <div class="form-group">
-    
-                        <!-- Label -->
-                        <label class="form-label">
-                          Label (optional)
-                        </label>
-    
-                        <!-- Input -->
-                        <input type="text" class="form-control">
-    
-                      </div>
-    
-                      <!-- Submit -->
-                      <button class="btn w-100 btn-primary lift" type="submit">
-                        Add new API key
-                      </button>
-    
-                    </form>
-
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-
-            <!-- Credits -->
-            <div class="card">
-              <div class="card-header">
-                <div class="row align-items-center">
-                  <div class="col">
-
-                    <!-- Title -->
-                    <h4 class="card-header-title">
-                      Credits
-                    </h4>
-
-                  </div>
-                </div>
-              </div>
-
-              <div class="card-body">
-
-                <div class="row justify-content-center">
-
-                  <div class="col-12">
-
-                    <div class="form-group">
-  
-                      <!-- Label -->
-                      <label for="name" class="mb-2">
-                        Balance
-                      </label>
-  
-                      <!-- Input -->
-                      <input id="name" type="text" value="16259" readonly class="form-control mb-1 bg-light">
-  
-                      <small class="text-muted">
-                        Your current balance will be added once you made a top-up
-                      </small>
-
-                    </div>
-  
-                  </div>
-
-                  <div class="col-12 col-md-5">
-
-                    <div class="form-group">
-                      <label class="mb-2">
-                        <i class="neu-dollar"></i> Top-up amount
-                      </label>
-                      <input id="name" type="text" placeholder="10" data-parsley-min="10" name="amount" required="" class="form-control">
-                    </div>
-
-                  </div>
-
-                  <div class="col-12 col-md-2">
-
-                    <div class="text-center align-items-center">
-                      <div class="d-flex align-items-center justify-content-center mt-md-5 mb-2">
-                        <i class="neu-compare text-primary" style="font-size: 24px;"></i>
-                      </div>
-                    </div>
-
-                  </div>
-
-                  <div class="col-12 col-md-5">
-
-                    <div class="form-group">
-                      <label for="name" class="mb-2">
-                        <i class="neu-coin"></i> Top-up Credits
-                      </label>
-                      <input id="name" type="text" value="0" readonly="" class="form-control bg-light">
-                    </div>
-
-                  </div>
-
-                </div>
-
-                <button class="btn btn-primary">
-                  Top up Credits
-                </button>
-
-              </div>
-
-            </div>
-
             <!-- Card -->
             <div class="card">
               <div class="card-header">
-                <div class="row align-items-center">
-                  <div class="col">
 
-                    <!-- Title -->
-                    <h4 class="card-header-title">
-                      Payment methods
-                    </h4>
+                <!-- Title -->
+                <h4 class="card-header-title">
+                  Members
+                </h4>
 
-                  </div>
-                  <div class="col-auto">
+                <!-- Dropdown -->
+                <div class="dropdown">
+                  <button class="btn btn-sm btn-primary" type="button" id="inviteMember" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Invite member
+                  </button>
+                  <form class="dropdown-menu dropdown-menu-end dropdown-menu-card" aria-labelledby="inviteMember">
+                    <div class="card-header">
 
-                    <!-- Button -->
-                    <a class="btn btn-sm btn-primary" href="#!">
-                      Add method
-                    </a>
+                      <!-- Title -->
+                      <h4 class="card-header-title">
+                        Invite a member
+                      </h4>
 
-                  </div>
+                    </div>
+                    <div class="card-header">
+                      <div class="row g-0 align-items-center">
+                        <div class="col-3">
+
+                          <!-- Label -->
+                          <label class="mb-0" for="inviteMemberEmail">
+                            Email
+                          </label>
+
+                        </div>
+                        <div class="col">
+
+                          <!-- Input -->
+                          <input class="form-control form-control-flush" id="inviteMemberEmail" type="text" placeholder="Email address">
+
+                        </div>
+                      </div> <!-- / .row -->
+                    </div>
+                    <div class="card-footer">
+
+                      <!-- Button -->
+                      <button class="btn w-100 btn-primary" type="submit">
+                        Invite member
+                      </button>
+
+                    </div>
+                  </form>
                 </div>
+
               </div>
               <div class="card-body">
 
@@ -480,30 +265,18 @@
                 <div class="list-group list-group-flush my-n3">
                   <div class="list-group-item">
                     <div class="row align-items-center">
-                      <div class="col-auto">
+                      <div class="col-5">
 
-                        <!-- Image -->
-                        <img class="img-fluid" src="assets/img/payment-methods/visa.svg" alt="..." style="max-width: 38px;">
-
-                      </div>
-                      <div class="col ms-n2">
-
-                        <!-- Heading -->
-                        <h4 class="mb-1">
-                          Visa ending in 1234
+                        <!-- Title -->
+                        <h4>
+                          example@nubela.co
                         </h4>
 
-                        <!-- Text -->
-                        <small class="text-muted">
-                          Expires 3/2024
-                        </small>
-
                       </div>
-                      <div class="col-auto me-n3">
+                      <div class="col-auto ms-auto">
 
-                        <!-- Badge -->
-                        <span class="badge bg-light">
-                          Default
+                        <span class="badge bg-warning">
+                          Admin
                         </span>
 
                       </div>
@@ -511,34 +284,104 @@
                   </div>
                   <div class="list-group-item">
                     <div class="row align-items-center">
-                      <div class="col-auto">
+                      <div class="col-5">
 
-                        <!-- Image -->
-                        <img class="img-fluid" src="assets/img/payment-methods/mastercard.svg" alt="..." style="max-width: 38px;">
-
-                      </div>
-                      <div class="col ms-n2">
-
-                        <!-- Heading -->
-                        <h4 class="mb-1">
-                          Mastercard ending in 1234
+                        <!-- Title -->
+                        <h4>
+                          slimshady@nubela.co
                         </h4>
 
-                        <!-- Text -->
-                        <small class="text-muted">
-                          Expires 3/2024
-                        </small>
+                      </div>
+                      <div class="col-auto ms-auto me-n3">
+
+                        <span class="badge bg-info">
+                          Member
+                        </span>
 
                       </div>
+                      <div class="col-auto">
 
-                      <div class="col-auto me-n3">
-
-                        <button class="btn btn-sm btn-outline-primary">
-                          Make default
-                        </button>
+                        <!-- Dropdown -->
+                        <div class="dropdown">
+                          <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fe fe-more-vertical"></i>
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-end">
+                            <a class="dropdown-item" href="#!">
+                              Remove user
+                            </a>
+                          </div>
+                        </div>
 
                       </div>
+                    </div> <!-- / .row -->
+                  </div>
+                  <div class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col-5">
 
+                        <!-- Title -->
+                        <h4>
+                          ayamsuwir@nubela.co
+                        </h4>
+
+                      </div>
+                      <div class="col-auto ms-auto me-n3">
+
+                        <span class="badge bg-info">
+                          Member
+                        </span>
+
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Dropdown -->
+                        <div class="dropdown">
+                          <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fe fe-more-vertical"></i>
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-end">
+                            <a class="dropdown-item" href="#!">
+                              Remove user
+                            </a>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div> <!-- / .row -->
+                  </div>
+                  <div class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col-5">
+
+                        <!-- Title -->
+                        <h4>
+                          luhut@nubela.co
+                        </h4>
+
+                      </div>
+                      <div class="col-auto ms-auto me-n3">
+
+                        <span class="badge bg-info">
+                          Member
+                        </span>
+
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Dropdown -->
+                        <div class="dropdown">
+                          <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fe fe-more-vertical"></i>
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-end">
+                            <a class="dropdown-item" href="#!">
+                              Remove user
+                            </a>
+                          </div>
+                        </div>
+
+                      </div>
                     </div> <!-- / .row -->
                   </div>
                 </div>
