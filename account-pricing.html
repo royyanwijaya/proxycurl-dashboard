@@ -240,85 +240,222 @@
             </div>
             -->
 
-            <!-- Card tabs -->
-
             <!-- Card -->
             <div class="card">
 
               <div class="card-body">
-                <div class="row align-items-center">
-                  <div class="col-12 col-md-9">
 
-                    <!-- Nav -->
-                    <ul class="nav nav-tabs">
+                <div class="row align-items-top">
+
+                  <div class="col-12 col-md-9 py-2 pe-0 pe-md-4 mb-4 mb-md-0">
+
+                    <!-- Tabs -->
+                    <ul class="nav nav-tabs" id="nav-tab" role="tablist">
                       <li class="nav-item">
-                        <a href="account-api.html" class="nav-link active">
+                        <button class="nav-link active" id="nav-pay-tab" data-bs-toggle="tab" data-bs-target="#nav-pay" type="button" role="tab" aria-controls="nav-pay" aria-selected="true">
                           Pay-as-you-go
-                        </a>
+                        </button>
                       </li>
                       <li class="nav-item">
-                        <a href="account-work.html" class="nav-link">
+                        <button class="nav-link" id="nav-month-tab" data-bs-toggle="tab" data-bs-target="#nav-month" type="button" role="tab" aria-controls="nav-month" aria-selected="false">
                           Month plan
-                        </a>
+                        </button>
                       </li>
                       <li class="nav-item">
-                        <a href="account-invoices.html" class="nav-link">
+                        <button class="nav-link" id="nav-annual-tab" data-bs-toggle="tab" data-bs-target="#nav-annual" type="button" role="tab" aria-controls="nav-annual" aria-selected="false">
                           Annual plan
-                        </a>
+                        </button>
                       </li>
                     </ul>
 
-                    <p class="my-4">
-                      Credits do not expire
-                    </p>
+                    <!-- Tabs content -->
+                    <div class="tab-content" id="nav-tabContent">
 
-                    <div class="table-responsive">
-                      <table class="table table-sm table-nowrap card-table table-hover">
+                      <div class="tab-pane fade show active" id="nav-pay" role="tabpanel" aria-labelledby="nav-pay-tab">
+                        <div class="table-responsive">
 
-                        <tbody class="fs-base">
-                          <tr>
-                            <td>
-                              100 credits (0.1/credit)
-                            </td>
-                            <td>
-                              $10
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              600 credits (0.08166/credit)
-                            </td>
-                            <td>
-                              $49
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              6000 credits (0.06/credit)
-                            </td>
-                            <td>
-                              $299
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              18000 credits (0.05/credit)
-                            </td>
-                            <td>
-                              $899
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                          <p class="my-4">
+                            Credits do not expire
+                          </p>
+
+                          <table class="table table-sm table-nowrap card-table table-hover">
+    
+                            <tbody class="fs-base">
+                              <tr>
+                                <td>
+                                  100 credits (0.1/credit)
+                                </td>
+                                <td>
+                                  $10
+                                </td>
+                              </tr>
+                              <tr class="table-primary">
+                                <td>
+                                  600 credits (0.08166/credit)
+                                </td>
+                                <td>
+                                  $49
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  6000 credits (0.06/credit)
+                                </td>
+                                <td>
+                                  $299
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  18000 credits (0.05/credit)
+                                </td>
+                                <td>
+                                  $899
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  47475 credits (0.04/credit)
+                                </td>
+                                <td>
+                                  $1899
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+
+                        </div>
+                      </div>
+
+                      <div class="tab-pane fade" id="nav-month" role="tabpanel" aria-labelledby="nav-month-tab">
+                        
+                        <p class="my-4">
+                          Credits expire monthly
+                        </p>
+
+                        <table class="table table-sm table-nowrap card-table table-hover">
+  
+                          <tbody class="fs-base">
+                            <tr>
+                              <td>
+                                1000 credits (0.049/credit)
+                              </td>
+                              <td>
+                                $49
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                7500 credits (0.04/credit)
+                              </td>
+                              <td>
+                                $299
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                29966 credits (0.03/credit)
+                              </td>
+                              <td>
+                                $899
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                95000 credits (0.02/credit)
+                              </td>
+                              <td>
+                                $1899
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                      </div>
+                      
+                      <div class="tab-pane fade" id="nav-annual" role="tabpanel" aria-labelledby="nav-annual-tab">
+                        
+                        <p class="my-4">
+                          Credits expire annually
+                        </p>
+
+                        <table class="table table-sm table-nowrap card-table table-hover">
+  
+                          <tbody class="fs-base">
+                            <tr>
+                              <td>
+                                1200 credits
+                              </td>
+                              <td>
+                                $49
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                10000 credits (0.03/credit)
+                              </td>
+                              <td>
+                                $299
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                45000 credits (0.02/credit)
+                              </td>
+                              <td>
+                                $899
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                190000 credits (0.01/credit)
+                              </td>
+                              <td>
+                                $1899
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                      </div>
+
                     </div>
 
                   </div>
-                  <div class="col-12 col-md-auto">
-                    <p class="text-center">
-                      araara
+                  
+                  <div class="col-12 col-md-3 py-5 bg-white border rounded bg-lighter">
+
+                    <p class="text-uppercase text-center">
+                      Pay-as-you-go
                     </p>
+
+                    <h1 class="display-2 text-center">
+                      $49
+                    </h1>
+
+                    <p class="text-center mb-2">
+                      600 credits
+                    </p>
+
+                    <p class="text-info text-center mb-4">
+                      Credits do not expire
+                    </p>
+
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" id="checklistOne">
+                      <label class="form-check-label small" for="checklistOne">
+                        Automatically top up when credits fall below 10 credits.
+                      </label>
+                    </div>
+
+                    <button class="btn btn-primary w-100 btn-block">
+                      Buy Credits
+                    </button>
+
                   </div>
-                </div>
+
+                </div>                
+
               </div>
 
             </div>
