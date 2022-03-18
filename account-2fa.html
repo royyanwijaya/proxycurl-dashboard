@@ -276,16 +276,66 @@
 
                         <!-- Text -->
                         <small class="text-muted">
-                          Google auth or 1Password
+                          Use an authenticator app (such as Authy or Google Authenticator).
                         </small>
 
                       </div>
                       <div class="col-auto">
 
-                        <!-- Button -->
-                        <button class="btn btn-sm btn-white">
+                        <!-- Button modal -->
+                        <button class="btn btn-sm btn-white" type="button" data-toggle="modal" data-target="#authModal">
                           Setup
                         </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="authModal" tabindex="-1" role="dialog" aria-labelledby="authModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <h4 class="modal-title" id="authModalLabel">
+                                  Enable two-factor auth <span class="badge bg-light ms-2">disable</span> <span class="badge bg-success ms-2">enable</span>
+                                </h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">
+                                    <i class="fe fe-x"></i>
+                                  </span>
+                                </button>
+                              </div>
+
+                              <div class="modal-body">
+                                <div class="container-fluid">
+                                  <div class="row justify-content-center">
+                                    <div class="col-12 text-center">
+                                      <img class="img img-fluid mb-4" alt="..." width="256" src="assets/img/illustrations/qr code example.png">
+
+                                      <h6 class="text-muted text-uppercase mb-1">
+                                        2FA key manual entry
+                                      </h6>
+
+                                      <p class="text-info mb-4">
+                                        SOME -- EXAMPLE -- MANUAL -- 2FA -- CODES
+                                      </p>
+
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <input type="text" placeholder="Input authenticator code" class="form-control">
+                              </div>
+
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary me-md-2" data-dismiss="modal">
+                                  Close
+                                </button>
+                                <button type="button" class="btn btn-primary">
+                                  Enable two-factor
+                                </button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
 
                       </div>
                     </div> <!-- / .row -->
@@ -296,12 +346,12 @@
 
                         <!-- Heading -->
                         <h4 class="mb-1">
-                          SMS Recovery <i class="fe fe-info text-muted ms-1" data-bs-toggle="tooltip" data-title="We use the the phone number you provide in General"></i>
+                          Yubikey
                         </h4>
 
                         <!-- Text -->
                         <small class="text-muted">
-                          Standard messaging rates apply
+                          Use a YubiKey to access your account.
                         </small>
 
                       </div>
@@ -310,31 +360,6 @@
                         <!-- Button -->
                         <button class="btn btn-sm btn-danger">
                           Disable
-                        </button>
-
-                      </div>
-                    </div> <!-- / .row -->
-                  </div>
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col">
-
-                        <!-- Heading -->
-                        <h4 class="mb-1">
-                          Recovery codes <i class="fe fe-info text-muted ms-1" data-bs-toggle="tooltip" data-title="We use the the phone number you provide in General"></i>
-                        </h4>
-
-                        <!-- Text -->
-                        <small class="text-muted">
-                          Standard messaging rates apply
-                        </small>
-
-                      </div>
-                      <div class="col-auto">
-
-                        <!-- Button -->
-                        <button class="btn btn-sm btn-white">
-                          Reveal
                         </button>
 
                       </div>
@@ -362,6 +387,11 @@
     
     <!-- Theme JS -->
     <script src="./assets/js/theme.bundle.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   </body>
 </html>
