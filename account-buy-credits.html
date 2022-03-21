@@ -69,22 +69,12 @@
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
                     <a href="./account-api.html" class="nav-link">
-                      API Key and Billing
+                      API Key
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="./account-work.html" class="nav-link">
                       Work Email Lookup Logs
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="./account-invoices.html" class="nav-link">
-                      Invoices
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="./account-pricing.html" class="nav-link active">
-                      Pricing
                     </a>
                   </li>
                   <li class="nav-item">
@@ -109,6 +99,25 @@
                   <li class="nav-item">
                     <a href="#!" class="nav-link">
                       Docs
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sidebarPages" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebarPages">
+                <i class="fe fe-dollar-sign"></i> Billing
+              </a>
+              <div class="collapse show" id="sidebarPages">
+                <ul class="nav nav-sm flex-column">
+                  <li class="nav-item">
+                    <a href="./account-invoices.html" class="nav-link">
+                      Invoices
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./account-buy-credits.html" class="nav-link active">
+                      Buy Credits
                     </a>
                   </li>
                 </ul>
@@ -192,7 +201,7 @@
 
                     <!-- Title -->
                     <h1 class="header-title">
-                      Proxycurl API
+                      Billing
                     </h1>
 
                     <!-- User email -->
@@ -208,23 +217,13 @@
                     <!-- Nav -->
                     <ul class="nav nav-tabs nav-overflow header-tabs">
                       <li class="nav-item">
-                        <a href="account-api.html" class="nav-link">
-                          API Key and Billing
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="account-work.html" class="nav-link">
-                          Work Email Lookup Logs
-                        </a>
-                      </li>
-                      <li class="nav-item">
                         <a href="account-invoices.html" class="nav-link">
                           Invoices
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a href="account-pricing.html" class="nav-link active">
-                          Pricing
+                        <a href="account-buy-credits.html" class="nav-link active">
+                          Buy Credits
                         </a>
                       </li>
                     </ul>
@@ -234,11 +233,13 @@
               </div>
             </div>
 
-            <!-- Alert
-            <div class="alert alert-danger">
-              <i class="fe fe-info me-1"></i> You are near your API limits.
+            <!-- Alert -->
+            <div class="alert alert-warning">
+              <i class="fe fe-info me-1"></i> You need to add a payment method to get started.
+              <a class="btn btn-sm btn-white ms-2">
+                Add method
+              </a>
             </div>
-            -->
 
             <!-- Card -->
             <div class="card">
@@ -483,7 +484,26 @@
                     <div class="form-check mb-3">
                       <input class="form-check-input" type="checkbox" id="checklistOne">
                       <label class="form-check-label small" for="checklistOne">
-                        Automatically top up when credits fall below 10 credits.
+                        Automatically top up 
+
+                        <div class="dropdown">
+                          <button class="btn btn-outline-info btn-sm btn-block dropdown-toggle" href="#" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            $100
+                          </button>
+                          <div class="dropdown-menu dropdown-menu-start">
+                            <a class="dropdown-item" href="#!">
+                              $100
+                            </a>
+                            <a class="dropdown-item" href="#!">
+                              $500
+                            </a>
+                            <a class="dropdown-item" href="#!">
+                              $1000
+                            </a>
+                          </div>
+                        </div>
+
+                        worth of credits when credits fall below 10 credits.
                       </label>
                     </div>
 
@@ -497,6 +517,141 @@
 
               </div>
 
+            </div>
+
+            <!-- Payment method empty -->
+            <div class="card">
+              <div class="card-header">
+                <div class="row align-items-center">
+                  <div class="col">
+
+                    <!-- Title -->
+                    <h4 class="card-header-title">
+                      Payment methods
+                    </h4>
+
+                  </div>
+                  <div class="col-auto">
+
+                    <!-- Button -->
+                    <a class="btn btn-sm btn-primary" href="#!">
+                      Add method
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+
+                <div class="row justify-content-center">
+                  <div class="col-12 col-md-4 text-center">
+                    <img class="img img-fluid rounded" alt="..." src="Illustration_landscape_placement.png">
+
+                    <p class="mt-3 text-muted">
+                      You have no payment method saved. Please add one to get started.
+                    </p>
+
+                    <button class="btn btn-primary btn-sm">
+                      Add method
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div class="card">
+              <div class="card-header">
+                <div class="row align-items-center">
+                  <div class="col">
+
+                    <!-- Title -->
+                    <h4 class="card-header-title">
+                      Payment methods
+                    </h4>
+
+                  </div>
+                  <div class="col-auto">
+
+                    <!-- Button -->
+                    <a class="btn btn-sm btn-primary" href="#!">
+                      Add method
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+
+                <!-- List group -->
+                <div class="list-group list-group-flush my-n3">
+                  <div class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+
+                        <!-- Image -->
+                        <img class="img-fluid" src="assets/img/payment-methods/visa.svg" alt="..." style="max-width: 38px;">
+
+                      </div>
+                      <div class="col ms-n2">
+
+                        <!-- Heading -->
+                        <h4 class="mb-1">
+                          Visa ending in 1234
+                        </h4>
+
+                        <!-- Text -->
+                        <small class="text-muted">
+                          Expires 3/2024
+                        </small>
+
+                      </div>
+                      <div class="col-auto me-n3">
+
+                        <!-- Badge -->
+                        <span class="badge bg-light">
+                          Default
+                        </span>
+
+                      </div>
+                    </div> <!-- / .row -->
+                  </div>
+                  <div class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+
+                        <!-- Image -->
+                        <img class="img-fluid" src="assets/img/payment-methods/mastercard.svg" alt="..." style="max-width: 38px;">
+
+                      </div>
+                      <div class="col ms-n2">
+
+                        <!-- Heading -->
+                        <h4 class="mb-1">
+                          Mastercard ending in 1234
+                        </h4>
+
+                        <!-- Text -->
+                        <small class="text-muted">
+                          Expires 3/2024
+                        </small>
+
+                      </div>
+
+                      <div class="col-auto me-n3">
+
+                        <button class="btn btn-sm btn-outline-primary">
+                          Make default
+                        </button>
+
+                      </div>
+
+                    </div> <!-- / .row -->
+                  </div>
+                </div>
+
+              </div>
             </div>
 
             <br>
