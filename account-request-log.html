@@ -74,7 +74,7 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./account-work.html" class="nav-link active">
+                    <a href="./account-work.html" class="nav-link">
                       Work Email Lookup Logs
                     </a>
                   </li>
@@ -87,23 +87,9 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#sidebarDwarf" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebarDwarf">
-                <i class="fe fe-file"></i> Dwarf Forms API
+              <a class="nav-link active" href="account-request-log.html" role="button">
+                <i class="fe fe-activity"></i> Request Log
               </a>
-              <div class="collapse show" id="sidebarDwarf">
-                <ul class="nav nav-sm flex-column">
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      API Key and Billing
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#!" class="nav-link">
-                      Docs
-                    </a>
-                  </li>
-                </ul>
-              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#sidebarPages" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebarPages">
@@ -182,6 +168,87 @@
       </div>
     </nav>
 
+    <!--MODAL UPGRADE-->
+    <div class="modal fade" id="modalUpgrade" tabindex="-1" aria-labelledby="modalUpgradeLabel" aria-hidden="true">
+      
+      <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalUpgradeLabel">Upgrade Logs</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body">
+
+            <div class="table-responsive">
+              <table class="table table-sm table-nowrap card-table">
+                <thead>
+                  <tr>
+                    <th>Rows of logs available</th>
+                    <th>Minimum plan</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody class="fs-base">
+                  <tr>
+                    <td>
+                      5
+                    </td>
+                    <td>
+                      <span class="badge text-uppercase bg-secondary-soft">
+                        Pay as you go
+                      </span>
+                    </td>
+                    <td>
+                      <span class="badge bg-secondary-soft">
+                        Current plan
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      100
+                    </td>
+                    <td>
+                      <span class="badge text-uppercase bg-primary-soft">
+                        $100/month
+                      </span>
+                    </td>
+                    <td>
+                      <a class="btn btn-primary btn-sm" href="#!">
+                        Upgrade
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      1000
+                    </td>
+                    <td>
+                      <span class="badge text-uppercase bg-secondary-soft">
+                        $500/month
+                      </span>
+                    </td>
+                    <td>
+                      <a class="btn btn-primary btn-sm" href="#!">
+                        Upgrade
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
     <!-- MAIN CONTENT -->
     <div class="main-content">
 
@@ -214,25 +281,6 @@
                   </div>
                 </div> <!-- / .row -->
 
-                <div class="row align-items-center">
-                  <div class="col">
-
-                    <!-- Nav -->
-                    <ul class="nav nav-tabs nav-overflow header-tabs">
-                      <li class="nav-item">
-                        <a href="account-api.html" class="nav-link">
-                          API Key
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="account-work.html" class="nav-link active">
-                          Work Email Lookup Logs
-                        </a>
-                      </li>
-                    </ul>
-
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -251,14 +299,14 @@
 
                     <!-- Title -->
                     <h4 class="card-header-title">
-                      Work Email Lookup Logs
+                      Request Logs
                     </h4>
 
                   </div>
                   <div class="col-auto">
 
                     <!-- Button -->
-                    <a class="btn btn-sm btn-primary" href="#!">
+                    <a class="btn btn-sm btn-outline-primary" href="#!">
                       Download as CSV
                     </a>
 
@@ -341,21 +389,32 @@
                         anjay@mabar.com
                       </td>
                     </tr>
+                    <tr>
+                      <td>
+                        20 Jan 2022, 14:32
+                      </td>
+                      <td>
+                        linkedin.com/sapinjepat
+                      </td>
+                      <td>
+                        <span class="badge bg-primary-soft">
+                          email_found
+                        </span>
+                      </td>
+                      <td>
+                        sapi@njepat.com
+                      </td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
 
-              <div class="card-body">
-                <nav aria-label="Page navigation">
-                  <ul class="pagination">
-                    <li class="page-item"><a class="page-link bg-light" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">4</a></li>
-                    <li class="page-item"><a class="page-link" href="#">5</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                  </ul>
-                </nav>
+              <div class="card-body text-center">
+
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalUpgrade">
+                  UPGRADE TO VIEW MORE LOGS
+                </button>
+
               </div>
 
             </div>
