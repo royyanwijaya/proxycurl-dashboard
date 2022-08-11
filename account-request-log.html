@@ -168,79 +168,80 @@
       </div>
     </nav>
 
-    <!--MODAL UPGRADE-->
-    <div class="modal fade" id="modalUpgrade" tabindex="-1" aria-labelledby="modalUpgradeLabel" aria-hidden="true">
+    <!--MODAL CONFIRM $100/MONTH-->
+    <div class="modal fade" id="modalConfirm100" tabindex="-1" aria-labelledby="modalConfirm100Label" aria-hidden="true">
       
       <div class="modal-dialog modal-dialog-centered">
 
         <div class="modal-content">
 
           <div class="modal-header">
-            <h5 class="modal-title" id="modalUpgradeLabel">Upgrade Logs</h5>
+            <h5 class="modal-title" id="modalConfirm100Label">Upgrade log</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
 
           <div class="modal-body">
 
-            <div class="table-responsive">
-              <table class="table table-sm table-nowrap card-table">
-                <thead>
-                  <tr>
-                    <th>Rows of logs available</th>
-                    <th>Minimum plan</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody class="fs-base">
-                  <tr>
-                    <td>
-                      5
-                    </td>
-                    <td>
-                      <span class="badge text-uppercase bg-secondary-soft">
-                        Pay as you go
-                      </span>
-                    </td>
-                    <td>
-                      <span class="badge bg-secondary-soft">
-                        Current plan
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      100
-                    </td>
-                    <td>
-                      <span class="badge text-uppercase bg-primary-soft">
-                        $100/month
-                      </span>
-                    </td>
-                    <td>
-                      <a class="btn btn-primary btn-sm" href="#!">
-                        Upgrade
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      1000
-                    </td>
-                    <td>
-                      <span class="badge text-uppercase bg-secondary-soft">
-                        $500/month
-                      </span>
-                    </td>
-                    <td>
-                      <a class="btn btn-primary btn-sm" href="#!">
-                        Upgrade
-                      </a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            <span class="badge text-uppercase bg-info">
+              100 rows
+            </span>
+            
+            <span class="badge text-uppercase bg-info">
+              $100/month
+            </span>
 
+            <p class="mt-2">
+              Are you sure want to upgrade to 100 rows of available logs?
+              <br>
+              It will cost you $100/month.
+            </p>
+
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary me-2" data-bs-dismiss="modal">No, cancel upgrade</button>
+            <button type="button" class="btn btn-primary">Yes, upgrade $100/month</button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!--MODAL CONFIRM $500/MONTH-->
+    <div class="modal fade" id="modalConfirm500" tabindex="-1" aria-labelledby="modalConfirm500Label" aria-hidden="true">
+      
+      <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalConfirm500Label">Upgrade log</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body">
+
+            <span class="badge text-uppercase bg-info">
+              1000 rows
+            </span>
+            
+            <span class="badge text-uppercase bg-info">
+              $500/month
+            </span>
+
+            <p class="mt-2">
+              Are you sure want to upgrade to 1000 rows of available logs?
+              <br>
+              It will cost you $500/month.
+            </p>
+
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary me-md-2" data-bs-dismiss="modal">No, cancel upgrade</button>
+            <button type="button" class="btn btn-primary">Yes, upgrade $500/month</button>
           </div>
 
         </div>
@@ -283,12 +284,6 @@
 
               </div>
             </div>
-
-            <!-- Alert
-            <div class="alert alert-danger">
-              <i class="fe fe-info me-1"></i> You are near your API limits.
-            </div>
-            -->
 
             <!-- Card -->
             <div class="card">
@@ -409,18 +404,87 @@
                 </table>
               </div>
 
-              <div class="card-body text-center">
+              <div class="card-body">
 
-                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalUpgrade">
-                  UPGRADE TO VIEW MORE LOGS
-                </button>
+                <div class="dropdown">
+
+                  <button class="btn btn-primary" type="button" id="upgradeLogs" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    UPGRADE TO VIEW MORE LOGS
+                  </button>
+                  
+                  <form class="dropdown-menu dropdown-menu-start dropdown-menu-card mt-2" aria-labelledby="upgradeLogs">
+
+                    <div class="card-body">
+
+                      <div class="table-responsive">
+                        <table class="table table-sm card-table">
+                          <thead>
+                            <tr>
+                              <th>Rows of logs available</th>
+                              <th>Minimum plan</th>
+                              <th></th>
+                            </tr>
+                          </thead>
+                          <tbody class="fs-base">
+                            <tr>
+                              <td>
+                                5
+                              </td>
+                              <td>
+                                <span class="badge text-uppercase bg-secondary-soft">
+                                  Pay as you go
+                                </span>
+                              </td>
+                              <td>
+                                <span class="badge bg-success-soft">
+                                  Current plan
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                100
+                              </td>
+                              <td>
+                                <span class="badge text-uppercase bg-primary-soft">
+                                  $100/month
+                                </span>
+                              </td>
+                              <td>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalConfirm100">
+                                  Upgrade
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                1000
+                              </td>
+                              <td>
+                                <span class="badge text-uppercase bg-primary-soft">
+                                  $500/month
+                                </span>
+                              </td>
+                              <td>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalConfirm500">
+                                  Upgrade
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+
+                    </div>
+
+                  </form>
+
+                </div>
 
               </div>
 
             </div>
-
-            <br>
-
+            
           </div>
         </div> <!-- / .row -->
       </div>
