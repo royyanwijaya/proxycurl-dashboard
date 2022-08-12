@@ -17,6 +17,7 @@
     
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+    <link rel="stylesheet" href="style-custom.css"/>
     
     <!-- Title -->
     <title>Proxycurl - Dashboard</title>
@@ -168,20 +169,18 @@
       </div>
     </nav>
 
-    <!--MODAL CONFIRM $100/MONTH-->
-    <div class="modal fade" id="modalConfirm100" tabindex="-1" aria-labelledby="modalConfirm100Label" aria-hidden="true">
-      
+    <!--MODAL CONFIRM $100-->
+    <div class="modal fade" id="modalhundred" tabindex="-1" aria-labelledby="modalhundredLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
-
         <div class="modal-content">
-
+    
           <div class="modal-header">
-            <h5 class="modal-title" id="modalConfirm100Label">Upgrade log</h5>
+            <h5 class="modal-title" id="modalhundredLabel">Upgrade log</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-
+    
           <div class="modal-body">
-
+    
             <span class="badge text-uppercase bg-info">
               100 rows
             </span>
@@ -189,40 +188,36 @@
             <span class="badge text-uppercase bg-info">
               $100/month
             </span>
-
+    
             <p class="mt-2">
               Are you sure want to upgrade to 100 rows of available logs?
               <br>
               It will cost you $100/month.
             </p>
-
+    
           </div>
-
+    
           <div class="modal-footer">
             <button type="button" class="btn btn-outline-secondary me-2" data-bs-dismiss="modal">No, cancel upgrade</button>
             <button type="button" class="btn btn-primary">Yes, upgrade $100/month</button>
           </div>
-
+    
         </div>
-
       </div>
-
     </div>
 
     <!--MODAL CONFIRM $500/MONTH-->
-    <div class="modal fade" id="modalConfirm500" tabindex="-1" aria-labelledby="modalConfirm500Label" aria-hidden="true">
-      
+    <div class="modal fade" id="modalfivehundred" tabindex="-1" aria-labelledby="modalfivehundredLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
-
         <div class="modal-content">
-
+    
           <div class="modal-header">
-            <h5 class="modal-title" id="modalConfirm500Label">Upgrade log</h5>
+            <h5 class="modal-title" id="modalfivehundredLabel">Upgrade log</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-
+    
           <div class="modal-body">
-
+    
             <span class="badge text-uppercase bg-info">
               1000 rows
             </span>
@@ -230,28 +225,26 @@
             <span class="badge text-uppercase bg-info">
               $500/month
             </span>
-
+    
             <p class="mt-2">
               Are you sure want to upgrade to 1000 rows of available logs?
               <br>
               It will cost you $500/month.
             </p>
-
+    
           </div>
-
+    
           <div class="modal-footer">
-            <button type="button" class="btn btn-outline-secondary me-md-2" data-bs-dismiss="modal">No, cancel upgrade</button>
-            <button type="button" class="btn btn-primary">Yes, upgrade $500/month</button>
+            <button type="button" class="btn btn-outline-secondary me-2" data-bs-dismiss="modal">No, cancel upgrade</button>
+            <button type="button" class="btn btn-primary">Yes, upgrade $100/month</button>
           </div>
-
+    
         </div>
-
       </div>
-
     </div>
 
     <!-- MAIN CONTENT -->
-    <div class="main-content">
+    <div class="main-content pb-5">
 
       <div class="container-fluid">
         <div class="row justify-content-center">
@@ -404,7 +397,8 @@
                 </table>
               </div>
 
-              <div class="card-body">
+              <!--UPGRADE DROPDOWN-->
+              <div class="card-body text-center">
 
                 <div class="dropdown">
 
@@ -412,7 +406,7 @@
                     UPGRADE TO VIEW MORE LOGS
                   </button>
                   
-                  <form class="dropdown-menu dropdown-menu-start dropdown-menu-card mt-2" aria-labelledby="upgradeLogs">
+                  <form class="dropdown-menu dropdown-center dropdown-menu-card shadow" aria-labelledby="upgradeLogs">
 
                     <div class="card-body">
 
@@ -451,7 +445,7 @@
                                 </span>
                               </td>
                               <td>
-                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalConfirm100">
+                                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalhundred">
                                   Upgrade
                                 </button>
                               </td>
@@ -466,7 +460,7 @@
                                 </span>
                               </td>
                               <td>
-                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalConfirm500">
+                                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalfivehundred">
                                   Upgrade
                                 </button>
                               </td>
@@ -481,6 +475,93 @@
 
                 </div>
 
+              </div>
+
+              <div class="table-responsive blur">
+                <table class="table table-sm table-nowrap card-table">
+                  <tbody class="fs-base">
+                    <tr>
+                      <td>
+                        20 Jan 2022, 14:50
+                      </td>
+                      <td>
+                        linkedin.com/billgates
+                      </td>
+                      <td>
+                        <span class="badge bg-primary-soft">
+                          email_found
+                        </span>
+                      </td>
+                      <td>
+                        gates@microsoft.com
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        20 Jan 2022, 14:42
+                      </td>
+                      <td>
+                        linkedin.com/gomugomuno
+                      </td>
+                      <td>
+                        <span class="badge bg-danger-soft">
+                          email_not_found
+                        </span>
+                      </td>
+                      <td>
+                        gomu@gomu.no
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        20 Jan 2022, 14:40
+                      </td>
+                      <td>
+                        linkedin.com/kanebohijau
+                      </td>
+                      <td>
+                        <span class="badge bg-danger-soft">
+                          email_not_found
+                        </span>
+                      </td>
+                      <td>
+                        tokenasix@kanebo.hijau
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        20 Jan 2022, 14:32
+                      </td>
+                      <td>
+                        linkedin.com/anjaymabar
+                      </td>
+                      <td>
+                        <span class="badge bg-primary-soft">
+                          email_found
+                        </span>
+                      </td>
+                      <td>
+                        anjay@mabar.com
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        20 Jan 2022, 14:32
+                      </td>
+                      <td>
+                        linkedin.com/sapinjepat
+                      </td>
+                      <td>
+                        <span class="badge bg-primary-soft">
+                          email_found
+                        </span>
+                      </td>
+                      <td>
+                        sapi@njepat.com
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
 
             </div>
