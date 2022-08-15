@@ -11,3 +11,6 @@
     text-align: center !important;
     transform: translate(-50%, 0) !important;
   }
+  .mt-minus{
+    margin-top: -12rem !important;
+  }
