@@ -17,6 +17,7 @@
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
     <link rel="stylesheet" href="style-custom.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.9.0/css/neu.min.css">
     
     <!-- Title -->
     <title>Proxycurl - Dashboard</title>
@@ -357,15 +358,212 @@
               </a>
             </div>
 
+            <!--User plan-->
             <div class="card">
-              <div class="card-body">
-                <div class="row">
+
+              <div class="card-header">
+                <div class="row align-items-center">
+                  <div class="col">
+
+                    <!-- Title -->
+                    <h4 class="card-header-title">
+                      Proxycurl Plan
+                    </h4>
+
+                  </div>
 
                 </div>
               </div>
+
+              <!--Plan info-->
+              <div class="card-body">
+
+                <div class="row align-items-top border-bottom py-4">
+
+                  <div class="col-12 col-md-6">
+                    <h4 class="text-primary">
+                      $49/month (1000 credits)
+                    </h4>
+    
+                    <p class="text-muted">
+                      Extended on 31 September 2022
+                    </p>
+                  </div>
+
+                  <div class="col-12 col-md-6 text-end">
+
+                    <button type="submit" class="btn btn-lg btn-outline-primary">
+                      Change plan
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="row pt-4">
+
+                  <div class="col-12 col-md-6">
+
+                    <label class="mb-2">
+                      Credits
+                    </label>
+
+                    <div class="input-group">
+                      <span class="input-group-text bg-light" id="topupInput">
+                        <i class="neu-wallet"></i>
+                      </span>
+                      <input type="text" class="form-control bg-light" value="817" aria-label="topupInput" readonly aria-describedby="topupInput">
+                    </div>
+
+                    <p class="mt-1 text-muted">
+                      Credits expire monthly
+                    </p>
+
+                  </div>
+
+                  <div class="col-12 col-md-6">
+
+                    <label class="mb-2">
+                      Top-up amount
+                    </label>
+
+                    <div class="input-group">
+                      <span class="input-group-text" id="topupInput">$</span>
+                      <input type="number" class="form-control" placeholder="10" aria-label="Username" aria-describedby="topupInput">
+                    </div>
+
+                    <p class="mt-1 text-muted">
+                      <span class="text-primary">
+                        0
+                      </span>
+                        credits received upon top-up.
+                    </p>
+
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" id="checklistOne">
+                      <label class="form-check-label" for="checklistOne">
+                        Automatically top up 
+
+                        <div class="dropdown">
+                          <button class="btn btn-outline-info btn-sm btn-block dropdown-toggle" href="#" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            $100
+                          </button>
+                          <div class="dropdown-menu dropdown-menu-start">
+                            <a class="dropdown-item" href="#!">
+                              $100
+                            </a>
+                            <a class="dropdown-item" href="#!">
+                              $500
+                            </a>
+                            <a class="dropdown-item" href="#!">
+                              $1000
+                            </a>
+                          </div>
+                        </div>
+
+                        worth of credits when credits fall below 10 credits.
+                      </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-lg w-100 btn-primary">
+                      Top up
+                    </button>
+                  </div>
+
+                </div>
+
+              </div>
             </div>
 
-            <!-- Card -->
+            <!-- Topup credits -->
+            <div class="card">
+
+              <div class="card-header">
+                <div class="row align-items-center">
+                  <div class="col">
+
+                    <!-- Title -->
+                    <h4 class="card-header-title">
+                      Top-up Credits
+                    </h4>
+
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="card-body">
+
+                <!--Form-->
+                <div class="form-group">
+
+                  <fieldset disabled>
+                    <label for="creditsBalance" class="form-label">
+                      <i class="neu-wallet"></i> Credits
+                    </label>
+                    <input type="text" class="form-control bg-light" id="creditsBalance" value="817" readonly>
+                  </fieldset>
+
+                  <p class="mt-1 text-muted">
+                    Your current credit balance will be increased once you make a top-up
+                  </p>
+                  
+                </div>
+
+                <div class="row g-0">
+
+                  <div class="col-5">
+
+                      <label class="mb-2">
+                        Top-up amount
+                      </label>
+
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="topupInput">$</span>
+                        <input type="number" class="form-control" placeholder="10" aria-label="Username" aria-describedby="topupInput">
+                      </div>                      
+  
+                  </div>
+  
+                  <div class="col-2">
+  
+                    <div class="text-center align-items-center">
+                      <div class="d-flex align-items-center justify-content-center py-md-2 mt-md-4">
+                        <i class="neu-compare text-primary" style="font-size: 24px;"></i>
+                      </div>
+                    </div>
+  
+                  </div>
+  
+                  <div class="col-5">
+
+                    <label for="topupResult" class="mb-2">
+                      Credits received
+                    </label>
+
+                    <div class="input-group mb-3">
+                      <span class="input-group-text bg-light" id="topupInput">
+                        <i class="neu-coin"></i>
+                      </span>
+                      <input id="topupResult" type="text" class="form-control bg-light" value="0" readonly>
+                    </div>
+  
+                  </div>
+
+                </div>
+
+                <!-- Button -->
+                <button type="submit" class="btn btn-lg btn-primary w-100 mt-3">
+                  Top up
+                </button>
+
+              </div>
+            </div>
+
+            <!-- Plan -->
             <div class="card">
 
               <div class="card-body">
@@ -684,7 +882,7 @@
               </div>
             </div>
 
-            <!-- Card -->
+            <!-- Payment method -->
             <div class="card">
               <div class="card-header">
                 <div class="row align-items-center">
