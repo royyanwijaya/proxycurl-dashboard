@@ -296,6 +296,37 @@
       </div>
     </nav>
 
+    <!--MODAL TOPUP-->
+    <div class="modal fade" id="modalTopup" tabindex="-1" aria-labelledby="modalTopupLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+    
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTopupLabel">Credits top up</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+    
+          <div class="modal-body">
+    
+            <p class="mt-2">
+              You will pay $100 worth of credits. Are you sure you want to top up?
+            </p>
+
+            <p class="small text-info mt-auto">
+              <span class="text-danger">*</span>Credits expire monthly.
+            </p>
+    
+          </div>
+    
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary me-2" data-bs-dismiss="modal">No, cancel top-up</button>
+            <button type="button" class="btn btn-primary">Yes, top up $100</button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+
     <!-- MAIN CONTENT -->
     <div class="main-content">
 
@@ -378,6 +409,7 @@
               <!--Plan info-->
               <div class="card-body">
 
+                <!--Plan-->
                 <div class="row align-items-top border-bottom py-4">
 
                   <div class="col-12 col-md-6">
@@ -385,9 +417,10 @@
                       $49/month (1000 credits)
                     </h4>
     
-                    <p class="text-muted">
+                    <p class="mt-1">
                       Extended on 31 September 2022
                     </p>
+
                   </div>
 
                   <div class="col-12 col-md-6 text-end">
@@ -400,7 +433,8 @@
 
                 </div>
 
-                <div class="row pt-4">
+                <!--Top up-->
+                <div class="row py-4 border-bottom">
 
                   <div class="col-12 col-md-6">
 
@@ -416,7 +450,7 @@
                     </div>
 
                     <p class="mt-1 text-muted">
-                      Credits expire monthly
+                      Credits expire monthly.
                     </p>
 
                   </div>
@@ -424,58 +458,99 @@
                   <div class="col-12 col-md-6">
 
                     <label class="mb-2">
-                      Top-up amount
+                      Top up amount
                     </label>
 
                     <div class="input-group">
                       <span class="input-group-text" id="topupInput">$</span>
-                      <input type="number" class="form-control" placeholder="10" aria-label="Username" aria-describedby="topupInput">
+                      <input type="number" class="form-control" placeholder="$10" aria-label="Username" aria-describedby="topupInput">
                     </div>
 
                     <p class="mt-1 text-muted">
                       <span class="text-primary">
                         0
                       </span>
-                        credits received upon top-up.
+                        credits received upon top up.
                     </p>
 
                   </div>
 
                   <div class="col-12">
-                    <div class="form-check mb-3">
-                      <input class="form-check-input" type="checkbox" id="checklistOne">
-                      <label class="form-check-label" for="checklistOne">
-                        Automatically top up 
 
-                        <div class="dropdown">
-                          <button class="btn btn-outline-info btn-sm btn-block dropdown-toggle" href="#" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            $100
-                          </button>
-                          <div class="dropdown-menu dropdown-menu-start">
-                            <a class="dropdown-item" href="#!">
-                              $100
-                            </a>
-                            <a class="dropdown-item" href="#!">
-                              $500
-                            </a>
-                            <a class="dropdown-item" href="#!">
-                              $1000
-                            </a>
-                          </div>
-                        </div>
-
-                        worth of credits when credits fall below 10 credits.
-                      </label>
-                    </div>
-
-                    <button type="submit" class="btn btn-lg w-100 btn-primary">
+                    <button type="submit" class="btn btn-lg w-100 btn-primary" data-bs-toggle="modal" data-bs-target="#modalTopup">
                       Top up
                     </button>
+
+                  </div>
+
+                </div>
+
+                <!--Automatically top up-->
+                <div class="row pt-4">
+
+                  <div class="col-12 mb-4">
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" role="switch" id="autoTopupToggle">
+                      <label class="form-check-label" for="autoTopupToggle">
+                        Auto top up toggle <span class="badge text-uppercase bg-success">on</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6">
+
+                    <label class="mb-2">
+                      Auto top up
+                    </label>
+
+                    <div class="input-group">
+                      <span class="input-group-text" id="autoTopup">$</span>
+                      <input type="number" class="form-control" placeholder="$100" aria-label="autoTopup" aria-describedby="autoTopup">
+                    </div>
+
+                    <p class="mt-1 text-muted">
+                      Automatically top up <span class="text-primary">$100</span> worth of credits.
+                    </p>
+
+                  </div>
+
+                  <div class="col-12 col-md-6">
+
+                    <label class="mb-2">
+                      Credit threshold
+                    </label>
+
+                    <div class="input-group">
+                      <span class="input-group-text" id="creditTreshold">
+                        <i class="neu-wallet"></i>
+                      </span>
+                      <input type="number" class="form-control" placeholder="10" aria-label="creditTreshold" aria-describedby="creditTreshold">
+                    </div>
+
+                    <p class="mt-1 text-muted">
+                      Automatically top up when credits fall below
+                      <span class="text-primary">10</span>.
+                    </p>
+
+                  </div>
+
+                  <!--Save changes & Cancel button-->
+                  <div class="col-12 text-end">
+
+                    <button type="submit" class="btn btn-lg btn-outline-secondary me-2">
+                      Cancel
+                    </button>
+
+                    <button type="submit" class="btn btn-lg btn-primary">
+                      Save changes
+                    </button>
+
                   </div>
 
                 </div>
 
               </div>
+
             </div>
 
             <!-- Topup credits -->
