@@ -381,13 +381,14 @@
               </div>
             </div>
 
-            <!-- Alert -->
+            <!-- Alert 
             <div class="alert alert-warning">
               <i class="fe fe-info me-1"></i> You need to add a payment method to get started.
               <a class="btn btn-sm btn-white ms-2">
                 Add method
               </a>
             </div>
+            -->
 
             <!--User plan-->
             <div class="card">
@@ -425,61 +426,9 @@
 
                   <div class="col-12 col-md-6 text-end">
 
-                    <button type="submit" class="btn btn-lg btn-outline-primary">
+                    <a href="account-buy-credits-change-plan.html" target="_blank" class="btn btn-lg btn-outline-primary">
                       Change plan
-                    </button>
-
-                  </div>
-
-                </div>
-
-                <!--Top up-->
-                <div class="row py-4 border-bottom">
-
-                  <div class="col-12 col-md-6">
-
-                    <label class="mb-2">
-                      Credits
-                    </label>
-
-                    <div class="input-group">
-                      <span class="input-group-text bg-light" id="topupInput">
-                        <i class="neu-wallet"></i>
-                      </span>
-                      <input type="text" class="form-control bg-light" value="817" aria-label="topupInput" readonly aria-describedby="topupInput">
-                    </div>
-
-                    <p class="mt-1 text-muted">
-                      Credits expire monthly.
-                    </p>
-
-                  </div>
-
-                  <div class="col-12 col-md-6">
-
-                    <label class="mb-2">
-                      Top up amount
-                    </label>
-
-                    <div class="input-group">
-                      <span class="input-group-text" id="topupInput">$</span>
-                      <input type="number" class="form-control" placeholder="$10" aria-label="Username" aria-describedby="topupInput">
-                    </div>
-
-                    <p class="mt-1 text-muted">
-                      <span class="text-primary">
-                        0
-                      </span>
-                        credits received upon top up.
-                    </p>
-
-                  </div>
-
-                  <div class="col-12">
-
-                    <button type="submit" class="btn btn-lg w-100 btn-primary" data-bs-toggle="modal" data-bs-target="#modalTopup">
-                      Top up
-                    </button>
+                    </a>
 
                   </div>
 
@@ -488,62 +437,53 @@
                 <!--Automatically top up-->
                 <div class="row pt-4">
 
-                  <div class="col-12 mb-4">
-                    <div class="form-check form-switch">
-                      <input class="form-check-input" type="checkbox" role="switch" id="autoTopupToggle">
-                      <label class="form-check-label" for="autoTopupToggle">
-                        Auto top up toggle <span class="badge text-uppercase bg-success">on</span>
+                  <div class="col-12">
+
+                    <div class="row">
+
+                      <div class="col">
+                        <label class="mb-2">
+                          Credits 100/1000
+                        </label>
+                      </div>
+
+                      <div class="col-auto">
+                        <label class="mb-2 text-end">
+                          10% from total credits
+                        </label>
+                      </div>
+
+                    </div>
+
+                    <div class="progress" style="height: 32px;">
+                      <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-label="Example with label" style="width: 10%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">100/1000</div>
+                    </div>
+
+                    <div class="form-check mt-3 mb-3">
+                      <input class="form-check-input" type="checkbox" id="checklistOne">
+                      <label class="form-check-label small" for="checklistOne">
+                        Automatically top up 
+  
+                        <div class="dropdown">
+                          <button class="btn btn-outline-info btn-sm btn-block dropdown-toggle" href="#" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            $100
+                          </button>
+                          <div class="dropdown-menu dropdown-menu-start">
+                            <a class="dropdown-item" href="#!">
+                              $100
+                            </a>
+                            <a class="dropdown-item" href="#!">
+                              $500
+                            </a>
+                            <a class="dropdown-item" href="#!">
+                              $1000
+                            </a>
+                          </div>
+                        </div>
+  
+                        worth of credits when credits fall below 10 credits.
                       </label>
                     </div>
-                  </div>
-
-                  <div class="col-12 col-md-6">
-
-                    <label class="mb-2">
-                      Auto top up
-                    </label>
-
-                    <div class="input-group">
-                      <span class="input-group-text" id="autoTopup">$</span>
-                      <input type="number" class="form-control" placeholder="$100" aria-label="autoTopup" aria-describedby="autoTopup">
-                    </div>
-
-                    <p class="mt-1 text-muted">
-                      Automatically top up <span class="text-primary">$100</span> worth of credits.
-                    </p>
-
-                  </div>
-
-                  <div class="col-12 col-md-6">
-
-                    <label class="mb-2">
-                      Credit threshold
-                    </label>
-
-                    <div class="input-group">
-                      <span class="input-group-text" id="creditTreshold">
-                        <i class="neu-wallet"></i>
-                      </span>
-                      <input type="number" class="form-control" placeholder="10" aria-label="creditTreshold" aria-describedby="creditTreshold">
-                    </div>
-
-                    <p class="mt-1 text-muted">
-                      Automatically top up when credits fall below
-                      <span class="text-primary">10</span>.
-                    </p>
-
-                  </div>
-
-                  <!--Save changes & Cancel button-->
-                  <div class="col-12 text-end">
-
-                    <button type="submit" class="btn btn-lg btn-outline-secondary me-2">
-                      Cancel
-                    </button>
-
-                    <button type="submit" class="btn btn-lg btn-primary">
-                      Save changes
-                    </button>
 
                   </div>
 
@@ -579,7 +519,7 @@
                     <label for="creditsBalance" class="form-label">
                       <i class="neu-wallet"></i> Credits
                     </label>
-                    <input type="text" class="form-control bg-light" id="creditsBalance" value="817" readonly>
+                    <input type="text" class="form-control bg-light" id="creditsBalance" value="92" readonly>
                   </fieldset>
 
                   <p class="mt-1 text-muted">
@@ -634,325 +574,6 @@
                 <button type="submit" class="btn btn-lg btn-primary w-100 mt-3">
                   Top up
                 </button>
-
-              </div>
-            </div>
-
-            <!-- Plan -->
-            <div class="card">
-
-              <div class="card-body">
-
-                <div class="row align-items-top">
-
-                  <div class="col-12 col-md-9 py-2 pe-0 pe-md-4 mb-4 mb-md-0">
-
-                    <!-- Tabs -->
-                    <ul class="nav nav-tabs" id="nav-tab" role="tablist">
-                      <li class="nav-item">
-                        <button class="nav-link active" id="nav-pay-tab" data-bs-toggle="tab" data-bs-target="#nav-pay" type="button" role="tab" aria-controls="nav-pay" aria-selected="true">
-                          Pay-as-you-go
-                        </button>
-                      </li>
-                      <li class="nav-item">
-                        <button class="nav-link" id="nav-month-tab" data-bs-toggle="tab" data-bs-target="#nav-month" type="button" role="tab" aria-controls="nav-month" aria-selected="false">
-                          Month plan
-                        </button>
-                      </li>
-                      <li class="nav-item">
-                        <button class="nav-link" id="nav-annual-tab" data-bs-toggle="tab" data-bs-target="#nav-annual" type="button" role="tab" aria-controls="nav-annual" aria-selected="false">
-                          Annual plan
-                        </button>
-                      </li>
-                    </ul>
-
-                    <!-- Tabs content -->
-                    <div class="tab-content" id="nav-tabContent">
-
-                      <div class="tab-pane fade show active" id="nav-pay" role="tabpanel" aria-labelledby="nav-pay-tab">
-                        <div class="table-responsive">
-
-                          <p class="my-4">
-                            Credits do not expire
-                          </p>
-
-                          <table class="table table-sm table-nowrap card-table table-hover">
-    
-                            <tbody class="fs-base">
-                              <tr>
-                                <td>
-                                  100 credits
-                                </td>
-                                <td>
-                                  0.1/credit
-                                </td>
-                                <td>
-                                  $10
-                                </td>
-                              </tr>
-                              <tr class="table-primary">
-                                <td>
-                                  600 credits
-                                </td>
-                                <td>
-                                  0.08166/credit
-                                </td>
-                                <td>
-                                  $49
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  6000 credits
-                                </td>
-                                <td>
-                                  0.06/credit
-                                </td>
-                                <td>
-                                  $299
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  18000 credits
-                                </td>
-                                <td>
-                                  0.05/credit
-                                </td>
-                                <td>
-                                  $899
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  47475 credits
-                                </td>
-                                <td>
-                                  0.04/credit
-                                </td>
-                                <td>
-                                  $1899
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-
-                        </div>
-                      </div>
-
-                      <div class="tab-pane fade" id="nav-month" role="tabpanel" aria-labelledby="nav-month-tab">
-                        
-                        <p class="my-4">
-                          Credits expire monthly
-                        </p>
-
-                        <table class="table table-sm table-nowrap card-table table-hover">
-  
-                          <tbody class="fs-base">
-                            <tr>
-                              <td>
-                                1000 credits
-                              </td>
-                              <td>
-                                0.049/credit
-                              </td>
-                              <td>
-                                $49
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                7500 credits
-                              </td>
-                              <td>
-                                0.04/credit
-                              </td>
-                              <td>
-                                $299
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                29966 credits
-                              </td>
-                              <td>
-                                0.03/credit
-                              </td>
-                              <td>
-                                $899
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                95000 credits
-                              </td>
-                              <td>
-                                0.02/credit
-                              </td>
-                              <td>
-                                $1899
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-
-                      </div>
-                      
-                      <div class="tab-pane fade" id="nav-annual" role="tabpanel" aria-labelledby="nav-annual-tab">
-                        
-                        <p class="my-4">
-                          Credits expire annually
-                        </p>
-
-                        <table class="table table-sm table-nowrap card-table table-hover">
-  
-                          <tbody class="fs-base">
-                            <tr>
-                              <td>
-                                1200 credits
-                              </td>
-                              <td>
-                                
-                              </td>
-                              <td>
-                                $49
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                10000 credits
-                              </td>
-                              <td>
-                                0.03/credit
-                              </td>
-                              <td>
-                                $299
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                45000 credits
-                              </td>
-                              <td>
-                                0.02/credit
-                              </td>
-                              <td>
-                                $899
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                190000 credits
-                              </td>
-                              <td>
-                                0.01/credit
-                              </td>
-                              <td>
-                                $1899
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-
-                      </div>
-
-                    </div>
-
-                  </div>
-                  
-                  <div class="col-12 col-md-3 py-5 bg-white border rounded bg-lighter">
-
-                    <p class="text-uppercase text-center">
-                      Pay-as-you-go
-                    </p>
-
-                    <h1 class="display-2 text-center">
-                      $49
-                    </h1>
-
-                    <p class="text-center mb-2">
-                      600 credits
-                    </p>
-
-                    <p class="text-info text-center mb-4">
-                      Credits do not expire
-                    </p>
-
-                    <div class="form-check mb-3">
-                      <input class="form-check-input" type="checkbox" id="checklistOne">
-                      <label class="form-check-label small" for="checklistOne">
-                        Automatically top up 
-
-                        <div class="dropdown">
-                          <button class="btn btn-outline-info btn-sm btn-block dropdown-toggle" href="#" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            $100
-                          </button>
-                          <div class="dropdown-menu dropdown-menu-start">
-                            <a class="dropdown-item" href="#!">
-                              $100
-                            </a>
-                            <a class="dropdown-item" href="#!">
-                              $500
-                            </a>
-                            <a class="dropdown-item" href="#!">
-                              $1000
-                            </a>
-                          </div>
-                        </div>
-
-                        worth of credits when credits fall below 10 credits.
-                      </label>
-                    </div>
-
-                    <button class="btn btn-primary w-100 btn-block">
-                      Buy Credits
-                    </button>
-
-                  </div>
-
-                </div>                
-
-              </div>
-
-            </div>
-
-            <!-- Payment method empty -->
-            <div class="card">
-              <div class="card-header">
-                <div class="row align-items-center">
-                  <div class="col">
-
-                    <!-- Title -->
-                    <h4 class="card-header-title">
-                      Payment methods
-                    </h4>
-
-                  </div>
-                  <div class="col-auto">
-
-                    <!-- Button -->
-                    <a class="btn btn-sm btn-primary" href="#!">
-                      Add method
-                    </a>
-
-                  </div>
-                </div>
-              </div>
-              <div class="card-body">
-
-                <div class="row justify-content-center">
-                  <div class="col-12 col-md-4 text-center">
-                    <img class="img img-fluid rounded" alt="..." src="assets/img/illustrations/payment card illustration.svg">
-
-                    <p class="mt-3 text-muted">
-                      You have no payment method saved. Please add one to get started.
-                    </p>
-
-                    <button class="btn btn-primary btn-sm mb-4">
-                      Add method
-                    </button>
-                  </div>
-                </div>
 
               </div>
             </div>
