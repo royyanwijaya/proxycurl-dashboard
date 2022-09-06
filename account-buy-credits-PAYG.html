@@ -315,7 +315,7 @@
               You will pay $49 for a 600 credits. Are you sure you about it?
             </p>
     
-            <div class="form-check mb-4">
+            <div class="form-check mb-0">
               <input class="form-check-input" type="checkbox" id="checklistOne">
               <label class="form-check-label small" for="checklistOne">
                 Automatically top up 
@@ -340,10 +340,6 @@
                 worth of credits when credits fall below 10 credits.
               </label>
             </div>
-
-            <p class="small text-info mb-0">
-              <span class="text-danger">*</span>Credits expire monthly.
-            </p>
 
           </div>
     
@@ -412,14 +408,6 @@
                   </div>
                 </div>
               </div>
-            </div>
-
-            <!-- Alert -->
-            <div class="alert alert-warning">
-              <i class="fe fe-info me-1"></i> You need to add a payment method to get started.
-              <a class="btn btn-sm btn-white ms-2">
-                Add method
-              </a>
             </div>
 
             <!-- Plan -->
@@ -592,6 +580,102 @@
               </div>
 
             </div>
+
+            <!-- Payment method -->
+            <div class="card">
+              <div class="card-header">
+                <div class="row align-items-center">
+                  <div class="col">
+
+                    <!-- Title -->
+                    <h4 class="card-header-title">
+                      Payment methods
+                    </h4>
+
+                  </div>
+                  <div class="col-auto">
+
+                    <!-- Button -->
+                    <a class="btn btn-sm btn-primary" href="#!">
+                      Add method
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+
+                <!-- List group -->
+                <div class="list-group list-group-flush my-n3">
+                  <div class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+
+                        <!-- Image -->
+                        <img class="img-fluid" src="assets/img/payment-methods/visa.svg" alt="..." style="max-width: 38px;">
+
+                      </div>
+                      <div class="col ms-n2">
+
+                        <!-- Heading -->
+                        <h4 class="mb-1">
+                          Visa ending in 1234
+                        </h4>
+
+                        <!-- Text -->
+                        <small class="text-muted">
+                          Expires 3/2024
+                        </small>
+
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Badge -->
+                        <span class="badge bg-light">
+                          Default
+                        </span>
+
+                      </div>
+                    </div> <!-- / .row -->
+                  </div>
+                  <div class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+
+                        <!-- Image -->
+                        <img class="img-fluid" src="assets/img/payment-methods/mastercard.svg" alt="..." style="max-width: 38px;">
+
+                      </div>
+                      <div class="col ms-n2">
+
+                        <!-- Heading -->
+                        <h4 class="mb-1">
+                          Mastercard ending in 1234
+                        </h4>
+
+                        <!-- Text -->
+                        <small class="text-muted">
+                          Expires 3/2024
+                        </small>
+
+                      </div>
+
+                      <div class="col-auto">
+
+                        <button class="btn btn-sm btn-outline-primary">
+                          Make default
+                        </button>
+
+                      </div>
+
+                    </div> <!-- / .row -->
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <br>
 
           </div>
         </div> <!-- / .row -->
