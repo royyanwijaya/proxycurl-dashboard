@@ -342,43 +342,20 @@
             <span class="badge text-uppercase bg-info">Pay-as-you-go</span>
 
             <p class="mt-4">
-              You will pay $49 for a 600 credits. Are you sure you about it?
+              Confirm a one-time purchase of 600 credits for $49?
             </p>
-    
-            <div class="form-check mb-0">
-              <input class="form-check-input" type="checkbox" id="checklistOne">
-              <label class="form-check-label small" for="checklistOne">
-                Automatically top up 
-
-                <div class="dropdown">
-                  <button class="btn btn-outline-info btn-sm btn-block dropdown-toggle" href="#" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    $100
-                  </button>
-                  <div class="dropdown-menu dropdown-menu-start">
-                    <a class="dropdown-item" href="#!">
-                      $100
-                    </a>
-                    <a class="dropdown-item" href="#!">
-                      $500
-                    </a>
-                    <a class="dropdown-item" href="#!">
-                      $1000
-                    </a>
-                  </div>
-                </div>
-
-                worth of credits when credits fall below 10 credits.
-              </label>
-            </div>
 
           </div>
     
           <div class="modal-footer">
             <button type="button" class="btn btn-outline-secondary me-2" data-bs-dismiss="modal">
-              No, cancel
+              Cancel
+            </button>
+            <button type="button" class="btn btn-outline-secondary me-2">
+              Buy credits only
             </button>
             <a href="UX-account-buy-credits-2-credit-prompt.html" class="btn btn-primary">
-              Yes, continue to payment
+              Buy credits and enable $100 auto-topup
             </a>
           </div>
     
@@ -458,7 +435,7 @@
                       </li>
                       <li class="nav-item">
                         <button class="nav-link" id="nav-month-tab" data-bs-toggle="tab" data-bs-target="#nav-month" type="button" role="tab" aria-controls="nav-month" aria-selected="false">
-                          Month plan
+                          Monthly subscription
                         </button>
                       </li>
                     </ul>
@@ -481,7 +458,7 @@
                                   100 credits
                                 </td>
                                 <td>
-                                  0.1/credit
+                                  $0.10/credit
                                 </td>
                                 <td>
                                   $10
@@ -492,10 +469,15 @@
                                   600 credits
                                 </td>
                                 <td>
-                                  0.08166/credit
+                                  $0.08166/credit
+                                </td>
+                                <td class="fw-bold">
+                                  $49
                                 </td>
                                 <td>
-                                  $49
+                                  <button type="submit" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modalNext">
+                                    Next
+                                  </button>
                                 </td>
                               </tr>
                               <tr>
@@ -503,7 +485,7 @@
                                   6000 credits
                                 </td>
                                 <td>
-                                  0.06/credit
+                                  $0.06/credit
                                 </td>
                                 <td>
                                   $299
@@ -514,7 +496,7 @@
                                   18000 credits
                                 </td>
                                 <td>
-                                  0.05/credit
+                                  $0.05/credit
                                 </td>
                                 <td>
                                   $899
@@ -525,7 +507,7 @@
                                   47475 credits
                                 </td>
                                 <td>
-                                  0.04/credit
+                                  $0.04/credit
                                 </td>
                                 <td>
                                   $1899
@@ -551,7 +533,7 @@
                                 1000 credits
                               </td>
                               <td>
-                                0.049/credit
+                                $0.049/credit
                               </td>
                               <td>
                                 $49
@@ -562,7 +544,7 @@
                                 7500 credits
                               </td>
                               <td>
-                                0.04/credit
+                                $0.04/credit
                               </td>
                               <td>
                                 $299
@@ -573,7 +555,7 @@
                                 29966 credits
                               </td>
                               <td>
-                                0.03/credit
+                                $0.03/credit
                               </td>
                               <td>
                                 $899
@@ -584,7 +566,7 @@
                                 95000 credits
                               </td>
                               <td>
-                                0.02/credit
+                                $0.02/credit
                               </td>
                               <td>
                                 $1899
@@ -595,12 +577,6 @@
 
                       </div>
 
-                    </div>
-
-                    <div class="col-12 text-end">
-                      <button type="submit" class="btn btn-primary mt-4" data-bs-toggle="modal" data-bs-target="#modalNext">
-                        Next
-                      </button>
                     </div>
 
                   </div>
