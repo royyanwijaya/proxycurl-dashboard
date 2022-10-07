@@ -41,43 +41,20 @@
             <span class="badge text-uppercase bg-info">$899/month</span>
 
             <p class="mt-4">
-              You will pay $899 for a 29966 credits. Are you sure you about it?
+              Would you like to change your plan from $49/month and 1000 credits to $899/month and 29966 credits plan from date onwards?
             </p>
-    
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="checklistOne">
-              <label class="form-check-label small" for="checklistOne">
-                Automatically top up 
-
-                <div class="dropdown">
-                  <button class="btn btn-outline-info btn-sm btn-block dropdown-toggle" href="#" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    $100
-                  </button>
-                  <div class="dropdown-menu dropdown-menu-start">
-                    <a class="dropdown-item" href="#!">
-                      $100
-                    </a>
-                    <a class="dropdown-item" href="#!">
-                      $500
-                    </a>
-                    <a class="dropdown-item" href="#!">
-                      $1000
-                    </a>
-                  </div>
-                </div>
-
-                worth of credits when credits fall below 10 credits.
-              </label>
-            </div>
 
           </div>
     
           <div class="modal-footer">
-            <button type="button" class="btn btn-outline-secondary me-2" data-bs-dismiss="modal">
-              No, cancel
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+              Cancel
             </button>
-            <a href="UX-account-buy-credits-2-credit-prompt.html" class="btn btn-primary">
-              Yes, continue to payment
+            <button type="button" class="btn btn-outline-secondary">
+              Change plan only
+            </button>
+            <a href="account-buy-credits-after-stripe-prompt.html" class="btn btn-primary">
+              Change plan and enable $100 auto-topup
             </a>
           </div>
     
@@ -100,22 +77,17 @@
             <span class="badge text-uppercase bg-info">$49/month</span>
 
             <p class="mt-3 mb-4">
-              If you cancel your plan, you will lose access to all paid features.<br>
-              Are you sure you about it?
-            </p>
-
-            <p class="mb-0">
-              <span class="text-danger">*</span>Your subscription will end on 31 September 2022.
+              Confirm plan cancellation? Your existing plan will continue to stay <span class="fw-bold text-info">active until 31 November 2022</span>.
             </p>
 
           </div>
     
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary me-2" data-bs-dismiss="modal">
-              Continue with subscription
+            <button type="button" class="btn btn-outline-secondary me-2" data-bs-dismiss="modal">
+              Do not cancel plan
             </button>
-            <a href="UX-account-buy-credits-2-credit-prompt.html" class="btn btn-outline-secondary">
-              Yes, cancel my plan
+            <a href="#!" class="btn btn-primary">
+              Cancel plan
             </a>
           </div>
     
@@ -166,7 +138,7 @@
                     <ul class="nav nav-tabs" id="nav-tab" role="tablist">
                       <li class="nav-item">
                         <button class="nav-link active" id="nav-month-tab" data-bs-toggle="tab" data-bs-target="#nav-month" type="button" role="tab" aria-controls="nav-month" aria-selected="false">
-                          Month plan
+                          Monthly subscription
                         </button>
                       </li>
                     </ul>
@@ -188,7 +160,7 @@
                                 1000 credits
                               </td>
                               <td>
-                                0.049/credit
+                                $0.049/credit
                               </td>
                               <td>
                                 $49
@@ -199,7 +171,7 @@
                                 7500 credits
                               </td>
                               <td>
-                                0.04/credit
+                                $0.04/credit
                               </td>
                               <td>
                                 $299
@@ -210,7 +182,7 @@
                                 29966 credits
                               </td>
                               <td>
-                                0.03/credit
+                                $0.03/credit
                               </td>
                               <td>
                                 $899
@@ -226,7 +198,7 @@
                                 95000 credits
                               </td>
                               <td>
-                                0.02/credit
+                                $0.02/credit
                               </td>
                               <td>
                                 $1899
