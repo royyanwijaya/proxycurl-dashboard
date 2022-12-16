@@ -12,12 +12,7 @@
     transform: translate(-50%, 0) !important;
 }
 
-@media (min-width: 1500px) {
-    .main-content-dashboard {
-        flex: 0 0 auto;
-        width: 73.33333%;
-    }   
-}
+
 
 .dropdown-menu-center{
     right: auto !important;
