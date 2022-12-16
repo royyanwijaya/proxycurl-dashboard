@@ -17,7 +17,8 @@
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
     <link rel="stylesheet" href="style-custom.css" />
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.9.0/css/neu.min.css">
+
     <!-- Title -->
     <title>Proxycurl - Dashboard</title>
   </head>
@@ -407,6 +408,180 @@
       </div>
     </nav>
 
+    <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a>
+
+    <!-- Modal copy -->
+    <div class="modal fade" id="authModalcopye" tabindex="-1" role="dialog" aria-labelledby="authModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h4 class="modal-title text-center" id="authModalLabel">
+              Enable two-factor authas das
+            </h4>
+            <button type="button" class="btn-close pe-4" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                  <img class="img img-fluid mb-4" alt="..." width="256" src="assets/img/illustrations/qr code example.png">
+
+                  <h6 class="text-muted text-uppercase mb-1">
+                    2FA key manual entry
+                  </h6>
+
+                  <p class="text-info mb-4">
+                    SOME -- EXAMPLE -- MANUAL -- 2FA -- CODES
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            
+            <input type="text" placeholder="Input authenticator code" class="form-control">
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary me-md-2" data-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">
+              Enable two-factor
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="authModalFirst" aria-labelledby="authModalFirstLabel" aria-hidden="true" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+          <a type="button" class="btn-close h1 ps-4 pt-4" data-dismiss="modal" aria-label="Close">
+          </a>
+
+          <div class="modal-body">
+
+            <div class="row justify-content-center pb-md-5">
+
+              <div class="col-12 col-md-9 text-center mb-4">
+                <i class="neu-so-lock-square text-warning display-1"></i>
+              </div>
+
+              <div class="col-12 col-md-9 text-center">
+
+                <h1 class="fw-bold mb-3">
+                  Enter your password
+                </h1>
+
+                <p class="mb-4 lead">
+                  Please enter your Proxycurl password to get started using two factor security.
+                </p>
+
+                <input type="password" class="form-control form-control-lg" id="authPassword" placeholder="Enter your password">
+                
+                <button class="btn btn-lg btn-primary w-100 mt-4" data-target="#authModal" data-toggle="modal" data-dismiss="modal">
+                  Confirm
+                </button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="authModal" aria-labelledby="authModalLabel" aria-hidden="true" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+          <a type="button" class="btn-close h1 ps-4 pt-4" data-dismiss="modal" aria-label="Close">
+          </a>
+
+          <div class="modal-body">
+
+            <div class="row justify-content-center pb-md-5">
+
+              <div class="col-12 col-md-9">
+                <h1 class="fw-bold text-center">
+                  Link the authenticator app to your Proxycurl account
+                </h1>
+              </div>
+
+              <div class="col-12 col-md-9 text-center">
+
+                <img class="img img-fluid mb-4" alt="..." width="256" src="assets/img/illustrations/qr code example.png">
+
+                <h6 class="text-muted text-uppercase mb-1">
+                  2FA key manual entry
+                </h6>
+
+                <p class="text-info mb-4">
+                  SOME -- EXAMPLE -- MANUAL -- 2FA -- CODES
+                </p>
+
+                <input type="text" placeholder="Enter the confirmation code" class="form-control form-control-lg">
+
+                <button class="btn btn-lg btn-primary w-100 mt-4" data-target="#authModalDone" data-toggle="modal" data-dismiss="modal">
+                  Confirm
+                </button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="authModalDone" aria-labelledby="authModalLabelDone" aria-hidden="true" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+          <a type="button" class="btn-close h1 ps-4 pt-4" data-dismiss="modal" aria-label="Close">
+          </a>
+
+          <div class="modal-body">
+
+            <div class="row justify-content-center pb-md-5 pt-0">
+
+              <div class="col-12 col-md-9 text-center mb-4">
+                <i class="neu-so-tick-circle text-success display-1"></i>
+              </div>
+
+              <div class="col-12 col-md-9 text-center">
+                <h1 class="fw-bold mb-3">
+                  You are all set
+                </h1>
+
+                <p class="mb-4 fs-lg">
+                  Now you can use your authentication app to get an authentication code anytime you log in to Proxycurl. 
+                </p>
+
+                <button type="button" class="btn btn-lg btn-primary w-100" data-dismiss="modal">
+                  Done
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
     <!-- MAIN CONTENT -->
     <div class="main-content">      
 
@@ -465,36 +640,13 @@
             </div>
             -->
 
-            <div class="row justify-content-between align-items-center mb-5">
-              <div class="col-12 col-md-9 col-xl-7">
-
-                <!-- Heading -->
-                <h2 class="mb-2">
-                  Two factor security
-                </h2>
-
-                <!-- Text -->
-                <p class="text-muted mb-md-0">
-                  Two-factor authentication adds an additional layer of security to your account by requiring more than just a password to log in.
-                </p>
-
-              </div>
-              <div class="col-12 col-md-auto">
-
-                <!-- Button -->
-                <button class="btn btn-primary">
-                  Enable
-                </button>
-
-              </div>
-            </div> <!-- / .row -->
-
             <!-- Card -->
             <div class="card">
               <div class="card-body">
 
                 <!-- List group -->
                 <div class="list-group list-group-flush my-n3">
+                  
                   <div class="list-group-item">
                     <div class="row align-items-center">
                       <div class="col">
@@ -513,75 +665,52 @@
                       <div class="col-auto">
 
                         <!-- Button modal -->
-                        <button class="btn btn-sm btn-white" type="button" data-toggle="modal" data-target="#authModal">
-                          Setup
+                        <button class="btn btn-sm btn-white" type="button" data-toggle="modal" data-target="#authModalFirst">
+                          Enable
                         </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="authModal" tabindex="-1" role="dialog" aria-labelledby="authModalLabel" aria-hidden="true">
-                          <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-
-                              <div class="modal-header">
-                                <h4 class="modal-title" id="authModalLabel">
-                                  Enable two-factor auth <span class="badge bg-light ms-2">disable</span> <span class="badge bg-success ms-2">enable</span>
-                                </h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">
-                                    <i class="fe fe-x"></i>
-                                  </span>
-                                </button>
-                              </div>
-
-                              <div class="modal-body">
-                                <div class="container-fluid">
-                                  <div class="row justify-content-center">
-                                    <div class="col-12 text-center">
-                                      <img class="img img-fluid mb-4" alt="..." width="256" src="assets/img/illustrations/qr code example.png">
-
-                                      <h6 class="text-muted text-uppercase mb-1">
-                                        2FA key manual entry
-                                      </h6>
-
-                                      <p class="text-info mb-4">
-                                        SOME -- EXAMPLE -- MANUAL -- 2FA -- CODES
-                                      </p>
-
-                                    </div>
-                                  </div>
-                                </div>
-                                
-                                <input type="text" placeholder="Input authenticator code" class="form-control">
-                              </div>
-
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary me-md-2" data-dismiss="modal">
-                                  Close
-                                </button>
-                                <button type="button" class="btn btn-primary">
-                                  Enable two-factor
-                                </button>
-                              </div>
-
-                            </div>
-                          </div>
-                        </div>
 
                       </div>
                     </div> <!-- / .row -->
                   </div>
+
                   <div class="list-group-item">
                     <div class="row align-items-center">
                       <div class="col">
 
                         <!-- Heading -->
                         <h4 class="mb-1">
-                          Yubikey
+                          Security key
                         </h4>
 
                         <!-- Text -->
                         <small class="text-muted">
-                          Use a YubiKey to access your account.
+                          Use a security key that inserts into your computer or syncs to your mobile device when you log in to Proxycurl.
+                        </small>
+
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Button modal -->
+                        <button class="btn btn-sm btn-white" type="button" data-toggle="modal" data-target="#authModalFirst">
+                          Enable
+                        </button>
+
+                      </div>
+                    </div> <!-- / .row -->
+                  </div>
+
+                  <div class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col">
+
+                        <!-- Heading -->
+                        <h4 class="mb-1">
+                          Authy
+                        </h4>
+
+                        <!-- Text -->
+                        <small class="text-muted">
+                          You are using Authy as your 2fa method.
                         </small>
 
                       </div>
@@ -595,6 +724,7 @@
                       </div>
                     </div> <!-- / .row -->
                   </div>
+
                 </div>
 
               </div>
