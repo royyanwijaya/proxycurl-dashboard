@@ -553,8 +553,9 @@
                     <div class="row">
 
                       <div class="col">
-                        <label class="mb-2">
-                          Credits 100/1000
+                        <label class=" text-gray-700">
+                          Credits 
+                          <div class="h1 text-black mt-2 mb-4"> 100/1000 </div>
                         </label>
                       </div>
 
@@ -610,13 +611,27 @@
 
                   <div class="col-12">
 
+                     <!-- Tabs -->
+                    <ul class="nav nav-tabs" id="nav-tab" role="tablist">
+                      <li class="nav-item">
+                        <button class="nav-link active" id="nav-pay-tab" data-bs-toggle="tab" data-bs-target="#nav-pay" type="button" role="tab" aria-controls="nav-pay" aria-selected="true">
+                          Pay-as-you-go
+                        </button>
+                      </li>
+                      <li class="nav-item">
+                        <button class="nav-link" id="nav-month-tab" data-bs-toggle="tab" data-bs-target="#nav-month" type="button" role="tab" aria-controls="nav-month" aria-selected="false">
+                          Monthly plan
+                        </button>
+                      </li>
+
+                      </ul>
                     <!-- Tabs content -->
                     <div class="tab-content" id="nav-tabContent">
 
                       <div class="tab-pane fade show active" id="nav-pay" role="tabpanel" aria-labelledby="nav-pay-tab">
                         <div class="table-responsive">
 
-                          <p class="mb-4">
+                          <p class="h5 fw-normal my-4 text-gray-700">
                             Credits do not expire
                           </p>
 
@@ -633,6 +648,7 @@
                                 <td>
                                   $10
                                 </td>
+                                <td></td>
                               </tr>
                               <tr class="table-primary">
                                 <td>
@@ -646,7 +662,7 @@
                                 </td>
                                 <td>
                                   <button type="submit" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modalNext">
-                                    Next
+                                    Buy
                                   </button>
                                 </td>
                               </tr>
@@ -660,6 +676,7 @@
                                 <td>
                                   $299
                                 </td>
+                                <td></td>
                               </tr>
                               <tr>
                                 <td>
@@ -671,6 +688,7 @@
                                 <td>
                                   $899
                                 </td>
+                                <td></td>
                               </tr>
                               <tr>
                                 <td>
@@ -682,6 +700,7 @@
                                 <td>
                                   $1899
                                 </td>
+                                <td></td>
                               </tr>
                             </tbody>
                           </table>
@@ -708,16 +727,22 @@
                               <td>
                                 $49
                               </td>
+                              <td></td>
                             </tr>
-                            <tr>
+                            <tr class="table-primary">
                               <td>
                                 7500 credits
                               </td>
                               <td>
                                 $0.04/credit
                               </td>
-                              <td>
+                              <td class="fw-bold">
                                 $299
+                              </td>
+                              <td>
+                                <button type="submit" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modalNext">
+                                  Buy
+                                </button>
                               </td>
                             </tr>
                             <tr>
@@ -730,6 +755,7 @@
                               <td>
                                 $899
                               </td>
+                              <td></td>
                             </tr>
                             <tr>
                               <td>
@@ -741,6 +767,7 @@
                               <td>
                                 $1899
                               </td>
+                              <td></td>
                             </tr>
                           </tbody>
                         </table>
@@ -748,6 +775,8 @@
                       </div>
 
                     </div>
+
+                    
 
                   </div>
 
