@@ -410,54 +410,8 @@
 
     <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a>
 
-    <!-- Modal copy -->
-    <div class="modal fade" id="authModalcopye" tabindex="-1" role="dialog" aria-labelledby="authModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-
-          <div class="modal-header">
-            <h4 class="modal-title text-center" id="authModalLabel">
-              Enable two-factor authas das
-            </h4>
-            <button type="button" class="btn-close pe-4" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-
-          <div class="modal-body">
-            <div class="container-fluid">
-              <div class="row justify-content-center">
-                <div class="col-12 text-center">
-                  <img class="img img-fluid mb-4" alt="..." width="256" src="assets/img/illustrations/qr code example.png">
-
-                  <h6 class="text-muted text-uppercase mb-1">
-                    2FA key manual entry
-                  </h6>
-
-                  <p class="text-info mb-4">
-                    SOME -- EXAMPLE -- MANUAL -- 2FA -- CODES
-                  </p>
-
-                </div>
-              </div>
-            </div>
-            
-            <input type="text" placeholder="Input authenticator code" class="form-control">
-          </div>
-
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary me-md-2" data-dismiss="modal">
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">
-              Enable two-factor
-            </button>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 1 -->
-    <div class="modal fade" id="authModalFirst" aria-labelledby="authModalFirstLabel" aria-hidden="true" tabindex="-1">
+    <!-- Modal Remove-->
+    <div class="modal fade" id="authModalRemove" aria-labelledby="authModalRemoveLabel" aria-hidden="true" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
 
@@ -479,12 +433,12 @@
                 </h1>
 
                 <p class="mb-4 lead">
-                  Please enter your Proxycurl password to get started using two factor security.
+                  Please enter your Proxycurl password to continue.
                 </p>
 
                 <input type="password" class="form-control form-control-lg" id="authPassword" placeholder="Enter your password">
                 
-                <button class="btn btn-lg btn-primary w-100 mt-4" data-target="#authModal" data-toggle="modal" data-dismiss="modal">
+                <button class="btn btn-lg btn-primary w-100 mt-4" data-target="#authModalRemoveConfirm" data-toggle="modal" data-dismiss="modal">
                   Confirm
                 </button>
 
@@ -498,8 +452,8 @@
       </div>
     </div>
 
-    <!-- Modal 2 -->
-    <div class="modal fade" id="authModal" aria-labelledby="authModalLabel" aria-hidden="true" tabindex="-1">
+    <!-- Modal Remove 2 -->
+    <div class="modal fade" id="authModalRemoveConfirm" aria-labelledby="authModalRemoveConfirmLabel" aria-hidden="true" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
 
@@ -510,68 +464,28 @@
 
             <div class="row justify-content-center pb-md-5">
 
-              <div class="col-12 col-md-9">
-                <h1 class="fw-bold text-center">
-                  Link the authenticator app to your Proxycurl account
-                </h1>
+              <div class="col-12 col-md-9 text-center mb-4">
+                <i class="neu-so-unlock-square text-warning display-1"></i>
               </div>
 
               <div class="col-12 col-md-9 text-center">
 
-                <img class="img img-fluid mb-4" alt="..." width="256" src="assets/img/illustrations/qr code example.png">
+                <h1 class="fw-bold">
+                  Turn off two factor security?
+                </h1>
 
-                <h6 class="text-muted text-uppercase mb-1">
-                  2FA key manual entry
-                </h6>
-
-                <p class="text-info mb-4">
-                  SOME -- EXAMPLE -- MANUAL -- 2FA -- CODES
+                <p class="mb-4 lead">
+                  This will remove an extra security layer on your Proxycurl account.
                 </p>
 
-                <input type="text" placeholder="Enter the confirmation code" class="form-control form-control-lg">
+                <a class="btn btn-lg btn-primary w-100 mt-4" href="account-2fa.html">
+                  Turn off 2FA
+                </a>
 
-                <button class="btn btn-lg btn-primary w-100 mt-4" data-target="#authModalDone" data-toggle="modal" data-dismiss="modal">
-                  Confirm
+                <button class="btn btn-lg btn-outline-primary w-100 mt-3" data-dismiss="modal">
+                  Cancel
                 </button>
 
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 3 -->
-    <div class="modal fade" id="authModalDone" aria-labelledby="authModalLabelDone" aria-hidden="true" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-
-          <a type="button" class="btn-close h1 ps-4 pt-4" data-dismiss="modal" aria-label="Close">
-          </a>
-
-          <div class="modal-body">
-
-            <div class="row justify-content-center pb-md-5 pt-0">
-
-              <div class="col-12 col-md-9 text-center mb-4">
-                <i class="neu-so-tick-circle text-success display-1"></i>
-              </div>
-
-              <div class="col-12 col-md-9 text-center">
-                <h1 class="fw-bold mb-3">
-                  You are all set
-                </h1>
-
-                <p class="mb-4 fs-lg">
-                  Now you can use your authentication app to get an authentication code anytime you log in to Proxycurl. 
-                </p>
-
-                <a class="btn btn-lg btn-primary w-100" href="account-2fa-active.html">
-                  Done
-                </a>
               </div>
 
             </div>
@@ -646,27 +560,27 @@
 
                 <!-- List group -->
                 <div class="list-group list-group-flush my-n3">
-                  
+
                   <div class="list-group-item">
                     <div class="row align-items-center">
                       <div class="col">
 
                         <!-- Heading -->
                         <h4 class="mb-1">
-                          Authenticator app
+                          Authy
                         </h4>
 
                         <!-- Text -->
                         <small class="text-muted">
-                          Use an authenticator app (such as Authy or Google Authenticator).
+                          You are using Authy as your 2fa method.
                         </small>
 
                       </div>
                       <div class="col-auto">
 
-                        <!-- Button modal -->
-                        <button class="btn btn-sm btn-white" type="button" data-toggle="modal" data-target="#authModalFirst">
-                          Enable
+                        <!-- Button -->
+                        <button class="btn btn-sm btn-danger" type="button" data-toggle="modal" data-target="#authModalRemove">
+                          Disable
                         </button>
 
                       </div>
