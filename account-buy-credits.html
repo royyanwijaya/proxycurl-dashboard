@@ -138,8 +138,9 @@
           <div class="row">
 
             <div class="col-12">
-              <label class="mb-2">
-                Credits 100/1000
+              <label class="mb-2 text-gray-700">
+                Credits 
+                <span class="h3 text-black mt-2 mb-3"> 100/1000 </span>
               </label>
 
               <div class="progress">
@@ -149,7 +150,7 @@
               </div>
 
               <label class="small text-muted mt-2">
-                Auto-topup <span class="text-success fw-bold">Enabled</span>
+                Auto-topup <span class="badge bg-success fw-bold">Enabled</span>
               </label>
 
             </div>
@@ -175,8 +176,9 @@
           <div class="row text-center text-md-left">
 
             <div class="col-12">
-              <label class="mb-2">
-                Credits 980/1000
+              <label class="mb-2 text-gray-700">
+                Credits 
+                <span class="h3 text-black mt-2 mb-3"> 980/1000 </span>
               </label>
 
               <div class="progress">
@@ -187,7 +189,7 @@
               </div>
 
               <label class="small text-muted mt-2">
-                Auto-topup <span class="text-success fw-bold">Enabled</span>
+                Auto-topup <span class="badge bg-success fw-bold">Enabled</span>
               </label>
 
             </div>
@@ -613,7 +615,7 @@
 
                       <div class="col-auto">
                         <label class="mb-2 text-end">
-                          Auto-topup <span class="text-success fw-bold">Enabled</span>
+                          Auto-topup <span class="badge bg-success fw-bold">Enabled</span>
                         </label>
                       </div>
 
@@ -666,14 +668,22 @@
                      <!-- Tabs -->
                     <ul class="nav nav-tabs" id="nav-tab" role="tablist">
                       <li class="nav-item">
-                        <button class="nav-link active" id="nav-pay-tab" data-bs-toggle="tab" data-bs-target="#nav-pay" type="button" role="tab" aria-controls="nav-pay" aria-selected="true">
+                        <div class="h3 nav-link active fw-bold" id="nav-pay-tab" data-bs-toggle="tab" data-bs-target="#nav-pay" type="button" role="tab" aria-controls="nav-pay" aria-selected="true">
                           Pay-as-you-go
-                        </button>
+                          <div class="small fw-normal mt-3 mb-3">
+                            Credits do not expire
+                          </div>
+                        </div>
+
                       </li>
-                      <li class="nav-item">
-                        <button class="nav-link" id="nav-month-tab" data-bs-toggle="tab" data-bs-target="#nav-month" type="button" role="tab" aria-controls="nav-month" aria-selected="false">
+                      <li class="nav-item ms-3">
+                        <div class="h3 nav-link fw-bold" id="nav-month-tab" data-bs-toggle="tab" data-bs-target="#nav-month" type="button" role="tab" aria-controls="nav-month" aria-selected="false">
                           Monthly plan
-                        </button>
+                          <div class="small fw-normal mt-3 mb-3 active">
+                            Credits expire monthly
+                          </div>
+                        </div>
+
                       </li>
 
                       </ul>
@@ -683,31 +693,29 @@
                       <div class="tab-pane fade show active" id="nav-pay" role="tabpanel" aria-labelledby="nav-pay-tab">
                         <div class="table-responsive">
 
-                          <p class="h5 fw-normal my-4 text-gray-700">
-                            Credits do not expire
-                          </p>
+
 
                           <table class="table table-sm table-nowrap card-table table-hover">
     
                             <tbody class="fs-base">
                               <tr>
                                 <td>
-                                  100 credits
+                                  <span class="fw-bold"> 100 </span> credits
                                 </td>
                                 <td>
-                                  $0.10/credit
+                                  <span class="fw-bold">$0.10</span>/credit
                                 </td>
-                                <td>
+                                <td class="fw-bold">
                                   $10
                                 </td>
                                 <td></td>
                               </tr>
                               <tr class="table-primary">
                                 <td>
-                                  600 credits
+                                  <span class="fw-bold">600</span> credits
                                 </td>
                                 <td>
-                                  $0.08166/credit
+                                  <span class="fw-bold">$0.08166</span>/credit
                                 </td>
                                 <td class="fw-bold">
                                   $49
@@ -720,36 +728,36 @@
                               </tr>
                               <tr>
                                 <td>
-                                  6000 credits
+                                  <span class="fw-bold">6000</span> credits
                                 </td>
                                 <td>
-                                  $0.06/credit
+                                  <span class="fw-bold">$0.06</span>/credit
                                 </td>
-                                <td>
+                                <td class="fw-bold">
                                   $299
                                 </td>
                                 <td></td>
                               </tr>
                               <tr>
                                 <td>
-                                  18000 credits
+                                  <span class="fw-bold">18000</span> credits
                                 </td>
                                 <td>
-                                  $0.05/credit
+                                  <span class="fw-bold">$0.05</span>/credit
                                 </td>
-                                <td>
+                                <td class="fw-bold">
                                   $899
                                 </td>
                                 <td></td>
                               </tr>
                               <tr>
                                 <td>
-                                  47475 credits
+                                  <span class="fw-bold">47475</span> credits
                                 </td>
                                 <td>
-                                  $0.04/credit
+                                  <span class="fw-bold">$0.04</span>/credit
                                 </td>
-                                <td>
+                                <td class="fw-bold">
                                   $1899
                                 </td>
                                 <td></td>
@@ -762,31 +770,29 @@
 
                       <div class="tab-pane fade" id="nav-month" role="tabpanel" aria-labelledby="nav-month-tab">
                         
-                        <p class="my-4">
-                          Credits expire monthly
-                        </p>
+
 
                         <table class="table table-sm table-nowrap card-table table-hover">
   
                           <tbody class="fs-base">
                             <tr>
                               <td>
-                                1000 credits
+                                <span class="fw-bold">1000</span> credits
                               </td>
                               <td>
-                                $0.049/credit
+                                <span class="fw-bold">$0.049</span>/credit
                               </td>
-                              <td>
+                              <td class="fw-bold">
                                 $49
                               </td>
                               <td></td>
                             </tr>
                             <tr class="table-primary">
                               <td>
-                                7500 credits
+                                <span class="fw-bold">7500</span> credits
                               </td>
                               <td>
-                                $0.04/credit
+                                <span class="fw-bold">$0.04</span>/credit
                               </td>
                               <td class="fw-bold">
                                 $299
@@ -799,24 +805,24 @@
                             </tr>
                             <tr>
                               <td>
-                                29966 credits
+                                <span class="fw-bold">29966</span> credits
                               </td>
                               <td>
-                                $0.03/credit
+                                <span class="fw-bold">$0.03</span>/credit
                               </td>
-                              <td>
+                              <td class="fw-bold">
                                 $899
                               </td>
                               <td></td>
                             </tr>
                             <tr>
                               <td>
-                                95000 credits
+                                <span class="fw-bold">95000</span> credits
                               </td>
                               <td>
-                                $0.02/credit
+                                <span class="fw-bold">$0.02</span>/credit
                               </td>
-                              <td>
+                              <td class="fw-bold">
                                 $1899
                               </td>
                               <td></td>
