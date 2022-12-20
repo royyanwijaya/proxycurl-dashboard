@@ -405,35 +405,87 @@
     <div class="modal fade" id="modalNext" tabindex="-1" aria-labelledby="modalNextLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-    
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalNextLabel">Plan confirmation</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-    
+
+          <a type="button" class="btn-close h1 ps-4 pt-4" data-dismiss="modal" aria-label="Close">
+          </a>
+
           <div class="modal-body">
-    
-            <span class="badge text-uppercase bg-info">$49</span>
-            <span class="badge text-uppercase bg-info">Pay-as-you-go</span>
 
-            <p class="mt-4">
-              Confirm a one-time purchase of 600 credits for $49?
-            </p>
+            <div class="row justify-content-center">
+
+              <div class="col-12">
+
+                <h1 class="fw-bold mb-3">
+                  Order confirmation
+                </h1>
+
+                <p class="mb-6 lead">
+                  Confirm of a one-time purchase of <span class="fw-bold">600</span> credits for <span class="fw-bold">$49</span>?
+                </p>
+
+                <div class="row border-bottom pb-2 mb-4">
+                  <div class="col-6">
+                    <h2 class="h2 fw-bold">
+                      Credits
+                    </h2>
+                    <p class="lead">
+                      <span class="fw-bold">600</span> credits
+                    </p>
+                  </div>
+
+                  <div class="col-6 text-end">
+                    <h2 class="h2 fw-bold">
+                      Total
+                    </h2>
+                    <p class="lead fw-bold">
+                      $49
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row border-bottom pb-2 mb-4">
+                  <div class="col-6">
+                    <p class="lead">
+                      Payment method
+                    </p>
+                  </div>
+
+                  <div class="col-6 text-end">
+                    <p class="lead">
+                      Visa ending in <span class="fw-bold me-2">1234</span>
+                      <a class="fw-bold" href="account-plans-and-payments.html">
+                        Change
+                      </a>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row mb-6">
+                  <div class="col-12 text-end">
+                    <p class="text-muted small">
+                      All prices include VAT where applicable
+                    </p>
+                  </div>
+                </div>
+
+                <a class="btn btn-lg btn-primary w-100" href="account-buy-credits-after-stripe-prompt.html">
+                  Buy credits and enable credit auto-topup
+                </a>
+
+                <a class="btn btn-lg btn-outline-primary w-100 mt-3" href="account-buy-credits-after-stripe-prompt.html">
+                  Buy credits only
+                </a>
+
+                <button class="btn btn-lg btn-outline-primary w-100 mt-3" data-dismiss="modal">
+                  Cancel
+                </button>
+
+              </div>
+
+            </div>
 
           </div>
-    
-          <div class="modal-footer">
-            <button type="button" class="btn btn-outline-secondary me-2" data-bs-dismiss="modal">
-              Cancel
-            </button>
-            <button type="button" class="btn btn-outline-secondary me-2">
-              Buy credits only
-            </button>
-            <a href="account-buy-credits-after-stripe-prompt.html" class="btn btn-primary">
-              Buy credits and enable credit auto-topups
-            </a>
-          </div>
-    
+
         </div>
       </div>
     </div>
