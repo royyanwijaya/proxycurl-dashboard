@@ -131,6 +131,12 @@
 
             </div>
 
+            <div class="row align-items-center border-top">
+              <a class="text-center text-danger nav-link mt-3 mb-1" href="index.html">
+                <i class="fe fe-log-out"></i> Log out
+              </a>
+            </div>
+
           </div>
 
         </div>
@@ -145,7 +151,7 @@
           <div class="col-12">
             <label class="mb-2 text-gray-700">
               Credits
-              <span class="h3 text-black mt-2 mb-3"> 100</span><span class="small">/1000 </span>
+              <code class="h2 text-black" style="font-family: Cerebri Sans,sans-serif;"> 100</code><code class="small text-gray-700" style="font-family: Cerebri Sans,sans-serif;">/1000 </code>
             </label>
 
             <div class="progress">
@@ -184,7 +190,7 @@
             <div class="col-12">
               <label class="mb-2 text-gray-700">
                 Credits
-                <span class="h3 text-black mt-2 mb-3"> 980/1000 </span>
+                <code class="h2 text-black" style="font-family: Cerebri Sans,sans-serif;"> 980</code><code class="small text-gray-700" style="font-family: Cerebri Sans,sans-serif;">/1000 </code>
               </label>
 
               <div class="progress">
@@ -420,11 +426,13 @@
         </div>
 
         <!-- Dashboard toggle-->
-        <div class="d-flex mb-3">
-          <label class="h3 fw-normal mb-1 ms-1 text-gray-700" for="dashboardSwitch">
+        <div class="justify-content-between d-flex mb-3">
+          <div class="col-8">
+          <label class="h3 fw-normal mb-md-1 mb-0 ms-1 text-gray-700" for="dashboardSwitch">
             Back to old dashboard
           </label>
-          <div class="form-switch form-check mt-2">
+          </div>
+          <div class="col-auto form-switch form-check mt-0 mt-md-2">
             <input type="checkbox" class="form-check-input" id="dashboardSwitch">
           </div>
 
@@ -632,7 +640,9 @@
                     <div class="col mb-4">
                       <div class="border bg-lighter" style="border-radius: 8px; height: 56px;">
                         <div class="pt-3 ps-3 text-gray-700">
-                          <span class="h1 text-black">100</span>/1000
+                          <code class="h1 text-black" style="font-family: Cerebri Sans,sans-serif;"> 100</code><code
+                            class="h4 fw-normal text-gray-700"
+                            style="font-family: Cerebri Sans,sans-serif;">/1000</code>
                         </div>
                       </div>
                     </div>
@@ -656,7 +666,9 @@
                 <div class="col-12">
                   <div class="form-check mt-3">
                     <label class="form-check-label" for="autoTopup">
-                      Automatically top up $100 worth of credits when credits fall below 10 credits.
+                      Automatically top up <code class="text-black h4 fw-normal"
+                        style="font-family: Cerebri Sans,sans-serif;"> $100</code> worth of credits when credits fall
+                      below 10 credits.
                     </label>
                     <input class="form-check-input" type="checkbox" id="autoTopup" checked>
                   </div>
@@ -735,11 +747,10 @@
                               </td>
                               <td>
                                 <code class="h4 fw-normal text-black"
-                                style="font-family: Cerebri Sans,sans-serif;">$0.10</code>/credit
+                                  style="font-family: Cerebri Sans,sans-serif;">$0.10</code>/credit
                               </td>
                               <td>
-                                <code class="h4 fw-normal text-black"
-                                style="font-family: Cerebri Sans,sans-serif;">
+                                <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
                                 $10</code>
                               </td>
                               <td></td>
@@ -754,8 +765,7 @@
                                 <span class="">$0.08166</span>/credit
                               </td>
                               <td>
-                                <code class="h4 text-black fw-bold"
-                                style="font-family: Cerebri Sans,sans-serif;">
+                                <code class="h4 text-black fw-bold" style="font-family: Cerebri Sans,sans-serif;">
                                 $49</code>
                               </td>
                               <td>
@@ -772,13 +782,11 @@
                                 credits
                               </td>
                               <td>
-                                <code class="h4 fw-normal text-black"
-                                style="font-family: Cerebri Sans,sans-serif;">
+                                <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
                                 $0.06</code>/credit
                               </td>
                               <td>
-                                <code class="h4 fw-normal text-black"
-                                style="font-family: Cerebri Sans,sans-serif;">
+                                <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
                                 $299</code>
                               </td>
                               <td></td>
@@ -789,12 +797,12 @@
                                 18000</span></code> credits
                               </td>
                               <td>
-                                <code class="h4 fw-normal text-black"
-                                style="font-family: Cerebri Sans,sans-serif;">
+                                <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
                                 $0.05</code>/credit
                               </td>
                               <td>
-                                $899
+                                <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                $899</code>
                               </td>
                               <td></td>
                             </tr>
@@ -805,7 +813,8 @@
                                 credits
                               </td>
                               <td>
-                                <span class="">$0.04</span>/credit
+                                <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                $0.04</code>/credit
                               </td>
                               <td class="">
                                 $1899
@@ -831,10 +840,12 @@
                                 1000</span></code> credits
                             </td>
                             <td>
-                              <span class="fw-bold">$0.049</span>/credit
+                              <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                $0.049</code>/credit
                             </td>
-                            <td class="fw-bold">
-                              $49
+                            <td>
+                              <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                $49</code>
                             </td>
                             <td></td>
                           </tr>
@@ -844,10 +855,12 @@
                                 7500</span></code> credits
                             </td>
                             <td>
-                              <span class="fw-bold">$0.04</span>/credit
+                              <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
+                              $0.04</code>/credit
                             </td>
-                            <td class="fw-bold">
-                              $299
+                            <td>
+                              <code class="h4 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                $299</code>
                             </td>
                             <td>
                               <button type="submit" class="btn btn-primary w-100" data-bs-toggle="modal"
@@ -862,23 +875,27 @@
                                 29966</span></code> credits
                             </td>
                             <td>
-                              <span class="fw-bold">$0.03</span>/credit
+                              <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                $0.03</code>/credit
                             </td>
-                            <td class="fw-bold">
-                              $899
+                            <td>
+                              <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                $899</code>
                             </td>
                             <td></td>
                           </tr>
                           <tr>
                             <td>
-                              <code class="badge bg-light text-black"
-                                style="font-family: monospace;"> <span class="h4">95000</span></code> credits
+                              <code class="badge bg-light text-black" style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">
+                                95000</span></code> credits
                             </td>
                             <td>
-                              <span class="fw-bold">$0.02</span>/credit
+                              <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                $0.02</code>/credit
                             </td>
-                            <td class="fw-bold">
-                              $1899
+                            <td>
+                              <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                $1899</code>
                             </td>
                             <td></td>
                           </tr>
