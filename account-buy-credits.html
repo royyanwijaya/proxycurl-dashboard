@@ -1,164 +1,132 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc." />
-    
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon"/>
-    
-    <!-- Map CSS -->
-    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
-    
-    <!-- Libs CSS -->
-    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
-    
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
-    <link rel="stylesheet" href="style-custom.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.9.0/css/neu.min.css">
-    
-    <!-- Title -->
-    <title>Proxycurl - Dashboard</title>
-  </head>
-  <body>
 
-    <!-- NAVIGATION -->
-    <nav class="navbar navbar-vertical fixed-start navbar-expand-md navbar-light" id="sidebar">
-      <div class="container-fluid">
-    
-        <!-- Toggler -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarCollapse" aria-controls="sidebarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <!-- Brand -->
-        <a class="navbar-brand" href="./index.html">
-          <img src="./assets/img/logo.svg" class="navbar-brand-img mx-auto" alt="...">
-        </a>
-    
-        <!-- User (xs) -->
-        <div class="navbar-user d-md-none">
-    
-          <div class="btn-group dropdown">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc." />
 
-            <button type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              example@nubela.co <i class="fe fe-chevron-down ms-3"></i>
-            </button>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
 
-            <div class="dropdown-menu dropdown-menu-end shadow-lg" aria-labelledby="dropdownMenuButton">
-              
-              <h6 class="header-pretitle border-bottom text-black px-4 py-4 mb-0">
-                Switch team <span class="badge fw-bold px-2 py-2 ms-1 bg-warning">Coming soon</span>
-              </h6>
+  <!-- Map CSS -->
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
 
-              <div class="pt-3 pb-3 px-4 border-bottom">
+  <!-- Libs CSS -->
+  <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
 
-                <form>
-                  <div class="form-floating form-group mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Dragon Team">
-                    <label for="floatingInput">Team name</label>
-                  </div>
-  
-                  <button class="btn btn-primary w-100" data-bs-toggle="tooltip" data-bs-placement="top" title="We are fleshing out this new dashboard iteratively. We are intending to include a Teams feature and it is coming soon!">
-                    Create new team
-                  </button>
-                </form>
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+  <link rel="stylesheet" href="style-custom.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.9.0/css/neu.min.css">
 
-              </div>
+  <!-- Title -->
+  <title>Proxycurl - Dashboard</title>
+</head>
 
-              <div class="border py-3 px-4 bg-lighter">
+<body>
 
-                <a href="#!" type="button">
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-vertical fixed-start navbar-expand-md navbar-light" id="sidebar">
+    <div class="container-fluid">
 
-                  <div class="row align-items-center g-0">
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarCollapse"
+        aria-controls="sidebarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-                    <div class="col-2">
-                      <i class="fe fe-check"></i>
-                    </div>
+      <!-- Brand -->
+      <a class="navbar-brand" href="./index.html">
+        <img src="./assets/img/logo.svg" class="navbar-brand-img mx-auto" alt="...">
+      </a>
 
-                    <div class="col-10">
-                      <span class="text-primary small">
-                        example@nubela.co
-                      </span>
+      <!-- User (xs) -->
+      <div class="navbar-user d-md-none">
 
-                      <p class="text-black mb-0">
-                        Nubela
-                      </p>
-                    </div>
+        <div class="btn-group dropdown">
 
-                  </div>
+          <button type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            example@nubela.co <i class="fe fe-chevron-down ms-3"></i>
+          </button>
 
-                </a>
+          <div class="dropdown-menu dropdown-menu-end shadow-lg" aria-labelledby="dropdownMenuButton">
 
-              </div>
+            <h6 class="header-pretitle border-bottom text-black px-4 py-4 mb-0">
+              Switch team <span class="badge fw-bold px-2 py-2 ms-1 bg-warning">Coming soon</span>
+            </h6>
 
-              <div class="pt-3 px-4">
-                
-                <a href="#!" type="button">
+            <div class="pt-3 pb-3 px-4 border-bottom">
 
-                  <span class="text-primary small">
-                    yowassap@thenounproject.com
-                  </span>
-
-                  <p class="text-black">
-                    Black Ireng
-                  </p>
-
-                </a>
-
-              </div>
-
-              <div class="pt-3 px-4">
-                
-                <a href="#!" type="button">
-
-                  <span class="text-primary small">
-                    john@welut.com
-                  </span>
-
-                  <p class="text-black">
-                    Welut
-                  </p>
-
-                </a>
-
-              </div>
-
-            </div>
-
-          </div>
-    
-        </div>
-
-        <!-- Credits (md)-->
-        <div class="navbar-user d-none d-md-flex border-bottom pb-4 mb-4">
-
-          <div class="row">
-
-            <div class="col-12">
-              <label class="mb-2 text-gray-700">
-                Credits 
-                <span class="h3 text-black mt-2 mb-3"> 100</span><span class="small">/1000 </span>
-              </label>
-
-              <div class="progress">
-                <div class="progress-bar bg-danger" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
-                  10% left
+              <form>
+                <div class="form-floating form-group mb-3">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="Dragon Team">
+                  <label for="floatingInput">Team name</label>
                 </div>
-              </div>
 
-              <label class="small text-muted mt-2">
-                Auto-topup <span class="badge bg-success fw-bold">Enabled</span>
-              </label>
+                <button class="btn btn-primary w-100" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="We are fleshing out this new dashboard iteratively. We are intending to include a Teams feature and it is coming soon!">
+                  Create new team
+                </button>
+              </form>
 
             </div>
 
-            <div class="col-12">
+            <div class="border py-3 px-4 bg-lighter">
 
-              <a class="btn btn-outline-primary w-100 mt-3" href="account-buy-credits.html">
-                Buy credits
+              <a href="#!" type="button">
+
+                <div class="row align-items-center g-0">
+
+                  <div class="col-2">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <div class="col-10">
+                    <span class="text-primary small">
+                      example@nubela.co
+                    </span>
+
+                    <p class="text-black mb-0">
+                      Nubela
+                    </p>
+                  </div>
+
+                </div>
+
+              </a>
+
+            </div>
+
+            <div class="pt-3 px-4">
+
+              <a href="#!" type="button">
+
+                <span class="text-primary small">
+                  yowassap@thenounproject.com
+                </span>
+
+                <p class="text-black">
+                  Black Ireng
+                </p>
+
+              </a>
+
+            </div>
+
+            <div class="pt-3 px-4">
+
+              <a href="#!" type="button">
+
+                <span class="text-primary small">
+                  john@welut.com
+                </span>
+
+                <p class="text-black">
+                  Welut
+                </p>
+
               </a>
 
             </div>
@@ -166,6 +134,44 @@
           </div>
 
         </div>
+
+      </div>
+
+      <!-- Credits (md)-->
+      <div class="navbar-user d-none d-md-flex border-bottom pb-4 mb-4">
+
+        <div class="row">
+
+          <div class="col-12">
+            <label class="mb-2 text-gray-700">
+              Credits
+              <span class="h3 text-black mt-2 mb-3"> 100</span><span class="small">/1000 </span>
+            </label>
+
+            <div class="progress">
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 10%;" aria-valuenow="10"
+                aria-valuemin="0" aria-valuemax="100">
+                10% left
+              </div>
+            </div>
+
+            <label class="small text-muted mt-2">
+              Auto-topup <span class="badge bg-success fw-bold">Enabled</span>
+            </label>
+
+          </div>
+
+          <div class="col-12">
+
+            <a class="btn btn-outline-primary w-100 mt-3" href="account-buy-credits.html">
+              Buy credits
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
 
       <!-- Collapse -->
       <div class="collapse navbar-collapse" id="sidebarCollapse">
@@ -177,7 +183,7 @@
 
             <div class="col-12">
               <label class="mb-2 text-gray-700">
-                Credits 
+                Credits
                 <span class="h3 text-black mt-2 mb-3"> 980/1000 </span>
               </label>
 
@@ -416,13 +422,13 @@
         <!-- Dashboard toggle-->
         <div class="d-flex mb-3">
           <label class="h3 fw-normal mb-1 ms-1 text-gray-700" for="dashboardSwitch">
-          Back to old dashboard
+            Back to old dashboard
           </label>
           <div class="form-switch form-check mt-2">
-              <input type="checkbox" class="form-check-input" id="dashboardSwitch">
+            <input type="checkbox" class="form-check-input" id="dashboardSwitch">
           </div>
-         
-      </div>
+
+        </div>
 
         <!---
         <div class="form-check form-switch mt-2 mb-2">
@@ -434,88 +440,217 @@
       -->
 
       </div> <!-- / .navbar-collapse -->
-    
+
+    </div>
+  </nav>
+
+  <!--MODAL TOPUP-->
+  <div class="modal fade" id="modalNext" tabindex="-1" aria-labelledby="modalNextLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <a type="button" class="btn-close h1 ps-4 pt-4" data-dismiss="modal" aria-label="Close">
+        </a>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center">
+
+            <div class="col-12">
+
+              <h1 class="fw-bold mb-3">
+                Order confirmation
+              </h1>
+
+              <p class="mb-6 lead">
+                Confirm of a one-time purchase of <span class="fw-bold">600</span> credits for <span
+                  class="fw-bold">$49</span>?
+              </p>
+
+              <div class="row border-bottom pb-2 mb-4">
+                <div class="col-6">
+                  <h2 class="h2 fw-bold">
+                    Credits
+                  </h2>
+                  <p class="lead">
+                    <span class="fw-bold">600</span> credits
+                  </p>
+                </div>
+
+                <div class="col-6 text-end">
+                  <h2 class="h2 fw-bold">
+                    Total
+                  </h2>
+                  <p class="lead fw-bold">
+                    $49
+                  </p>
+                </div>
+              </div>
+
+              <div class="row border-bottom pb-2 mb-4">
+                <div class="col-6">
+                  <p class="lead">
+                    Payment method
+                  </p>
+                </div>
+
+                <div class="col-6 text-end">
+                  <p class="lead">
+                    Visa ending in <span class="fw-bold me-2">1234</span>
+                    <a class="fw-bold" href="account-plans-and-payments.html">
+                      Change
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="row mb-6">
+                <div class="col-12 text-end">
+                  <p class="text-muted small">
+                    All prices include VAT where applicable
+                  </p>
+                </div>
+              </div>
+
+              <a class="btn btn-lg btn-primary w-100" href="account-buy-credits-after-stripe-prompt.html">
+                Buy credits and enable credit auto-topup
+              </a>
+
+              <a class="btn btn-lg btn-outline-primary w-100 mt-3" href="account-buy-credits-after-stripe-prompt.html">
+                Buy credits only
+              </a>
+
+              <button class="btn btn-lg btn-outline-primary w-100 mt-3" data-dismiss="modal">
+                Cancel
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
-    </nav>
+    </div>
+  </div>
 
-    <!--MODAL TOPUP-->
-    <div class="modal fade" id="modalNext" tabindex="-1" aria-labelledby="modalNextLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
 
-          <a type="button" class="btn-close h1 ps-4 pt-4" data-dismiss="modal" aria-label="Close">
-          </a>
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-12 main-content-dashboard">
 
-          <div class="modal-body">
+          <!-- Header -->
+          <div class="header mt-md-5">
+            <div class="header-body">
 
-            <div class="row justify-content-center">
+              <div class="row align-items-center">
+                <div class="col">
 
-              <div class="col-12">
+                  <!-- Pretitle -->
+                  <h6 class="header-pretitle">
+                    Overview
+                  </h6>
 
-                <h1 class="fw-bold mb-3">
-                  Order confirmation
-                </h1>
+                  <!-- Title -->
+                  <h1 class="header-title">
+                    Billing
+                  </h1>
 
-                <p class="mb-6 lead">
-                  Confirm of a one-time purchase of <span class="fw-bold">600</span> credits for <span class="fw-bold">$49</span>?
-                </p>
-
-                <div class="row border-bottom pb-2 mb-4">
-                  <div class="col-6">
-                    <h2 class="h2 fw-bold">
-                      Credits
-                    </h2>
-                    <p class="lead">
-                      <span class="fw-bold">600</span> credits
-                    </p>
-                  </div>
-
-                  <div class="col-6 text-end">
-                    <h2 class="h2 fw-bold">
-                      Total
-                    </h2>
-                    <p class="lead fw-bold">
-                      $49
-                    </p>
-                  </div>
                 </div>
+              </div> <!-- / .row -->
 
-                <div class="row border-bottom pb-2 mb-4">
-                  <div class="col-6">
-                    <p class="lead">
-                      Payment method
-                    </p>
-                  </div>
+              <div class="row align-items-center">
+                <div class="col">
 
-                  <div class="col-6 text-end">
-                    <p class="lead">
-                      Visa ending in <span class="fw-bold me-2">1234</span>
-                      <a class="fw-bold" href="account-plans-and-payments.html">
-                        Change
+                  <!-- Nav -->
+                  <ul class="nav nav-tabs nav-overflow header-tabs">
+                    <li class="nav-item">
+                      <a href="account-plans-and-payments.html" class="nav-link">
+                        Plan and payments
                       </a>
-                    </p>
-                  </div>
+                    </li>
+                    <li class="nav-item">
+                      <a href="account-buy-credits.html" class="nav-link active">
+                        Buy Credits
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="account-invoices.html" class="nav-link">
+                        Invoices
+                      </a>
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+
+            <div class="card-header">
+              <div class="row align-items-center">
+
+                <div class="col">
+
+                  <!-- Title -->
+                  <h4 class="card-header-title">
+                    Credits info
+                  </h4>
+
                 </div>
 
-                <div class="row mb-6">
-                  <div class="col-12 text-end">
-                    <p class="text-muted small">
-                      All prices include VAT where applicable
-                    </p>
+              </div>
+            </div>
+
+            <div class="card-body">
+
+              <div class="row">
+
+                <div class="col-12">
+
+                  <div class="row mb-3">
+
+                    <div class="col">
+                      <label>
+                        <i class="neu-wallet h3"></i> Credits
+                      </label>
+                    </div>
+
+                    <div class="col-auto">
+                      <label class="text-end">
+                        Auto-topup <span class="badge bg-success fw-bold">Enabled</span>
+                      </label>
+                    </div>
+
                   </div>
+
+                  <div class="row">
+
+                    <div class="col mb-4">
+                      <input id="name" type="text" value="100"  readonly="" class="form-control h1 bg-lighter">
+                    </div>
+                    
+                  </div>
+
+                  <div class="progress" style="height: 32px;">
+                    <div class="progress-bar progress-bar-striped bg-danger" role="progressbar"
+                      aria-label="Example with label" style="width: 10%;" aria-valuenow="25" aria-valuemin="0"
+                      aria-valuemax="100">100/1000</div>
+                  </div>
+
                 </div>
 
-                <a class="btn btn-lg btn-primary w-100" href="account-buy-credits-after-stripe-prompt.html">
-                  Buy credits and enable credit auto-topup
-                </a>
-
-                <a class="btn btn-lg btn-outline-primary w-100 mt-3" href="account-buy-credits-after-stripe-prompt.html">
-                  Buy credits only
-                </a>
-
-                <button class="btn btn-lg btn-outline-primary w-100 mt-3" data-dismiss="modal">
-                  Cancel
-                </button>
+                <div class="col-12">
+                  <div class="form-check mt-3">
+                    <label class="form-check-label" for="autoTopup">
+                      Automatically top up $100 worth of credits when credits fall below 10 credits.
+                    </label>
+                    <input class="form-check-input" type="checkbox" id="autoTopup" checked>
+                  </div>
+                </div>
 
               </div>
 
@@ -523,292 +658,112 @@
 
           </div>
 
-        </div>
-      </div>
-    </div>
+          <!-- Buy credtis -->
+          <div class="card">
 
-    <!-- MAIN CONTENT -->
-    <div class="main-content">
+            <div class="card-header">
+              <div class="row align-items-center">
+                <div class="col">
 
-      <div class="container-fluid">
-        <div class="row justify-content-center">
-          <div class="col-12 main-content-dashboard">
+                  <!-- Title -->
+                  <h4 class="card-header-title">
+                    Buy credits
+                  </h4>
 
-            <!-- Header -->
-            <div class="header mt-md-5">
-              <div class="header-body">
-
-                <div class="row align-items-center">
-                  <div class="col">
-
-                    <!-- Pretitle -->
-                    <h6 class="header-pretitle">
-                      Overview
-                    </h6>
-
-                    <!-- Title -->
-                    <h1 class="header-title">
-                      Billing
-                    </h1>
-
-                  </div>
-                </div> <!-- / .row -->
-
-                <div class="row align-items-center">
-                  <div class="col">
-
-                    <!-- Nav -->
-                    <ul class="nav nav-tabs nav-overflow header-tabs">
-                      <li class="nav-item">
-                        <a href="account-plans-and-payments.html" class="nav-link">
-                          Plan and payments
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="account-buy-credits.html" class="nav-link active">
-                          Buy Credits
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="account-invoices.html" class="nav-link">
-                          Invoices
-                        </a>
-                      </li>
-                    </ul>
-
-                  </div>
                 </div>
+
               </div>
             </div>
 
-            <div class="card">
+            <div class="card-body">
 
-              <div class="card-header">
-                <div class="row align-items-center">
+              <div class="row align-items-top">
 
-                  <div class="col">
+                <div class="col-12">
 
-                    <!-- Title -->
-                    <h4 class="card-header-title">
-                      Credits info
-                    </h4>
-
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="card-body">
-
-                <div class="row">
-
-                  <div class="col-12">
-
-                    <div class="row">
-
-                      <div class="col">
-                        <label class=" text-gray-700">
-                          Credits 
-                          <div class="h1 text-black mt-2 mb-4"> 100/1000 </div>
-                        </label>
-                      </div>
-
-                      <div class="col-auto">
-                        <label class="mb-2 text-end">
-                          Auto-topup <span class="badge bg-success fw-bold">Enabled</span>
-                        </label>
-                      </div>
-
-                    </div>
-
-                    <div class="progress" style="height: 32px;">
-                      <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-label="Example with label" style="width: 10%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">100/1000</div>
-                    </div>
-
-                  </div>
-                  
-                  <div class="col-12">
-                    <div class="form-check mt-4">
-                      <label class="form-check-label" for="autoTopup">
-                        Automatically top up $100 worth of credits when credits fall below 10 credits.
-                      </label>
-                      <input class="form-check-input" type="checkbox" id="autoTopup" checked>
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-
-            <!-- Buy credtis -->
-            <div class="card">
-
-              <div class="card-header">
-                <div class="row align-items-center">
-                  <div class="col">
-
-                    <!-- Title -->
-                    <h4 class="card-header-title">
-                      Buy credits
-                    </h4>
-
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="card-body">
-
-                <div class="row align-items-top">
-
-                  <div class="col-12">
-
-                     <!-- Tabs -->
-                    <ul class="nav nav-tabs" id="nav-tab" role="tablist">
-                      <li class="nav-item">
-                        <div class="h3 nav-link active fw-bold" id="nav-pay-tab" data-bs-toggle="tab" data-bs-target="#nav-pay" type="button" role="tab" aria-controls="nav-pay" aria-selected="true">
-                          Pay-as-you-go
-                          <div class="small fw-normal mt-3 mb-3">
-                            Credits do not expire
-                          </div>
-                        </div>
-
-                      </li>
-                      <li class="nav-item ms-3">
-                        <div class="h3 nav-link fw-bold" id="nav-month-tab" data-bs-toggle="tab" data-bs-target="#nav-month" type="button" role="tab" aria-controls="nav-month" aria-selected="false">
-                          Monthly plan
-                          <div class="small fw-normal mt-3 mb-3 active">
-                            Credits expire monthly
-                          </div>
-                        </div>
-
-                      </li>
-
-                      </ul>
-                    <!-- Tabs content -->
-                    <div class="tab-content" id="nav-tabContent">
-
-                      <div class="tab-pane fade show active" id="nav-pay" role="tabpanel" aria-labelledby="nav-pay-tab">
-                        <div class="table-responsive">
-
-
-
-                          <table class="table table-sm table-nowrap card-table table-hover">
-    
-                            <tbody class="fs-base">
-                              <tr>
-                                <td>
-                                  <span class="fw-bold"> 100 </span> credits
-                                </td>
-                                <td>
-                                  <span class="fw-bold">$0.10</span>/credit
-                                </td>
-                                <td class="fw-bold">
-                                  $10
-                                </td>
-                                <td></td>
-                              </tr>
-                              <tr class="table-primary">
-                                <td>
-                                  <span class="fw-bold">600</span> credits
-                                </td>
-                                <td>
-                                  <span class="fw-bold">$0.08166</span>/credit
-                                </td>
-                                <td class="fw-bold">
-                                  $49
-                                </td>
-                                <td>
-                                  <button type="submit" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modalNext">
-                                    Buy
-                                  </button>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <span class="fw-bold">6000</span> credits
-                                </td>
-                                <td>
-                                  <span class="fw-bold">$0.06</span>/credit
-                                </td>
-                                <td class="fw-bold">
-                                  $299
-                                </td>
-                                <td></td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <span class="fw-bold">18000</span> credits
-                                </td>
-                                <td>
-                                  <span class="fw-bold">$0.05</span>/credit
-                                </td>
-                                <td class="fw-bold">
-                                  $899
-                                </td>
-                                <td></td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <span class="fw-bold">47475</span> credits
-                                </td>
-                                <td>
-                                  <span class="fw-bold">$0.04</span>/credit
-                                </td>
-                                <td class="fw-bold">
-                                  $1899
-                                </td>
-                                <td></td>
-                              </tr>
-                            </tbody>
-                          </table>
-
+                  <!-- Tabs -->
+                  <ul class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <li class="nav-item">
+                      <div class="h3 nav-link active fw-bold" id="nav-pay-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-pay" type="button" role="tab" aria-controls="nav-pay" aria-selected="true">
+                        Pay-as-you-go
+                        <div class="small fw-normal mt-3 mb-3">
+                          Credits do not expire
                         </div>
                       </div>
 
-                      <div class="tab-pane fade" id="nav-month" role="tabpanel" aria-labelledby="nav-month-tab">
-                        
+                    </li>
+                    <li class="nav-item ms-3">
+                      <div class="h3 nav-link fw-bold" id="nav-month-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-month" type="button" role="tab" aria-controls="nav-month"
+                        aria-selected="false">
+                        Monthly plan
+                        <div class="small fw-normal mt-3 mb-3 active">
+                          Credits expire monthly
+                        </div>
+                      </div>
+
+                    </li>
+
+                  </ul>
+                  <!-- Tabs content -->
+                  <div class="tab-content" id="nav-tabContent">
+
+                    <div class="tab-pane fade show active" id="nav-pay" role="tabpanel" aria-labelledby="nav-pay-tab">
+                      <div class="table-responsive">
+
 
 
                         <table class="table table-sm table-nowrap card-table table-hover">
-  
+
                           <tbody class="fs-base">
                             <tr>
                               <td>
-                                <span class="fw-bold">1000</span> credits
+                                <span class="fw-bold"> 100 </span> credits
                               </td>
                               <td>
-                                <span class="fw-bold">$0.049</span>/credit
+                                <span class="fw-bold">$0.10</span>/credit
                               </td>
                               <td class="fw-bold">
-                                $49
+                                $10
                               </td>
                               <td></td>
                             </tr>
                             <tr class="table-primary">
                               <td>
-                                <span class="fw-bold">7500</span> credits
+                                <span class="fw-bold">600</span> credits
                               </td>
                               <td>
-                                <span class="fw-bold">$0.04</span>/credit
+                                <span class="fw-bold">$0.08166</span>/credit
                               </td>
                               <td class="fw-bold">
-                                $299
+                                $49
                               </td>
                               <td>
-                                <button type="submit" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modalNext">
+                                <button type="submit" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                  data-bs-target="#modalNext">
                                   Buy
                                 </button>
                               </td>
                             </tr>
                             <tr>
                               <td>
-                                <span class="fw-bold">29966</span> credits
+                                <span class="fw-bold">6000</span> credits
                               </td>
                               <td>
-                                <span class="fw-bold">$0.03</span>/credit
+                                <span class="fw-bold">$0.06</span>/credit
+                              </td>
+                              <td class="fw-bold">
+                                $299
+                              </td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <span class="fw-bold">18000</span> credits
+                              </td>
+                              <td>
+                                <span class="fw-bold">$0.05</span>/credit
                               </td>
                               <td class="fw-bold">
                                 $899
@@ -817,10 +772,10 @@
                             </tr>
                             <tr>
                               <td>
-                                <span class="fw-bold">95000</span> credits
+                                <span class="fw-bold">47475</span> credits
                               </td>
                               <td>
-                                <span class="fw-bold">$0.02</span>/credit
+                                <span class="fw-bold">$0.04</span>/credit
                               </td>
                               <td class="fw-bold">
                                 $1899
@@ -831,34 +786,101 @@
                         </table>
 
                       </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-month" role="tabpanel" aria-labelledby="nav-month-tab">
+
+
+
+                      <table class="table table-sm table-nowrap card-table table-hover">
+
+                        <tbody class="fs-base">
+                          <tr>
+                            <td>
+                              <span class="fw-bold">1000</span> credits
+                            </td>
+                            <td>
+                              <span class="fw-bold">$0.049</span>/credit
+                            </td>
+                            <td class="fw-bold">
+                              $49
+                            </td>
+                            <td></td>
+                          </tr>
+                          <tr class="table-primary">
+                            <td>
+                              <span class="fw-bold">7500</span> credits
+                            </td>
+                            <td>
+                              <span class="fw-bold">$0.04</span>/credit
+                            </td>
+                            <td class="fw-bold">
+                              $299
+                            </td>
+                            <td>
+                              <button type="submit" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                data-bs-target="#modalNext">
+                                Buy
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="fw-bold">29966</span> credits
+                            </td>
+                            <td>
+                              <span class="fw-bold">$0.03</span>/credit
+                            </td>
+                            <td class="fw-bold">
+                              $899
+                            </td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="fw-bold">95000</span> credits
+                            </td>
+                            <td>
+                              <span class="fw-bold">$0.02</span>/credit
+                            </td>
+                            <td class="fw-bold">
+                              $1899
+                            </td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
 
                     </div>
 
-                    
-
                   </div>
 
-                </div>                
+
+
+                </div>
 
               </div>
 
             </div>
 
           </div>
-        </div> <!-- / .row -->
-      </div>
 
-    </div> <!-- / .main-content -->
+        </div>
+      </div> <!-- / .row -->
+    </div>
 
-    <!-- JAVASCRIPT -->
-    <!-- Map JS -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
-    
-    <!-- Vendor JS -->
-    <script src="./assets/js/vendor.bundle.js"></script>
-    
-    <!-- Theme JS -->
-    <script src="./assets/js/theme.bundle.js"></script>
+  </div> <!-- / .main-content -->
 
-  </body>
+  <!-- JAVASCRIPT -->
+  <!-- Map JS -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+  <!-- Vendor JS -->
+  <script src="./assets/js/vendor.bundle.js"></script>
+
+  <!-- Theme JS -->
+  <script src="./assets/js/theme.bundle.js"></script>
+
+</body>
+
 </html>
