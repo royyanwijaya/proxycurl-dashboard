@@ -453,7 +453,7 @@
                   <div class="col-6 text-end">
                     <p class="lead">
                       Visa ending in <span class="fw-bold me-2">1234</span>
-                      <a class="fw-bold" href="account-plans-and-payments.html">
+                      <a class="fw-bold border-bottom border-primary" href="account-plans-and-payments.html">
                         Change
                       </a>
                     </p>
@@ -550,27 +550,32 @@
 
                     <!-- Tabs -->
                     <ul class="nav nav-tabs" id="nav-tab" role="tablist">
+
                       <li class="nav-item">
-                        <button class="nav-link active" id="nav-pay-tab" data-bs-toggle="tab" data-bs-target="#nav-pay" type="button" role="tab" aria-controls="nav-pay" aria-selected="true">
+                        <div class="h3 nav-link active fw-bold" id="nav-pay-tab" data-bs-toggle="tab" data-bs-target="#nav-pay" type="button" role="tab" aria-controls="nav-pay" aria-selected="true">
                           Pay-as-you-go
-                        </button>
+                          <div class="small fw-normal mt-3 mb-3">
+                            Credits do not expire
+                          </div>
+                        </div>
                       </li>
-                      <li class="nav-item">
-                        <button class="nav-link" id="nav-month-tab" data-bs-toggle="tab" data-bs-target="#nav-month" type="button" role="tab" aria-controls="nav-month" aria-selected="false">
-                          Monthly subscription
-                        </button>
+
+                      <li class="nav-item ms-3">
+                        <div class="h3 nav-link fw-bold" id="nav-month-tab" data-bs-toggle="tab" data-bs-target="#nav-month" type="button" role="tab" aria-controls="nav-month" aria-selected="false">
+                          Monthly plan
+                          <div class="small fw-normal mt-3 mb-3 active">
+                            Credits expire monthly
+                          </div>
+                        </div>
                       </li>
-                    </ul>
+
+                      </ul>
 
                     <!-- Tabs content -->
                     <div class="tab-content" id="nav-tabContent">
 
                       <div class="tab-pane fade show active" id="nav-pay" role="tabpanel" aria-labelledby="nav-pay-tab">
                         <div class="table-responsive">
-
-                          <p class="my-4">
-                            Credits do not expire
-                          </p>
 
                           <table class="table table-sm table-nowrap card-table table-hover">
     
@@ -642,10 +647,6 @@
                       </div>
 
                       <div class="tab-pane fade" id="nav-month" role="tabpanel" aria-labelledby="nav-month-tab">
-                        
-                        <p class="my-4">
-                          Credits expire monthly
-                        </p>
 
                         <table class="table table-sm table-nowrap card-table table-hover">
   
