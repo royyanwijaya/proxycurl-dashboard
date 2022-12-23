@@ -441,8 +441,8 @@
       </div>
     </nav>
 
-  <!--MODAL UPGRADE-->
-  <div class="modal fade" id="modalCTA" tabindex="-1" aria-labelledby="modalCTALabel" aria-hidden="true">
+    <!--MODAL UPGRADE-->
+    <div class="modal fade" id="modalCTA" tabindex="-1" aria-labelledby="modalCTALabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
 
@@ -484,7 +484,7 @@
 
       </div>
     </div>
-  </div>
+    </div>
 
     <!-- MAIN CONTENT -->
     <div class="main-content">
@@ -586,7 +586,7 @@
             -->
 
             <!-- Token -->
-            <div class="row">             
+            <div class="row pb-6">             
 
               <div class="col-12 col-xl-9">
 
@@ -643,15 +643,90 @@
                       </table>
                     </div>
 
-                    <div class="row">
-                      <div class="col-12 text-end">
-                        <button class="btn btn-outline-primary mt-4" type="submit" data-bs-toggle="modal" data-bs-target="#modalCTA">
-                          Generate more API keys <i class="neu-so-lock-square"></i>
-                        </button>
-                      </div>
-                    </div>
-
                   </div>
+                </div>
+
+                <div class="card">
+
+                  <div class="card-header">
+                    <div class="row align-items-center">
+                      <div class="col">
+    
+                        <!-- Title -->
+                        <h4 class="card-header-title">
+                          Credits
+                        </h4>
+    
+                      </div>
+    
+                    </div>
+                  </div>
+    
+                  <!--Plan info-->
+                  <div class="card-body">
+
+                    <!--Automatically top up-->
+                    <div class="row">
+    
+                      <div class="col-12">
+    
+                        <div class="row mb-3">
+    
+                          <div class="col">
+                            <label>
+                              <i class="neu-wallet h3"></i> Credits balance
+                            </label>
+                          </div>
+    
+                          <div class="col-auto">
+                            <label class="text-end">
+                              Auto-topup <span class="badge bg-success fw-bold">Enabled</span>
+                            </label>
+                          </div>
+    
+                        </div>
+    
+                        <div class="row">
+    
+                          <div class="col mb-4">
+                            <div class="border bg-lighter" style="border-radius: 8px; height: 56px;">
+                              <div class="pt-3 ps-3 text-gray-700">
+                                <code class="h1 text-black" style="font-family: Cerebri Sans,sans-serif;"> 480</code><code
+                                  class="h4 fw-normal text-gray-700"
+                                  style="font-family: Cerebri Sans,sans-serif;">/1000</code>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+    
+                        <div class="progress" style="height: 32px;">
+                          <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-label="Example with label" style="width: 48%;" aria-valuenow="48" aria-valuemin="0" aria-valuemax="100">
+                            48% left
+                          </div>
+                        </div>
+    
+                        <div class="col-12">
+                          <div class="form-check mt-3">
+                            <label class="form-check-label" for="autoTopup">
+                              Automatically top up <code class="text-black h4 fw-normal"
+                                style="font-family: Cerebri Sans,sans-serif;"> $100</code> worth of credits when credits fall
+                              below 10 credits.
+                            </label>
+                            <input class="form-check-input" type="checkbox" id="autoTopup" checked>
+                          </div>
+                        </div>
+
+                        <a class="btn btn-lg btn-primary w-100 mt-5" href="account-buy-credits.html">
+                          Buy credits
+                        </a>
+    
+                      </div>
+    
+                    </div>
+    
+                  </div>
+    
                 </div>
 
               </div>
