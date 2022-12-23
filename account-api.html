@@ -18,6 +18,7 @@
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
     <link rel="stylesheet" href="style-custom.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.9.0/css/neu.min.css">
     
     <!-- Title -->
     <title>Proxycurl - Dashboard</title>
@@ -440,6 +441,51 @@
       </div>
     </nav>
 
+  <!--MODAL UPGRADE-->
+  <div class="modal fade" id="modalCTA" tabindex="-1" aria-labelledby="modalCTALabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <a type="button" class="btn-close h1 ps-4 pt-4" data-dismiss="modal" aria-label="Close">
+        </a>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-9 text-center mb-4">
+              <i class="neu-list text-success display-1"></i>
+            </div>
+
+            <div class="col-12 col-md-10 text-center">
+
+              <h1 class="fw-bold mb-5">
+                Upgrade to generate more API keys
+              </h1>
+
+              <p class="mb-5 lead">
+                Upgrade to a <span class="fw-bold">$299</span>/mo (or <span class="fw-bold">bigger</span>) plan<br>
+                to unlock this feature.
+              </p>
+
+              <a class="btn btn-lg btn-primary w-100" href="account-plans-and-payments-change-plan.html">
+                Upgrade plan
+              </a>
+
+              <button class="btn btn-lg btn-outline-primary w-100 mt-3" data-dismiss="modal">
+                Cancel
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
     <!-- MAIN CONTENT -->
     <div class="main-content">
 
@@ -548,13 +594,20 @@
 
                   <div class="card-header">
                     <div class="row align-items-center">
+
                       <div class="col">
-    
                         <!-- Title -->
                         <h4 class="card-header-title">
                           Bearer Token (API Key)
                         </h4>
-    
+                      </div>
+
+                      <div class="col-auto">
+                        <div class="col-auto">
+                          <button class="btn btn-sm btn-outline-primary" type="submit" data-bs-toggle="modal" data-bs-target="#modalCTA">
+                            Generate more API keys <i class="neu-so-lock-square"></i>
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -567,7 +620,7 @@
                           <tr>
                             <th>Token</th>
                             <th>Label</th>
-                            <th>Delete</th>
+                            <th>Action</th>
                           </tr>
                         </thead>
                         <tbody class="fs-base">
@@ -581,58 +634,21 @@
                               </span>
                             </td>
                             <td>
-                              <button class="btn btn-sm btn-outline-danger">
-                                Remove Token
-                              </button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              9786ae61-3797-48df-b59d-0f7b18728d09
-                            </td>
-                            <td>
-                              <span class="badge bg-primary-soft">
-                                devs
-                              </span>
-                            </td>
-                            <td>
-                              <button class="btn btn-sm btn-outline-danger">
-                                Remove Token
-                              </button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              9786ae61-3797-48df-b59d-0f7b18728d09
-                            </td>
-                            <td>
-                              <span class="badge bg-primary-soft">
-                                marketing
-                              </span>
-                            </td>
-                            <td>
-                              <button class="btn btn-sm btn-outline-danger">
-                                Remove Token
-                              </button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              9786ae61-3797-48df-b59d-0f7b18728d09
-                            </td>
-                            <td>
-                              <span class="badge bg-primary-soft">
-                                onigashima
-                              </span>
-                            </td>
-                            <td>
-                              <button class="btn btn-sm btn-outline-danger">
-                                Remove Token
+                              <button class="btn btn-sm btn-outline-dark">
+                                Regenerate
                               </button>
                             </td>
                           </tr>
                         </tbody>
                       </table>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-12 text-end">
+                        <button class="btn btn-outline-primary mt-4" type="submit" data-bs-toggle="modal" data-bs-target="#modalCTA">
+                          Generate more API keys <i class="neu-so-lock-square"></i>
+                        </button>
+                      </div>
                     </div>
 
                   </div>
@@ -653,7 +669,7 @@
 
                     <!-- Text -->
                     <p class="small text-muted mb-4">
-                      Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua.
+                      You can access the API using different API Tokens which have been labeled
                     </p>
 
                     <!-- Form group -->
@@ -673,7 +689,7 @@
                       </div>
     
                       <!-- Submit -->
-                      <button class="btn w-100 btn-primary lift" type="submit">
+                      <button class="btn w-100 btn-primary lift" type="submit" disabled>
                         Add new API key
                       </button>
     
