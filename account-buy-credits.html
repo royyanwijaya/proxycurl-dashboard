@@ -666,8 +666,19 @@
                 <div class="col-12">
                   <div class="form-check mt-3 mb-0 mb-md-2">
                     <label class="form-check-label" for="autoTopup">
-                      Automatically top up <code class="text-black h4 fw-normal"
-                        style="font-family: Cerebri Sans,sans-serif;"> $100</code> worth of credits when credits fall
+                      Automatically top up 
+                      <span>
+                        <div class="dropdown div-inline">
+                          <button class="btn btn-outline-primary btn-sm dropdown-toggle" type="button" id="topupDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            $100
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="topupDropdown">
+                            <li><a class="dropdown-item" href="#">$100</a></li>
+                            <li><a class="dropdown-item" href="#">$500</a></li>
+                            <li><a class="dropdown-item" href="#">$1000</a></li>
+                          </ul>
+                        </div>
+                      </span> worth of credits when credits fall
                       below 10 credits.
                     </label>
                     <input class="form-check-input" type="checkbox" id="autoTopup" checked>
