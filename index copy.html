@@ -1,27 +1,29 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc." />
-    
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon"/>
-    
-    <!-- Map CSS -->
-    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
-    
-    <!-- Libs CSS -->
-    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
-    
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
-    <link rel="stylesheet" href="style-custom.css" />
-    
-    <!-- Title -->
-    <title>Proxycurl - Dashboard</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc." />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
+
+  <!-- Map CSS -->
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
+
+  <!-- Libs CSS -->
+  <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+  <link rel="stylesheet" href="style-custom.css" />
+
+  <!-- Title -->
+  <title>Proxycurl - Dashboard</title>
+</head>
+
+<body>
 
     <!-- NAVIGATION -->
     <nav class="navbar navbar-vertical fixed-start navbar-expand-md navbar-light" id="sidebar">
@@ -52,14 +54,6 @@
             <h6 class="header-pretitle border-bottom text-black px-4 py-4 mb-0">
               Switch team <span class="badge fw-bold px-2 py-2 ms-1 bg-warning">Coming soon</span>
             </h6>
-
-            <div class="pt-3 pb-3 px-4 border-bottom">
-              <a class="btn btn-light w-100 pt-3 pb-1"
-                href="https://nubela.co/proxycurl/affiliate?utm_campaign=affiliate_marketing&utm_source=affiliate_link&utm_medium=affiliate&utm_content=internal_navigator_menu">
-                <h5 class="text-primary"> <i class="fe fe-gift pe-1"></i> Earn 30% for 2 years <i class="fe fe-arrow-up-right"></i>
-                </h5>
-              </a>
-            </div>
 
             <div class="pt-3 pb-3 px-4 border-bottom">
 
@@ -288,8 +282,8 @@
             <div class="collapse show" id="sidebarAccount">
               <ul class="nav nav-sm flex-column">
                 <li class="nav-item">
-                  <a href="index.html" class="nav-link">
-                    <span class="border-start border-2 ps-3">Change email</span>
+                  <a href="index.html" class="nav-link fw-bold">
+                    <span class="border-start border-2 ps-3 text-primary border-primary"">Change email</span>
                   </a>
                 </li>
                 <li class="nav-item">
@@ -306,7 +300,7 @@
             </div>
           </li>
           <li class="nav-item mb-4">
-            <a class="nav-link text-primary fw-bold" href="account-team.html">
+            <a class="nav-link" href="account-team.html">
               <i class="fe fe-users"></i> Team
             </a>
           </li>
@@ -340,14 +334,6 @@
               <h6 class="header-pretitle border-bottom text-black px-4 py-4 mb-0">
                 Switch team <span class="badge fw-bold px-2 py-2 ms-1 bg-warning">Coming soon</span>
               </h6>
-
-              <div class="pt-3 pb-3 px-4 border-bottom">
-                <a class="btn btn-light w-100 pt-3 pb-1"
-                  href="https://nubela.co/proxycurl/affiliate?utm_campaign=affiliate_marketing&utm_source=affiliate_link&utm_medium=affiliate&utm_content=internal_navigator_menu">
-                  <h5 class="text-primary"> <i class="fe fe-gift pe-1"></i> Earn 30% for 2 years <i class="fe fe-arrow-up-right"></i>
-                  </h5>
-                </a>
-              </div>
 
               <div class="pt-3 pb-3 px-4 border-bottom">
 
@@ -453,12 +439,12 @@
       </div>
     </nav>
 
-    <!-- MAIN CONTENT -->
-    <div class="main-content">
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
 
-      <div class="container-fluid">
-        <div class="row justify-content-center">
-          <div class="col-12 main-content-dashboard">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-12 main-content-dashboard">
 
             <!--News Alert-->
             <div class="card bg-dark mt-5">
@@ -492,252 +478,146 @@
 
             </div>
 
-            <!-- Header -->
-            <div class="header mt-md-5">
-              <div class="header-body">
+          <!-- Header -->
+          <div class="header mt-md-5">
+            <div class="header-body">
+              <div class="row align-items-center">
+                <div class="col">
 
-                <div class="row align-items-center">
+                  <!-- Pretitle -->
+                  <h6 class="header-pretitle">
+                    Overview
+                  </h6>
 
-                  <div class="col">
+                  <!-- Title -->
+                  <h1 class="header-title">
+                    Account
+                  </h1>
 
-                    <!-- Pretitle -->
-                    <h6 class="header-pretitle">
-                      Overview
-                    </h6>
+                </div>
+              </div> <!-- / .row -->
+              <div class="row align-items-center">
+                <div class="col">
 
-                    <!-- Title -->
-                    <h1 class="header-title">
-                      Team
-                    </h1>
+                  <!-- Nav -->
+                  <ul class="nav nav-tabs nav-overflow header-tabs">
+                    <li class="nav-item">
+                      <a href="index.html" class="nav-link active">
+                        Change email
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="account-change-password.html" class="nav-link">
+                        Change password
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="account-2fa.html" class="nav-link">
+                        Two factor security
+                      </a>
+                    </li>
+                  </ul>
 
-                  </div>
-
-                </div> <!-- / .row -->
-                
+                </div>
               </div>
             </div>
+          </div>
 
-            <!-- Alert
+          <!-- Alert
             <div class="alert alert-danger">
               <i class="fe fe-info me-1"></i> You are near your API limits.
             </div>
             -->
 
-            <!-- Card -->
-            <div class="card">
-              <div class="card-header">
+          <div class="row justify-content-between align-items-center mb-5">
+            <div class="col-12">
 
-                <!-- Title -->
-                <h4 class="card-header-title">
-                  Members
-                </h4>
+              <!-- Heading -->
+              <h2 class="mb-2">
+                Change your email
+              </h2>
 
-                <!-- Dropdown -->
-                <div class="dropdown">
-                  <button class="btn btn-sm btn-outline-primary" type="button" id="inviteMember" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Invite member
-                  </button>
-                  <form class="dropdown-menu dropdown-menu-end dropdown-menu-card" aria-labelledby="inviteMember">
-                    <div class="card-header">
+              <!-- Text -->
+              <p class="text-muted mb-xl-0">
+                We will email you a confirmation when changing your email, so please expect that email after submitting.
+              </p>
 
-                      <!-- Title -->
-                      <h4 class="card-header-title">
-                        Invite a member
-                      </h4>
+            </div>
+          </div> <!-- / .row -->
 
-                    </div>
-                    <div class="card-header">
-                      <div class="row g-0 align-items-center">
-                        <div class="col-3">
+          <div class="row">
 
-                          <!-- Label -->
-                          <label class="mb-0" for="inviteMemberEmail">
-                            Email
-                          </label>
+            <div class="col-12">
 
-                        </div>
-                        <div class="col">
+              <!-- Form -->
+              <form>
 
-                          <!-- Input -->
-                          <input class="form-control form-control-flush" id="inviteMemberEmail" type="text" placeholder="Email address">
+                <!-- Password -->
+                <div class="form-group">
 
-                        </div>
-                      </div> <!-- / .row -->
-                    </div>
-                    <div class="card-footer">
+                  <!-- Label -->
+                  <label class="form-label">
+                    Current email
+                  </label>
 
-                      <!-- Button -->
-                      <button class="btn w-100 btn-primary" type="submit">
-                        Invite member
-                      </button>
+                  <!-- Input -->
+                  <input type="email" placeholder="Enter current email address" class="form-control">
 
-                    </div>
-                  </form>
                 </div>
 
-              </div>
-              <div class="card-body">
+                <!-- New password -->
+                <div class="form-group">
 
-                <!-- List group -->
-                <div class="list-group list-group-flush my-n3">
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-5">
+                  <!-- Label -->
+                  <label class="form-label">
+                    New email
+                  </label>
 
-                        <!-- Title -->
-                        <h4>
-                          example@nubela.co
-                        </h4>
+                  <!-- Input -->
+                  <input type="email" placeholder="Enter new email address" class="form-control">
 
-                      </div>
-                      <div class="col-auto ms-auto me-n3">
-
-                        <span class="badge bg-secondary">
-                          Admin
-                        </span>
-
-                      </div>
-                      <div class="col-auto">
-
-                        <!-- Dropdown -->
-                        <div class="dropdown">
-                          <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fe fe-more-vertical"></i>
-                          </a>
-                          <div class="dropdown-menu dropdown-menu-end">
-                            <a class="dropdown-item" href="#!">
-                              Remove user
-                            </a>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div> <!-- / .row -->
-                  </div>
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-5">
-
-                        <!-- Title -->
-                        <h4>
-                          slimshady@nubela.co
-                        </h4>
-
-                      </div>
-                      <div class="col-auto ms-auto me-n3">
-
-                        <span class="badge bg-secondary-soft">
-                          Member
-                        </span>
-
-                      </div>
-                      <div class="col-auto">
-
-                        <!-- Dropdown -->
-                        <div class="dropdown">
-                          <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fe fe-more-vertical"></i>
-                          </a>
-                          <div class="dropdown-menu dropdown-menu-end">
-                            <a class="dropdown-item" href="#!">
-                              Remove user
-                            </a>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div> <!-- / .row -->
-                  </div>
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-5">
-
-                        <!-- Title -->
-                        <h4>
-                          ayamsuwir@nubela.co
-                        </h4>
-
-                      </div>
-                      <div class="col-auto ms-auto me-n3">
-
-                        <span class="badge bg-secondary-soft">
-                          Member
-                        </span>
-
-                      </div>
-                      <div class="col-auto">
-
-                        <!-- Dropdown -->
-                        <div class="dropdown">
-                          <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fe fe-more-vertical"></i>
-                          </a>
-                          <div class="dropdown-menu dropdown-menu-end">
-                            <a class="dropdown-item" href="#!">
-                              Remove user
-                            </a>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div> <!-- / .row -->
-                  </div>
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-5">
-
-                        <!-- Title -->
-                        <h4>
-                          luhut@nubela.co
-                        </h4>
-
-                      </div>
-                      <div class="col-auto ms-auto me-n3">
-
-                        <span class="badge bg-secondary-soft">
-                          Member
-                        </span>
-
-                      </div>
-                      <div class="col-auto">
-
-                        <!-- Dropdown -->
-                        <div class="dropdown">
-                          <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fe fe-more-vertical"></i>
-                          </a>
-                          <div class="dropdown-menu dropdown-menu-end">
-                            <a class="dropdown-item" href="#!">
-                              Remove user
-                            </a>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div> <!-- / .row -->
-                  </div>
                 </div>
 
-              </div>
+                <!-- Confirm new password -->
+                <div class="form-group">
+
+                  <!-- Label -->
+                  <label class="form-label">
+                    Current password
+                  </label>
+
+                  <!-- Input -->
+                  <input type="password" placeholder="Enter your current password" class="form-control">
+
+                </div>
+
+                <!-- Submit -->
+                <button class="btn w-100 btn-primary lift" type="submit">
+                  Update email
+                </button>
+
+              </form>
+
             </div>
 
-            <br>
+          </div> <!-- / .row -->
 
-          </div>
-        </div> <!-- / .row -->
-      </div>
+        </div>
+      </div> <!-- / .row -->
+    </div>
 
-    </div> <!-- / .main-content -->
+  </div> <!-- / .main-content -->
 
-    <!-- JAVASCRIPT -->
-    <!-- Map JS -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
-    
-    <!-- Vendor JS -->
-    <script src="./assets/js/vendor.bundle.js"></script>
-    
-    <!-- Theme JS -->
-    <script src="./assets/js/theme.bundle.js"></script>
+  <!-- JAVASCRIPT -->
+  <!-- Map JS -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 
-  </body>
+  <!-- Vendor JS -->
+  <script src="./assets/js/vendor.bundle.js"></script>
+
+  <!-- Theme JS -->
+  <script src="./assets/js/theme.bundle.js"></script>
+
+</body>
+
 </html>
