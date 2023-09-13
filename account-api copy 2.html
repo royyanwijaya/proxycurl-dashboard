@@ -475,7 +475,94 @@
     </nav>
 
     <!-- MODAL
-    ------------------> 
+    ------------------>
+    <!--MODAL SURVEY-->
+    <div class="modal fade" id="modalSurvey" aria-labelledby="modalSurvey" aria-hidden="true" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+          <a type="button" class="btn-close h1 ps-4 pt-4" data-bs-dismiss="modal" aria-label="Close">
+          </a>
+
+          <div class="modal-body">
+
+            <div class="row justify-content-center pb-md-5">
+
+              <div class="col-12 col-md-9 text-center mb-3">
+                <i class="neu-so-pie-chart-ui text-primary display-1"></i>
+
+                <h1 class="fw-bold mb-3 mt-4">
+                  Which segment will you be using Proxycurl for?
+                </h1>
+
+                <p class="text-gray-700 fs-lg">
+                  Let us know which user segment you'll be working with, and enjoy your 5 extra credits!
+                </p>
+              </div>
+
+              <div class="col-12 col-md-8 mt-3">
+
+                <!--Radio button-->
+                <div class="mb-5">
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="radioSurvey" id="radioSurvey1">
+                    <label class="form-check-label" for="radioSurvey1">
+                      Sales/Marketing Automation
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="radioSurvey" id="radioSurvey2">
+                    <label class="form-check-label" for="radioSurvey2">
+                      Growth-hacking
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="radioSurvey" id="radioSurvey3">
+                    <label class="form-check-label" for="radioSurvey3">
+                      Venture Capital <span class="text-muted">(due dilligence/sourcing/etc)</span>
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="radioSurvey" id="radioSurvey4">
+                    <label class="form-check-label" for="radioSurvey4">
+                      Hiring automation
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="radioSurvey" id="radioSurvey5">
+                    <label class="form-check-label" for="radioSurvey5">
+                      Trying out for learning purposes
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="radioSurvey" id="radioSurvey6">
+                    <label class="form-check-label" for="radioSurvey6">
+                      Other
+                    </label>
+                    <textarea class="form-control mt-2" placeholder="Tell us why" id="floatingTextarea2"
+                      style="height: 100px"></textarea>
+                  </div>
+
+                </div>
+
+                <div class="row align-items-center justify-content-center mt-5">
+
+                    <div class="btn btn-lg btn-primary w-100 lift" data-bs-target="#modalSurveyConfirm" data-bs-toggle="modal" data-bs-dismiss="modal">
+                      Submit the survey
+                    </div>
+
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>    
 
     <!--MODAL SURVEY CONFIRM-->
     <div class="modal fade" id="modalSurveyConfirm" aria-labelledby="modalSurveyConfirm" aria-hidden="true" tabindex="-1">
@@ -617,9 +704,9 @@
             
                       <div class="card-body">
 
-                        <div class="row align-items-top">
+                        <div class="row align-items-center">
 
-                          <div class="col-9 col-md-10">
+                          <div class="col-9 col-md-11">
                             <h1 class="mb-2 h2">
                               Which segment will you be using Proxycurl for? <span class="badge fw-bold bg-warning mb-1 ms-0 ms-md-2">+5 credits upon completion</span>
                             </h1>
@@ -628,61 +715,13 @@
                               Excited to dive into Proxycurl? Just let us know which user segment you'll be working with, and enjoy your 5 extra credits!
                             </p>
 
-                            <div class="col-12 col-md-6 mt-4">
-
-                              <!--Radio button-->
-                              <div class="mb-5">
-                                <div class="form-check mb-3">
-                                  <input class="form-check-input" type="radio" name="radioSurvey" id="radioSurvey1">
-                                  <label class="form-check-label" for="radioSurvey1">
-                                    Sales/Marketing Automation
-                                  </label>
-                                </div>
-                                <div class="form-check mb-3">
-                                  <input class="form-check-input" type="radio" name="radioSurvey" id="radioSurvey2">
-                                  <label class="form-check-label" for="radioSurvey2">
-                                    Growth-hacking
-                                  </label>
-                                </div>
-                                <div class="form-check mb-3">
-                                  <input class="form-check-input" type="radio" name="radioSurvey" id="radioSurvey3">
-                                  <label class="form-check-label" for="radioSurvey3">
-                                    Venture Capital <span class="text-muted">(due dilligence/sourcing/etc)</span>
-                                  </label>
-                                </div>
-                                <div class="form-check mb-3">
-                                  <input class="form-check-input" type="radio" name="radioSurvey" id="radioSurvey4">
-                                  <label class="form-check-label" for="radioSurvey4">
-                                    Hiring automation
-                                  </label>
-                                </div>
-                                <div class="form-check mb-3">
-                                  <input class="form-check-input" type="radio" name="radioSurvey" id="radioSurvey5">
-                                  <label class="form-check-label" for="radioSurvey5">
-                                    Trying out for learning purposes
-                                  </label>
-                                </div>
-                                <div class="form-check mb-3">
-                                  <input class="form-check-input" type="radio" name="radioSurvey" id="radioSurvey6">
-                                  <label class="form-check-label" for="radioSurvey6">
-                                    Other
-                                  </label>
-                                  <textarea class="form-control mt-2" placeholder="Tell us your segment" id="floatingTextarea2"
-                                    style="height: 40px"></textarea>
-                                </div>
-              
-                              </div>
-            
-              
-                            </div>
-
-                            <button class="btn btn-lg btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#modalSurveyConfirm">
-                              Submit the survey
+                            <button class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#modalSurvey">
+                              Complete the survey
                             </button>
                           </div>
 
-                          <div class="col-3 col-md-1 mt-md-1 ms-md-6">
-                            <div class="avatar avatar-lg">
+                          <div class="col-3 col-md-1">
+                            <div class="avatar avatar-lg ms-md-n4">
                               <div class="avatar-title bg-light border border-primary rounded-circle">
                                 <button class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="This onboarding card will be removed when you have completed the survey.">
                                   <span class="h1 text-primary">
