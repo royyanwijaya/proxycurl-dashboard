@@ -569,79 +569,42 @@
     </div>
   </div>
 
-  <!--MODAL TWITTER-->
-  <div class="modal fade" id="modalTwitter" tabindex="-1" aria-labelledby="modalTwitterLabel" aria-hidden="true">
+  <!--MODAL TWITTER VERIF-->
+  <div class="modal fade" id="modalTwitterVerif" tabindex="-1" aria-labelledby="modalTwitterVerifLabel" aria-hidden="true">
+    
     <div class="modal-dialog modal-dialog-centered">
+
       <div class="modal-content">
 
-        <a type="button" class="btn-close h1 ps-4 pt-4" data-dismiss="modal" aria-label="Close">
-        </a>
-
-        <div class="modal-body">
+        <div class="modal-body pt-5 pb-4">
 
           <div class="row justify-content-center">
 
             <div class="col-12">
 
-              <h1 class="fw-bold mb-3">
-                Tweet and get FREE credits
-              </h1>
+              <div class="border-bottom pb-4 mb-4">
 
-              <p class="lead mb-4">
-                Open your Twitter profile and write a review about Proxycurl.
-              </p>
-
-              <div class="row pb-4 mb-2">
-
-                <h2 class="h2 mb-2 fw-bold">
-                  <span class="badge bg-secondary me-2">
-                    Step 1
-                  </span>
-                  Write a tweet
+                <h2 class="h2 fw-bold mb-3">
+                  <i class="neu-so-tick-circle text-success"></i> Tweet is verified
                 </h2>
 
-                <p class="fw-normal lead">
-                  Tweet something about Proxycurl.
-                </p>
-
-                <div class="col-12">
-                  <button class="btn btn-lg btn-primary w-100">
-                    <i class="neu-br-twitter"></i> Tweet now
-                  </button>
-                </div>
-
-              </div>
-
-              <div class="row border-bottom pb-4 mb-4">
-
-                <h2 class="h2 mb-1 fw-bold">
-                  <span class="badge bg-secondary me-2">
-                    Step 2
+                <p class="fw-normal mb-0 lead">
+                  Your <a class="text-primary" href="linktotweet">tweet</a> from <a class="text-primary" href="linktoprofile" target="_blank">@elonmusk</a> is verified.<br>
+                  You have 
+                  <code class="badge bg-light text-black"
+                  style="font-family: Cerebri Sans,sans-serif;">
+                  <span class="h4 fw-bold">
+                    1200
                   </span>
-                  Verify your Twitter profile
-                </h2>
-
-                <p class="fw-normal lead">
-                  You need to connect and verify your Twitter account first.
+                  </code>
+                  followers in total.
                 </p>
-
-                <div class="col-12 col-md-9">
-                  <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">@</span>
-                    <input class="form-control" type="text" placeholder="Twitter username" aria-label="Username" aria-describedby="basic-addon1">
-                  </div>
-                </div>
-
-                <div class="col-12 col-md-3">
-                  <a class="btn btn-outline-primary w-100" href="account-buy-credits-twitter-success.html">
-                    Verify Tweet
-                  </a>
-                </div>
 
               </div>
 
               <div class="row border-bottom pb-2 mb-4">
-                <div class="col-6">
+
+                <div class="col-7">
                   <h3 class="h2 fw-bold">
                     Credits
                   </h3>
@@ -650,7 +613,7 @@
                   </p>
                 </div>
 
-                <div class="col-6 text-end">
+                <div class="col-5 text-end">
                   <h3 class="h2 fw-bold">
                     Total
                   </h3>
@@ -658,22 +621,33 @@
                     <code class="badge bg-light text-black"
                     style="font-family: Cerebri Sans,sans-serif;">
                     <span class="h4 fw-bold">
-                      N
+                      240
                     </span>
                   </code>
-                  credits <span class="fst-italic small">(Calculated after the verification)</span>
+                  credits
                   </span>
                 </div>
+
               </div>
 
-              <div class="col-12">
+              <div class="col-12 mb-4">
 
-                <h3 class="h2 fw-bold mb-1">
+                <h3 class="h2 fw-bold mb-3">
                   Credits distribution
                 </h3>
 
                 <p class="lead">
-                  You will be given out separated overtime credits over 3 days:
+                  You get <code class="badge bg-light text-black"
+                  style="font-family: Cerebri Sans,sans-serif;">
+                  <span class="h4 fw-bold">
+                    240
+                  </span>
+                  </code> total credits, calculated from <code class="badge bg-light text-black"
+                  style="font-family: Cerebri Sans,sans-serif;">
+                  <span class="h4 fw-bold">
+                    1200
+                  </span>
+                  </code> total followers. It will be given out separated overtime credits over 3 days:
                 </p>
 
                 <p class="lead">
@@ -681,10 +655,10 @@
                   <code class="badge bg-light text-black"
                     style="font-family: Cerebri Sans,sans-serif;">
                     <span class="h4 fw-bold">
-                      N
+                      24
                     </span>
                   </code>
-                  credits <span class="fst-italic small">(Calculated after the verification)</span>.
+                  credits.
                 </p>
 
                 <p class="lead">
@@ -692,10 +666,10 @@
                   <code class="badge bg-light text-black"
                     style="font-family: Cerebri Sans,sans-serif;">
                     <span class="h4 fw-bold">
-                      N
+                      72
                     </span>
                   </code>
-                  credits <span class="fst-italic small">(Calculated after the verification)</span>.
+                  credits.
                 </p>
 
                 <p class="lead">
@@ -703,13 +677,17 @@
                   <code class="badge bg-light text-black"
                     style="font-family: Cerebri Sans,sans-serif;">
                     <span class="h4 fw-bold">
-                      N
+                      144
                     </span>
                   </code>
-                  credits <span class="fst-italic small">(Calculated after the verification)</span>.
+                  credits.
                 </p>
 
               </div>
+
+              <button type="button" class="btn btn-lg btn-primary w-100" data-bs-dismiss="modal">
+                Close
+              </button>
 
             </div>
 
@@ -718,7 +696,9 @@
         </div>
 
       </div>
+
     </div>
+
   </div>
 
   <!-- MAIN CONTENT -->
@@ -889,8 +869,7 @@
                             <li><a class="dropdown-item" href="#">$1000</a></li>
                           </ul>
                         </div>
-                      </span> worth of credits when credits fall
-                      below 10 credits.
+                      </span> worth of credits when credits fall below 10 credits.
                     </label>
                     <input class="form-check-input" type="checkbox" id="autoTopup">
                   </div>
@@ -1049,28 +1028,28 @@
                               <td></td>
                             </tr>
 
-                            <tr class="table-primary">
+                            <tr class="text-muted">
                               <td>
                                 <code class="badge bg-light text-black"
                                   style="font-family: Cerebri Sans,sans-serif;">
                                   <span class="h4 fw-normal">
-                                    N
+                                    240
                                   </span>
                                 </code>
-                                credits
+                                credits claimed
                               </td>
                               <td>
-                                <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                <code class="h4 fw-normal text-muted" style="font-family: Cerebri Sans,sans-serif;">
                                 1 credit</code>/5 Twitter followers
                               </td>
                               <td>
-                                <p class="h4 fw-bold mb-0">
+                                <p class="mb-0">
                                   Tweet a review about Proxycurl and get credits
                                 </p>
                               </td>
                               <td>
-                                <button type="submit" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modalTwitter">
-                                  <i class="neu-br-twitter"></i> TWEET AND GET FREE CREDITS
+                                <button type="submit" class="btn btn-outline-secondary w-100" data-bs-toggle="modal" data-bs-target="#modalTwitterVerif">
+                                  Credits info
                                 </button>
                               </td>
                             </tr>
