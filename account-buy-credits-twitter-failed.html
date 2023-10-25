@@ -626,14 +626,20 @@
                 </p>
 
                 <div class="col-12 col-md-9">
-                  <div class="input-group mb-3">
+                  <div class="input-group mb-2">
                     <span class="input-group-text" id="basic-addon1">@</span>
-                    <input class="form-control" type="text" placeholder="Twitter username" aria-label="Username" aria-describedby="basic-addon1">
+                    <input class="form-control is-invalid" type="text" placeholder="Twitter username" aria-label="Username" aria-describedby="basic-addon1">                    
+                  </div>
+                  <div class="row mb-4 mb-md-0">
+                    <div class="col-1 text-danger"> <i class="fe fe-alert-circle"></i>
+                    </div>
+                    <div class="col-11 text-danger ms-n2 ms-md-n3 small mt-1">Your tweet from @elonmusk does not refer to Proxycurl or your account is private.
+                    </div>  
                   </div>
                 </div>
 
                 <div class="col-12 col-md-3">
-                  <a class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#modalTwitterFailed">
+                  <a class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#!">
                     Verify Tweet
                   </a>
                 </div>
