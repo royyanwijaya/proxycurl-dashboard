@@ -897,7 +897,7 @@
                       below 10 credits <u id="addLimit">(Add monthly auto-topup limit)</u>.
                     </label>
 
-                    <input class="form-check-input" type="checkbox" id="autoTopup">
+                    <input class="form-check-input" type="checkbox" id="autoTopup" checked>
 
                   </div>
 
@@ -924,28 +924,46 @@
 
                     <input class="form-check-input" type="checkbox" id="limitTopup">
 
+                    <button class="btn btn-primary btn-sm mt-2" id="saveButton">
+                      Save
+                    </button>
+
                   </div>
 
+                  <!--Save button-->
                   <script>
-// Get the button element by its id
-var button = document.getElementById("addLimit");
+// Get checkbox and button elements 
+const checkbox = document.getElementById('limitTopup');
+const button = document.getElementById('saveButton');
 
-// Get the limit element by its id
-var limit = document.getElementById("limitTrigger");
+// Hide button by default
+button.style.display = 'none'; 
 
-// Set the initial display style of the limit element to none (hidden)
-limit.style.display = "none";
+// Add click event listener to checkbox
+checkbox.addEventListener('click', () => {
+  if (checkbox.checked) {
+    button.style.display = 'block';
+  } else {
+    button.style.display = 'none';
+  }
+});
+                  </script>
 
-// Add a click event listener to the button element
-button.addEventListener("click", function() {
-// Toggle the display style of the limit element
-if (limit.style.display === "none") {
-// If the limit element is hidden, show it
-limit.style.display = "block";
-} else {
-// If the limit element is shown, hide it
-limit.style.display = "none";
-}
+                  <script>
+// Get button and content elements
+const addButton = document.getElementById('addLimit');
+const limit = document.getElementById('limitTrigger');
+
+// Hide limit content by default
+limit.style.display = 'none';
+
+// Add click event to button 
+addButton.addEventListener('click', () => {
+  if(limit.style.display === 'none') {
+    limit.style.display = 'block';
+  } else {
+    limit.style.display = 'none'; 
+  }
 });
                   </script>                  
 
