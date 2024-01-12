@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', function () {
   var toggleSwitch = document.getElementById('toggleSwitch');
   // Get the workEmailAlert div element
   var workEmailAlert = document.getElementById('workEmailAlert');
+  // Get the nav-tabContent div element
+  var navTabContent = document.getElementById('nav-tabContent');
 
   // Add an event listener to the checkbox
   checkbox.addEventListener('change', function () {
@@ -24,17 +26,22 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // Add an event listener to the toggle switch
-  toggleSwitch.addEventListener('change', toggleWorkEmailAlert);
+  toggleSwitch.addEventListener('change', function() {
+    // Call the function to toggle the visibility of the workEmailAlert div
+    toggleWorkEmailAlert();
+  });
 
-  // Function to toggle the visibility of the workEmailAlert div
+  // Function to toggle the visibility of the workEmailAlert div and nav-tabContent div
   function toggleWorkEmailAlert() {
     // Check the state of the toggle switch
-    if (toggleSwitch.checked) {
-      // If switch is ON, hide the workEmailAlert div
+    if (toggleSwitch.checked && checkbox.checked) {
+      // If switch is ON and checkbox is checked, hide the workEmailAlert div and show nav-tabContent div
       workEmailAlert.style.display = 'none';
+      navTabContent.style.display = 'block';
     } else {
-      // If switch is OFF, show the workEmailAlert div
+      // If switch is OFF or checkbox is unchecked, show the workEmailAlert div and hide nav-tabContent div
       workEmailAlert.style.display = 'block';
+      navTabContent.style.display = 'none';
     }
   }
 
