@@ -1080,7 +1080,7 @@ addButton.addEventListener('click', () => {
 
                       </div>
 
-                      <table class="table table-sm table-nowrap card-table table-hover">
+                      <table id="pricingTable" class="table table-sm table-nowrap card-table table-hover">
 
                         <tbody class="fs-base">
 
@@ -1166,6 +1166,16 @@ addButton.addEventListener('click', () => {
                         </tbody>
                       </table>
 
+                      <div id="workEmailAlert">
+                        <div class="alert alert-danger-subtle mb-4" role="alert">
+                          To subscribe to our monthly plans, an account with a work email address is required. This is necessary to ensure that you are acting in your official capacity when agreeing to our sales agreement, as our monthly plans involve specific contractual obligations.
+                        </div>
+      
+                        <a class="btn btn-primary" href="index.html">
+                          Update Email Address
+                        </a>
+                      </div>
+
                     </div>
                     
                     <div class="tab-pane fade" id="nav-payg" role="tabpanel" aria-labelledby="nav-payg-tab">
@@ -1191,8 +1201,8 @@ addButton.addEventListener('click', () => {
                               </code>
                               </td>
                               <td>
-                                <button type="submit" class="btn btn-light text-dark w-100" data-bs-toggle="modal"
-                                  data-bs-target="#modalNext" disabled><i class="neu-info"></i> Buy
+                                <button type="submit" class="btn btn-light text-dark w-100" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="This plan is a one-time purchase option intended for service validation. You have already purchased this plan. Please consider other plans." data-bs-toggle="modal" data-bs-target="#modalNext">
+                                  <i class="neu-info"></i> Buy
                                 </button>
                               </td>
                             </tr>
@@ -1300,228 +1310,6 @@ addButton.addEventListener('click', () => {
                       </div>
 
                     </div>
-
-                  </div>
-
-                  <div class="mt-4" id="workEmailAlert">
-
-                    <div class="tab-content mb-4" id="nav-annualOnly">
-
-                      <div class="tab-pane fade show active" id="nav-subs" role="tabpanel" aria-labelledby="nav-subs-tab">
-  
-                        <p class="mb-4 text-center">
-                          Annual plan
-                        </p>
-  
-                        <table class="table table-sm table-nowrap card-table table-hover">
-  
-                          <tbody class="fs-base">
-  
-                            <tr>
-                              <td>
-                                <code class="badge bg-light text-black" style="font-family: Cerebri Sans,sans-serif;"><span class="h4 fw-normal">30000</span></code>
-                                +
-                                <code class="badge bg-light text-black" style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">5000</span></code>
-                                credits
-                              </td>
-                              <td>
-                                <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
-                                  $0.020</code>/credit
-                              </td>
-                              <td>
-                                <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
-                                  $490</code>/year
-                              </td>
-                              <td></td>
-                            </tr>
-  
-                            <tr>
-                              <td>
-                                <code class="badge bg-light text-black" style="font-family: Cerebri Sans,sans-serif;"><span class="h4 fw-normal">300000</span></code>
-                                +
-                                <code class="badge bg-light text-black" style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">50000</span></code>
-                                credits
-                              </td>
-                              <td>
-                                <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
-                                $0.012</code>/credit
-                              </td>
-                              <td>
-                                <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
-                                  $2990</code>/year
-                              </td>
-                            </tr>
-  
-                            <tr>
-                              <td>
-                                <code class="badge bg-light text-black" style="font-family: Cerebri Sans,sans-serif;"><span class="h4 fw-normal">1078800</span></code>
-                                +
-                                <code class="badge bg-light text-black" style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">179800</span></code>
-                                credits
-                              </td>
-                              <td>
-                                <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
-                                  $0.010</code>/credit
-                              </td>
-                              <td>
-                                <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
-                                  $8990</code>/year
-                              </td>
-                              <td></td>
-                            </tr>
-  
-                            <tr class="table-primary">
-                              <td>
-                                <code class="badge bg-light text-black" style="font-family: Cerebri Sans,sans-serif;"><span class="h4 fw-normal">2532000</span></code>
-                                +
-                                <code class="badge bg-light text-black" style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">422000</span></code>
-                                credits
-                              </td>
-                              <td>
-                                <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
-                                  $0.009</code>/credit
-                              </td>
-                              <td>
-                                <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
-                                  $18990</code>/year
-                              </td>
-                              <td>
-                                <button type="submit" class="btn btn-primary w-100 mb-3" data-bs-toggle="modal"
-                                  data-bs-target="#modalNext">
-                                  Buy
-                                </button>
-                                <button class="btn btn-white w-100 d-block">
-                                  Pay by Wire/ACH
-                                </button>
-                              </td>
-                            </tr>
-  
-                          </tbody>
-                        </table>
-  
-                      </div>
-                      
-                      <div class="tab-pane fade" id="nav-payg" role="tabpanel" aria-labelledby="nav-payg-tab">
-  
-                        <div class="table-responsive">
-  
-                          <table class="table table-sm table-nowrap card-table table-hover">
-  
-                            <tbody class="fs-base">
-  
-                              <tr>
-                                <td>
-                                  <code class="badge bg-light text-black"
-                                    style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">1000 </span></code>
-                                  credits
-                                </td>
-                                <td>
-                                  <span class="">$0.05</span>/credit
-                                </td>
-                                <td>
-                                  <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
-                                  $50
-                                </code>
-                                </td>
-                                <td>
-                                  <button type="submit" class="btn btn-primary w-100" data-bs-toggle="modal"
-                                    data-bs-target="#modalNext"> Buy
-                                  </button>
-                                </td>
-                              </tr>
-  
-                              <tr>
-                                <td>
-                                  <code class="badge bg-light text-black"
-                                    style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">4546 </span></code>
-                                  credits
-                                </td>
-                                <td>
-                                  <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
-                                  $0.022</code>/credit
-                                </td>
-                                <td>
-                                  <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
-                                  $100
-                                </code>
-                                </td>
-                                <td></td>
-                              </tr>
-  
-                              <tr>
-                                <td>
-                                  <code class="badge bg-light text-black" style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">
-                                    25000</span></code> credits
-                                </td>
-                                <td>
-                                  <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
-                                  $0.02</code>/credit
-                                </td>
-                                <td>
-                                  <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
-                                  $500</code>
-                                </td>
-                                <td></td>
-                              </tr>
-  
-                              <tr>
-                                <td>
-                                  <code class="badge bg-light text-black"
-                                    style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">55556</span></code>
-                                  credits
-                                </td>
-                                <td>
-                                  <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
-                                  $0.0018</code>/credit
-                                </td>
-                                <td class="">
-                                  $1000
-                                </td>
-                                <td></td>
-                              </tr>
-  
-                              <tr class="table-primary">
-                                <td>
-                                  <code class="badge bg-light text-black"
-                                    style="font-family: Cerebri Sans,sans-serif;">
-                                    <span class="h4 fw-normal">
-                                      N
-                                    </span>
-                                  </code>
-                                  credits
-                                </td>
-                                <td>
-                                  <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
-                                  1 credit</code>/5 Twitter followers
-                                </td>
-                                <td>
-                                  <p class="h4 fw-bold mb-0">
-                                    Tweet a review about Proxycurl and get credits
-                                  </p>
-                                </td>
-                                <td>
-                                  <button type="submit" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modalTwitter">
-                                    <i class="neu-br-twitter"></i> TWEET AND GET FREE CREDITS
-                                  </button>
-                                </td>
-                              </tr>
-  
-                            </tbody>
-                          </table>
-  
-                        </div>
-  
-                      </div>
-  
-                    </div>
-
-                    <div class="alert alert-danger-subtle mb-4" role="alert">
-                      To subscribe to our monthly plans, an account with a work email address is required. This is necessary to ensure that you are acting in your official capacity when agreeing to our sales agreement, as our monthly plans involve specific contractual obligations.
-                    </div>
-  
-                    <a class="btn btn-primary" href="index.html">
-                      Update Email Address
-                    </a>
 
                   </div>
 
