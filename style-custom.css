@@ -1,3 +1,12 @@
+.alert-success-subtle-bg-only{
+    background-color: #dcfce7;
+    border-color: #22c55e;
+}
+.alert-success-subtle{
+    background-color: #dcfce7;
+    border-color: #22c55e;
+    color: #22c55e;
+}
 .alert-danger-subtle{
     background-color: #fee2e2;
     border-color: #ef4444;
