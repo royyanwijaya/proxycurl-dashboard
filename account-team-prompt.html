@@ -13,19 +13,18 @@
     
     <!-- Libs CSS -->
     <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.5.0/css/neu.min.css">
     
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
-    <link rel="stylesheet" href="style-custom.css"/>
+    <link rel="stylesheet" href="style-custom.css" />
     
     <!-- Title -->
     <title>Proxycurl - Dashboard</title>
   </head>
   <body>
 
-     <!-- NAVIGATION -->
-     <nav class="navbar navbar-vertical fixed-start navbar-expand-md navbar-light" id="sidebar">
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-vertical fixed-start navbar-expand-md navbar-light" id="sidebar">
       <div class="container-fluid">
     
         <!-- Toggler -->
@@ -268,7 +267,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-primary fw-bold" href="account-request-log.html" role="button">
+            <a class="nav-link" href="account-request-log.html" role="button">
               <i class="fe fe-activity"></i> Request Log
             </a>
           </li>
@@ -323,7 +322,7 @@
             </div>
           </li>
           <li class="nav-item mb-4">
-            <a class="nav-link" href="account-team.html">
+            <a class="nav-link text-primary fw-bold" href="account-team.html">
               <i class="fe fe-users"></i> Team
             </a>
           </li>
@@ -451,8 +450,6 @@
 
           </div>
 
-
-
         </div>
 
         <!-- Dashboard toggle-->
@@ -473,82 +470,8 @@
       </div>
     </nav>
 
-    <!--MODAL CONFIRM $100-->
-    <div class="modal fade" id="modalhundred" tabindex="-1" aria-labelledby="modalhundredLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-    
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalhundredLabel">Upgrade log</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-    
-          <div class="modal-body">
-    
-            <span class="badge text-uppercase bg-info">
-              100 rows
-            </span>
-            
-            <span class="badge text-uppercase bg-info">
-              $100/month
-            </span>
-    
-            <p class="mt-2">
-              Are you sure want to upgrade to 100 rows of available logs?
-              <br>
-              It will cost you $100/month.
-            </p>
-    
-          </div>
-    
-          <div class="modal-footer">
-            <button type="button" class="btn btn-outline-secondary me-2" data-bs-dismiss="modal">No, cancel upgrade</button>
-            <button type="button" class="btn btn-primary">Yes, upgrade $100/month</button>
-          </div>
-    
-        </div>
-      </div>
-    </div>
-
-    <!--MODAL CONFIRM $500/MONTH-->
-    <div class="modal fade" id="modalfivehundred" tabindex="-1" aria-labelledby="modalfivehundredLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-    
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalfivehundredLabel">Upgrade log</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-    
-          <div class="modal-body">
-    
-            <span class="badge text-uppercase bg-info">
-              1000 rows
-            </span>
-            
-            <span class="badge text-uppercase bg-info">
-              $500/month
-            </span>
-    
-            <p class="mt-2">
-              Are you sure want to upgrade to 1000 rows of available logs?
-              <br>
-              It will cost you $500/month.
-            </p>
-    
-          </div>
-    
-          <div class="modal-footer">
-            <button type="button" class="btn btn-outline-secondary me-2" data-bs-dismiss="modal">No, cancel upgrade</button>
-            <button type="button" class="btn btn-primary">Yes, upgrade $500/month</button>
-          </div>
-    
-        </div>
-      </div>
-    </div>
-
     <!-- MAIN CONTENT -->
-    <div class="main-content pb-8">
+    <div class="main-content">
 
       <div class="container-fluid">
         <div class="row justify-content-center">
@@ -585,12 +508,13 @@
               </div>
 
             </div>
-            
+
             <!-- Header -->
             <div class="header mt-md-5">
               <div class="header-body">
 
                 <div class="row align-items-center">
+
                   <div class="col">
 
                     <!-- Pretitle -->
@@ -600,325 +524,115 @@
 
                     <!-- Title -->
                     <h1 class="header-title">
-                      Request Log
+                      Team
                     </h1>
 
                   </div>
-                </div> <!-- / .row -->
 
+                </div> <!-- / .row -->
+                
               </div>
             </div>
 
+            <!-- Alert
+            <div class="alert alert-danger">
+              <i class="fe fe-info me-1"></i> You are near your API limits.
+            </div>
+            -->
+
             <!-- Card -->
             <div class="card">
-
               <div class="card-header">
-                <div class="row align-items-center">
-                  <div class="col">
 
-                    <!-- Title -->
-                    <h4 class="card-header-title">
-                      Request Logs
-                    </h4>
+                <!-- Title -->
+                <h4 class="card-header-title">
+                  Members
+                </h4>
 
-                  </div>
-                  <div class="col-auto">
-
-                    <!-- Button -->
-                    <a class="btn btn-sm btn-outline-primary" href="#!">
-                      Download as CSV
-                    </a>
-
-                  </div>
-                </div>
-              </div>
-
-              <div class="table-responsive">
-                <table class="table table-sm table-nowrap card-table">
-                  <thead>
-                    <tr>
-                      <th>Date/Time requested</th>
-                      <th>LinkedIn Profile URL</th>
-                      <th>Status</th>
-                      <th>Email address</th>
-                    </tr>
-                  </thead>
-                  <tbody class="fs-base">
-                    <tr>
-                      <td>
-                        20 Jan 2022, 14:50
-                      </td>
-                      <td>
-                        linkedin.com/billgates
-                      </td>
-                      <td>
-                        <span class="badge bg-primary-soft">
-                          email_found
-                        </span>
-                      </td>
-                      <td>
-                        gates@microsoft.com
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        20 Jan 2022, 14:42
-                      </td>
-                      <td>
-                        linkedin.com/gomugomuno
-                      </td>
-                      <td>
-                        <span class="badge bg-secondary-soft">
-                          email_not_found
-                        </span>
-                      </td>
-                      <td>
-                        gomu@gomu.no
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        20 Jan 2022, 14:40
-                      </td>
-                      <td>
-                        linkedin.com/kanebohijau
-                      </td>
-                      <td>
-                        <span class="badge bg-secondary-soft">
-                          email_not_found
-                        </span>
-                      </td>
-                      <td>
-                        tokenasix@kanebo.hijau
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        20 Jan 2022, 14:32
-                      </td>
-                      <td>
-                        linkedin.com/anjaymabar
-                      </td>
-                      <td>
-                        <span class="badge bg-primary-soft">
-                          email_found
-                        </span>
-                      </td>
-                      <td>
-                        anjay@mabar.com
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        20 Jan 2022, 14:32
-                      </td>
-                      <td>
-                        linkedin.com/sapinjepat
-                      </td>
-                      <td>
-                        <span class="badge bg-primary-soft">
-                          email_found
-                        </span>
-                      </td>
-                      <td>
-                        sapi@njepat.com
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
-              <div class="table-responsive blur">
-                <table class="table table-sm table-nowrap card-table">
-                  <tbody class="fs-base">
-                    <tr>
-                      <td>
-                        20 Jan 2022, 14:50
-                      </td>
-                      <td>
-                        linkedin.com/billgates
-                      </td>
-                      <td>
-                        <span class="badge bg-primary-soft">
-                          email_found
-                        </span>
-                      </td>
-                      <td>
-                        gates@microsoft.com
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        20 Jan 2022, 14:42
-                      </td>
-                      <td>
-                        linkedin.com/gomugomuno
-                      </td>
-                      <td>
-                        <span class="badge bg-secondary-soft">
-                          email_not_found
-                        </span>
-                      </td>
-                      <td>
-                        gomu@gomu.no
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        20 Jan 2022, 14:40
-                      </td>
-                      <td>
-                        linkedin.com/kanebohijau
-                      </td>
-                      <td>
-                        <span class="badge bg-secondary-soft">
-                          email_not_found
-                        </span>
-                      </td>
-                      <td>
-                        tokenasix@kanebo.hijau
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        20 Jan 2022, 14:32
-                      </td>
-                      <td>
-                        linkedin.com/anjaymabar
-                      </td>
-                      <td>
-                        <span class="badge bg-primary-soft">
-                          email_found
-                        </span>
-                      </td>
-                      <td>
-                        anjay@mabar.com
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        20 Jan 2022, 14:32
-                      </td>
-                      <td>
-                        linkedin.com/sapinjepat
-                      </td>
-                      <td>
-                        <span class="badge bg-primary-soft">
-                          email_found
-                        </span>
-                      </td>
-                      <td>
-                        sapi@njepat.com
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
-              <!--UPGRADE DROPDOWN-->
-              <div class="card-body text-center">
-
-                <div class="dropdown mt-minus">
-
-                  <button class="btn btn-primary lift shadow shadow-light-lg" type="button" id="upgradeLogs" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    UPGRADE TO VIEW MORE LOGS
+                <!-- Dropdown -->
+                <div class="dropdown">
+                  <button class="btn btn-sm btn-outline-primary" type="button" id="inviteMember" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Invite member
                   </button>
-                  
-                  <form class="dropdown-menu dropdown-center dropdown-menu-card shadow" aria-labelledby="upgradeLogs">
+                  <form class="dropdown-menu dropdown-menu-end dropdown-menu-card" aria-labelledby="inviteMember">
+                    <div class="card-header">
 
-                    <div class="card card-body">
+                      <!-- Title -->
+                      <h4 class="card-header-title">
+                        Invite a member
+                      </h4>
 
-                      <div class="table-responsive">
+                    </div>
+                    <div class="card-body">
+                      <div class="list-group-item rounded bg-lighter">
+                        <div class="row align-items-center">
+        
+                          <div class="col-auto">
+        
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="currentColor"><path d="M6 22.5h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1v-4c0-2.757-2.243-5-5-5s-5 2.243-5 5v4H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2m3-16c0-1.654 1.346-3 3-3s3 1.346 3 3v4H9z"></path></g></svg>
+        
+                          </div>
+        
+                          <div class="col ms-n2">
+        
+                            <h4 class="fw-normal mt-md-3">
+                              Upgrade to annual plan will also unlocked this feature.
+                            </h4>
+        
+                          </div>
+        
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
 
-                        <table class="table table-sm card-table mb-4">
-                          <thead>
-                            <tr>
-                              <th>Rows of logs available</th>
-                              <th>Minimum plan</th>
-                              <th></th>
-                            </tr>
-                          </thead>
-                          <tbody class="fs-base">
-                            <tr>
-                              <td>
-                                5
-                              </td>
-                              <td>
-                                <span class="badge text-uppercase bg-secondary-soft">
-                                  Pay as you go
-                                </span>
-                              </td>
-                              <td>
-                                <span class="badge bg-primary-soft">
-                                  Current plan
-                                </span>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                100
-                              </td>
-                              <td>
-                                <span class="badge text-uppercase bg-secondary">
-                                  $100/month
-                                </span>
-                              </td>
-                              <td>
-                                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalhundred">
-                                  Upgrade
-                                </button>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                1000
-                              </td>
-                              <td>
-                                <span class="badge text-uppercase bg-secondary">
-                                  $500/month
-                                </span>
-                              </td>
-                              <td>
-                                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalfivehundred">
-                                  Upgrade
-                                </button>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
+              </div>
+              <div class="card-body">
 
-                        <div class="list-group-item rounded bg-lighter text-start">
-                          <div class="row align-items-center">
-          
-                            <div class="col-auto">
-          
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="currentColor"><path d="M6 22.5h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1v-4c0-2.757-2.243-5-5-5s-5 2.243-5 5v4H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2m3-16c0-1.654 1.346-3 3-3s3 1.346 3 3v4H9z"></path></g></svg>
-          
-                            </div>
-          
-                            <div class="col ms-n2">
-          
-                              <h4 class="fw-normal mt-md-3">
-                                Upgrade to annual plan will also unlocked this feature.
-                              </h4>
-          
-                            </div>
-          
+                <!-- List group -->
+                <div class="list-group list-group-flush my-n3">
+                  <div class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col-5">
+
+                        <!-- Title -->
+                        <h4>
+                          example@nubela.co
+                        </h4>
+
+                      </div>
+                      <div class="col-auto ms-auto me-n3">
+
+                        <span class="badge bg-secondary">
+                          Admin
+                        </span>
+
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Dropdown -->
+                        <div class="dropdown">
+                          <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fe fe-more-vertical"></i>
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-end">
+                            <a class="dropdown-item" href="#!">
+                              Remove user
+                            </a>
                           </div>
                         </div>
 
                       </div>
-
-                    </div>
-
-                  </form>
-
+                    </div> <!-- / .row -->
+                  </div>
                 </div>
 
               </div>
-
             </div>
-            
+
+            <br>
+
           </div>
         </div> <!-- / .row -->
       </div>
