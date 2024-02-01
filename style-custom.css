@@ -47,3 +47,23 @@
     margin-top: -12rem !important;
 }
 
+@media screen and (max-width: 500px) {
+    td {
+      display: block;
+    }
+    .card-table tbody td:first-child, .card-table thead th:first-child {
+        padding-left: 1rem!important;
+        margin-top: 2rem;
+    }
+
+  .bg-primary-soft {
+    /* Remove or adjust styles for mobile view */
+    background-color: transparent !important;
+    /* Add any other styles for mobile view as needed */
+    
+  }
+
+
+  
+  }
+
