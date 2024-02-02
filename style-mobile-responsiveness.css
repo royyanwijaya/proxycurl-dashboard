@@ -1,0 +1,108 @@
+.alert-success-subtle-bg-only{
+    background-color: #dcfce7;
+    border-color: #22c55e;
+}
+.alert-success-subtle{
+    background-color: #dcfce7;
+    border-color: #22c55e;
+    color: #22c55e;
+}
+.alert-danger-subtle{
+    background-color: #fee2e2;
+    border-color: #ef4444;
+    color: #ef4444;
+}
+.div-inline{
+    display:inline-block;
+}
+.blur{
+    filter: blur(4px);
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+.dropdown-center{
+    top: 120% !important;
+    left: 50% !important;
+    right: auto !important;
+    text-align: center !important;
+    transform: translate(-50%, 0) !important;
+}
+
+@media (min-width: 1500px) {
+    .main-content-dashboard {
+        flex: 0 0 auto;
+        width: 73.33333%;
+    }   
+}
+
+.dropdown-menu-center{
+    right: auto !important;
+    left: 50% !important;
+    -webkit-transform: translate(-50%, 0) !important;
+    -o-transform: translate(-50%, 0) !important;
+    transform: translate(-50%, 0) !important;
+}
+  .mt-minus{
+    margin-top: -12rem !important;
+}
+
+
+/* FOR CHANGE PLAN MOBILE RESPONSIVENESS */
+@media screen and (max-width: 500px) {
+    td {
+      display: block;
+      border-width: 0cm !important;
+      padding-top: 0.5rem !important;
+      padding-bottom: 0.5rem !important;
+    }
+
+    .card-table tbody td:first-child, .card-table thead th:first-child {
+        padding-left: 1rem!important;
+        padding-top: 2rem !important;
+    }
+
+    .card-table tbody td:last-child, .card-table thead th:last-child {
+        padding-bottom: 1rem !important;
+        padding-top: 1rem !important;
+    }
+
+    tr {
+        border: 0;
+        display: block;
+        margin-top: 2rem;
+    }
+
+    .solid {
+        border: 1px #EDF2F9 solid;
+        border-radius: 6px;
+    }
+
+    .bg-primary-soft {
+    /* Remove or adjust styles for mobile view */
+    background-color: transparent !important;
+    /* Add any other styles for mobile view as needed */
+
+    }
+
+    .btn-block-mobile { 
+    width: 100% !important; 
+    display:block !important;
+    }
+
+    .mobile-price {
+    font-size: 1.5rem !important;
+    font-weight: 600 !important;
+    }
+
+    .mobile-percredit {
+    font-size: 0.9rem !important;
+    }
+
+    .mobile-credit {
+    font-size: 1.2rem !important;
+    }
+
+ 
+  }
+
