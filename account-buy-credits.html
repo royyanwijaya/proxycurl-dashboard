@@ -597,6 +597,129 @@
     </div>
   </div>
 
+  <!--MODAL TOPUP PAYG-->
+  <div class="modal fade" id="modalNextPAYG" tabindex="-1" aria-labelledby="modalNextLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <a type="button" class="btn-close h1 ps-4 pt-4 mb-0" data-dismiss="modal" aria-label="Close">
+        </a>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center">
+
+            <div class="col-12">
+
+              <div class="list-group-item rounded alert-danger-subtle mb-4">
+                <div class="row align-items-center">
+
+                  <div class="col-auto">
+
+                    <img class="img-fluid mb-2" src="assets/img/payment-methods/link-logo.svg" alt="link.com logo" style="max-width: 38px;">
+
+                  </div>
+
+                  <div class="col ms-n2">
+
+                    <h4 class="fw-normal mb-1">
+                      Please check your email address and confirm your email address with Link.com before proceeding with your payment. <a class="text-primary" target="_blank" href="https://support.link.com/questions/what-do-i-need-to-do-to-verify-my-account">Read more</a>.
+                    </h4>
+
+                  </div>
+
+                </div>
+              </div>
+              
+              <h1 class="fw-bold mb-3">
+                Order confirmation
+              </h1>
+
+              <p class="mb-4 lead">
+                Would you like to subscribe a plan for <span class="fw-bold font-monospace">$10</span> (<span class="fw-bold font-monospace badge bg-light text-black">1000</span> credits)?
+              </p>
+
+              <div class="row border-bottom pb-2 mb-4">
+                <div class="col-12 col-md-8">
+                  <h2 class="h2 fw-bold">
+                    Credits
+                  </h2>
+                  <p class="lead">
+                    <span class="fw-bold font-monospace badge bg-light text-black">1000</span> credits
+                  </p>
+                  <p class="small text-muted">
+                    Credits do not expire*
+                  </p>
+                  <p class="h6 text-muted mb-4">
+                    <span class="text-danger">*</span>PAYG Credits expire when an account is made inactive after 18 months of payment inactivity.
+                  </p>
+                </div>
+
+                <div class="col-12 col-md-4 text-md-end">
+                  <h2 class="h2 fw-bold">
+                    Total
+                  </h2>
+                  <p class="lead">
+                    <span class="fw-bold font-monospace">$10</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="row border-bottom pb-2 mb-4">
+                <div class="col-6">
+                  <p class="lead">
+                    Payment method
+                  </p>
+                </div>
+
+                <div class="col-6 text-end">
+                  <p class="lead">
+                    Visa ending in <span class="fw-bold font-monospace badge bg-light text-black">1234</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="row mb-4">
+                <div class="col-12 text-end">
+                  <p class="text-muted mb-0 small">
+                    All prices include VAT where applicable
+                  </p>
+                </div>
+              </div>
+
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label small text-muted" for="flexCheckChecked">
+                  By ticking this checkbox, I agree to a 12-month service contract with Proxycurl as detailed in the <a class="text-primary" href="#!" target="_blank">sales agreement</a>. I understand that this contract will automatically renew every 12 months unless I cancel it before the renewal date. If I cancel early before the end of the 12-month period, I acknowledge my obligation to pay the remaining balance of the contract term, and I agree that Proxycurl may bill me for this amount. I have read and understood these terms.
+                </label>
+              </div>
+
+              <div class="text-danger small mb-4" role="alert" id="checkboxAlert" style="display: none;">
+                <i class="neu-warning-circle"></i> Please tick the box to continue with the payment
+              </div>
+
+              <a class="btn btn-lg btn-primary mt-3 w-100" href="account-buy-credits-after-stripe-prompt.html" disabled>
+                Buy credits and enable credit auto-topup
+              </a>
+
+              <a class="btn btn-lg btn-outline-primary w-100 mt-3" href="account-buy-credits-after-stripe-prompt.html" disabled>
+                Buy credits only
+              </a>
+
+              <button class="btn btn-lg btn-outline-primary w-100 mt-3" data-dismiss="modal">
+                Cancel
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
   <!--MODAL TWITTER-->
   <div class="modal fade" id="modalTwitter" tabindex="-1" aria-labelledby="modalTwitterLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -1226,7 +1349,7 @@ addButton.addEventListener('click', () => {
                               </td>
                               <td>
                                 <button type="submit" class="btn btn-primary w-100" data-bs-toggle="modal"
-                                  data-bs-target="#modalNext"> Buy
+                                  data-bs-target="#modalNextPAYG"> Buy
                                 </button>
                               </td>
                             </tr>
