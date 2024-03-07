@@ -36,6 +36,65 @@
     }   
 }
 
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+    .main-content-dashboard {
+        transition: margin-left 0.3s ease, width 0.3s ease; /* Add transition for smooth animation */
+        margin-left: 380px; /* Set initial margin-left when sidebar is expanded */
+        padding-right: 40px;
+        width: 80%;
+    }
+    
+    #sidebarCustom.collapsed ~ #mainContent .main-content-dashboard {
+        margin-left: 200px; /* Adjust margin-left when sidebar is collapsed */
+        width: 150%;
+    }
+    
+}
+
+/* Hide the navigation bar by default */
+.nav-custom-show {
+    display: none !important;
+}
+
+/* SHOW CUSTOM NAV WHEN 900-1024 */
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+    .nav-custom-show {
+        display: block !important;
+    }
+
+    .btn-custom-hide {
+        display: none !important;
+    }
+}
+
+/* NORMAL NAV */
+@media screen and (max-width: 899px),
+(min-width: 1025px) {
+    .nav-custom-show {
+        display: none !important;
+    }
+}
+
+/* Hide the navigation bar by default */
+.nav-normal-show {
+    display: none !important;
+}
+
+/* SHOW CUSTOM NAV WHEN 900-1024 */
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+    .nav-normal-show {
+      display: none !important;
+    }
+}
+
+/* HIDE CUSTOM NAV WHEN 900-1024 */
+@media screen and (max-width: 899px), (min-width: 1025px) {
+    .nav-normal-show {
+      display: block !important;
+    }
+}
+
+
 .dropdown-menu-center{
     right: auto !important;
     left: 50% !important;
@@ -49,7 +108,7 @@
 
 
 /* FOR CHANGE PLAN MOBILE RESPONSIVENESS */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 899px) {
     td {
       display: block;
       border-width: 0cm !important;
@@ -109,4 +168,50 @@
 
 td.small-padding {
   padding-right: 0.5rem !important;
+}
+
+/*
+@media (min-width: 900px) and (max-width: 1024px) {
+    #sidebar.navbar-expand-md .navbar-collapse {
+      display: none !important;
+    }
+    #sidebar.navbar-expand-md .navbar-toggler {
+      display: block !important;
+    }
+    #sidebar.navbar-expand-md .navbar-toggler-icon {
+      display: inline-block !important;
+    }
+  }
+  @media (min-width: 1025px) {
+    #sidebar.navbar-expand-lg .navbar-collapse {
+      display: block !important;
+    }
+    #sidebar.navbar-expand-lg .navbar-toggler {
+      display: none !important;
+    }
+    #sidebar.navbar-expand-lg .navbar-toggler-icon {
+      display: none !important;
+    }
+  }
+  */
+  
+#sidebarCustom {
+    width: 280px; /* Set the width of the sidebar */
+    transition: width 0.3s ease; /* Add a transition for smooth animation */
+}
+
+#sidebarCustom.collapsed {
+    width: 100px; /* Hide the sidebar by setting width to 0 */
+}
+
+#navbarContent {
+    display: block; /* Ensure navbar content is visible by default */
+}
+
+#sidebarCustom.collapsed #navbarContent {
+    display: none; /* Hide the navbar content when sidebar is collapsed */
+}
+
+#toggleSidebarCustom.collapsed {
+    left: 280px; /* Move the button when the sidebar is collapsed */
 }
