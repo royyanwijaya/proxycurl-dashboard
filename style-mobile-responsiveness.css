@@ -112,8 +112,7 @@
     td {
       display: block;
       border-width: 0cm !important;
-      padding-top: 0.5rem !important;
-      padding-bottom: 0.5rem !important;
+      padding-bottom: 0.2rem !important;
     }
 
     .card-table tbody td:first-child, .card-table thead th:first-child {
@@ -150,17 +149,34 @@
     display:block !important;
     }
 
-    .mobile-price {
+    .mobile-tier {
     font-size: 1.5rem !important;
+    font-weight: 600 !important;
+    padding-bottom: 2.3rem !important;
+    }    
+
+    .mobile-price {
+    font-size: 2rem !important;
     font-weight: 600 !important;
     }
 
     .mobile-percredit {
     font-size: 0.9rem !important;
+    font-weight: 600 !important;
     }
 
     .mobile-credit {
-    font-size: 1.2rem !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    }
+
+    .mobile-credit-desc {
+    font-size: 1rem !important;
+    }
+    
+    .mobile-bold-text {
+    font-weight: 600 !important;
+    padding-bottom: 1.2rem !important;
     }
 
  
