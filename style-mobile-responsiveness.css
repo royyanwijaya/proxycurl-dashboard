@@ -36,7 +36,7 @@
     }   
 }
 
-@media screen and (min-width: 900px) and (max-width: 1024px) {
+@media screen and (min-width: 964px) and (max-width: 1110px) {
     .main-content-dashboard {
         transition: margin-left 0.3s ease, width 0.3s ease; /* Add transition for smooth animation */
         margin-left: 380px; /* Set initial margin-left when sidebar is expanded */
@@ -57,7 +57,7 @@
 }
 
 /* SHOW CUSTOM NAV WHEN 900-1024 */
-@media screen and (min-width: 900px) and (max-width: 1024px) {
+@media screen and (min-width: 964px) and (max-width: 1110px) {
     .nav-custom-show {
         display: block !important;
     }
@@ -68,8 +68,8 @@
 }
 
 /* NORMAL NAV */
-@media screen and (max-width: 899px),
-(min-width: 1025px) {
+@media screen and (max-width: 963px),
+(min-width: 1111px) {
     .nav-custom-show {
         display: none !important;
     }
@@ -81,14 +81,14 @@
 }
 
 /* SHOW CUSTOM NAV WHEN 900-1024 */
-@media screen and (min-width: 900px) and (max-width: 1024px) {
+@media screen and (min-width: 964px) and (max-width: 1110px) {
     .nav-normal-show {
       display: none !important;
     }
 }
 
 /* HIDE CUSTOM NAV WHEN 900-1024 */
-@media screen and (max-width: 899px), (min-width: 1025px) {
+@media screen and (max-width: 963px), (min-width: 1111px) {
     .nav-normal-show {
       display: block !important;
     }
@@ -108,7 +108,7 @@
 
 
 /* FOR CHANGE PLAN MOBILE RESPONSIVENESS */
-@media screen and (max-width: 899px) {
+@media screen and (max-width: 963px) {
     td {
       display: block;
       border-width: 0cm !important;
@@ -226,6 +226,14 @@ td.small-padding {
 
 #sidebarCustom.collapsed #navbarContent {
     display: none; /* Hide the navbar content when sidebar is collapsed */
+}
+
+#navbarShowCollapsed {
+    display: none;
+}
+
+#sidebarCustom.collapsed #navbarShowCollapsed {
+    display: block; /* Show the navbar content when sidebar is collapsed */
 }
 
 #toggleSidebarCustom.collapsed {

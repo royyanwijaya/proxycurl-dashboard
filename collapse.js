@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Additional adjustment for specific screen size range
     function adjustForSpecificScreenSize() {
         const screenWidth = window.innerWidth;
-        if (screenWidth >= 900 && screenWidth <= 1024) {
+        if (screenWidth >= 964 && screenWidth <= 1110) {
             mainContent.style.marginLeft = '0'; // Adjust as needed
             mainContent.style.width = '92%'; // Adjust as needed
         } 
