@@ -156,7 +156,7 @@
                     Payment method
                   </p>
                   <div class="form-check mb-4">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
                     <label class="form-check-label small" for="flexCheckDefault">
                       Set next payment method as default
                     </label>
@@ -164,37 +164,9 @@
                 </div>
 
                 <div class="col-12 col-md-6 text-md-end">
-                
-                  <div class="dropdown">
-                    <button class="btn btn-link text-black dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                      aria-expanded="false">
-                      Card ending in <span class="fw-bold font-monospace badge bg-light text-black">1234</span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li>
-                        <a class="dropdown-item text-black" href="#">
-                          Card ending in 1234 <i class="fe fe-check ms-2"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          Card ending in 2290
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item mb-2" href="#">
-                          Card ending in 4242
-                        </a>
-                      </li>
-                      <Li class="border"></Li>
-                      <li>
-                        <a class="dropdown-item text-primary mt-2" href="account-plans-and-payments.html">
-                          Add new card
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                
+                  <p class="lead">
+                    Visa ending in <span class="fw-bold font-monospace badge bg-light text-black">1234</span>
+                  </p>
                 </div>
               </div>
 
@@ -428,102 +400,176 @@
 
                 <div class="col-12">
 
-                  <!-- Tabs -->
-                  <ul class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <li class="nav-item ms-3 mt-3">
-                      <div class="h3 active fw-bold" id="nav-month-tab" data-bs-toggle="tab" data-bs-target="#nav-month"
-                        type="button" role="tab" aria-controls="nav-month" aria-selected="true">
-                        Monthly plan
-                        <div class="small fw-normal mt-3 mb-5 active">
-                          Credits expire monthly
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-
-                  <!-- Tabs content -->
-                  <div class="tab-content" id="nav-tabContent">
-
-                    <div class="tab-pane fade show active table-responsive" id="nav-month" role="tabpanel"
-                      aria-labelledby="nav-month-tab">
-
-                      <table class="table table-sm table-nowrap card-table table-hover">
-
-                        <tbody class="fs-base">
-                          <tr class="solid">
-                            <td class="mobile-credit">
-                              <span class="fw-bold">1000</span> credits
-                            </td>
-                            <td class="mobile-percredit">
-                              <span class="fw-bold">$0.049</span>/credit
-                            </td>
-                            <td class="mobile-price">
-                              $49
-                            </td>
-                            <td>
-                              <button class="btn btn-primary btn-block-mobile d-block d-md-none" type="submit"
-                                data-bs-toggle="modal" data-bs-target="#modalUpgrade">
-                                Cancel and Downgrade Plan
-                              </button>
-                            </td>
-                          </tr>
-                          <tr class="solid">
-                            <td class="mobile-credit">
-                              <span class="fw-bold">7500</span> credits
-                            </td>
-                            <td class="mobile-percredit">
-                              <span class="fw-bold">$0.04</span>/credit
-                            </td>
-                            <td class="mobile-price">
-                              $299
-                            </td>
-                            <td>
-                              <button class="btn btn-primary btn-block-mobile d-block d-md-none" type="submit"
-                                data-bs-toggle="modal" data-bs-target="#modalUpgrade">
-                                Cancel and Downgrade Plan
-                              </button>
-                            </td>
-                          </tr>
-                          <tr class="bg-primary-soft solid">
-                            <td class="mobile-credit">
-                              <span class="fw-bold">29966</span> credits
-                            </td>
-                            <td class="mobile-precredit">
-                              <span class="fw-bold">$0.03</span>/credit
-                            </td>
-                            <td class="mobile-price">
-                              $899
-                            </td>
-                            <td class="">
-                              <button class="btn btn-primary btn-block-mobile" type="submit" data-bs-toggle="modal"
-                                data-bs-target="#modalUpgrade">
-                                Cancel and Downgrade Plan
-                              </button>
-                            </td>
-                          </tr>
-                          <tr class="solid">
-                            <td class="mobile-credit">
-                              <span class="fw-bold">95000</span> credits
-                            </td>
-                            <td class="mobile-percredit">
-                              <span class="fw-bold">$0.02</span>/credit
-                            </td>
-                            <td class="mobile-price">
-                              $1899
-                            </td>
-                            <td>
-                              <button class="btn btn-primary btn-block-mobile d-block d-md-none" type="submit"
-                                data-bs-toggle="modal" data-bs-target="#modalUpgrade">
-                                Cancel and Downgrade Plan
-                              </button>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                    </div>
-
+                  <div class="">
+                    <h1 class="h3 fw-bold mb-2">
+                      Annual plan
+                    </h1>
+                    <p class="small">
+                      Credits expire every year
+                    </p>
                   </div>
+
+                  <table class="table table-sm table-nowrap card-table table-hover">
+
+                    <tbody class="fs-base">
+                      <tr class="solid">
+                        <td class="mobile-credit">
+                          <span class="fw-bold">1000</span> credits
+                        </td>
+                        <td class="mobile-percredit">
+                          <span class="fw-bold">$0.049</span>/credit
+                        </td>
+                        <td class="mobile-price">
+                          $49
+                        </td>
+                        <td>
+                          <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle btn-block-mobile d-block d-md-none" type="button" id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
+                              Upgrade Plan
+                            </button>
+                            <ul class="dropdown-menu dropdown-center" aria-labelledby="upgradePlan">
+                              <li>
+                                <h6 class="dropdown-header">
+                                  Select a payment card
+                                </h6>
+                              </li>
+                              <li>
+                                <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalUpgrade">
+                                  Pay with card ending in 1234
+                                </button>
+                              </li>
+                              <li>
+                                <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalUpgrade">
+                                  Pay with card ending in 5678
+                                </button>
+                              </li>
+                              <li>
+                                <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalUpgrade">
+                                  Pay with card ending in 4242
+                                </button>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="solid">
+                        <td class="mobile-credit">
+                          <span class="fw-bold">7500</span> credits
+                        </td>
+                        <td class="mobile-percredit">
+                          <span class="fw-bold">$0.04</span>/credit
+                        </td>
+                        <td class="mobile-price">
+                          $299
+                        </td>
+                        <td>
+                          <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle btn-block-mobile d-block d-md-none" type="button" id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
+                              Upgrade Plan
+                            </button>
+                            <ul class="dropdown-menu dropdown-center" aria-labelledby="upgradePlan">
+                              <li>
+                                <h6 class="dropdown-header">
+                                  Select a payment card
+                                </h6>
+                              </li>
+                              <li>
+                                <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalUpgrade">
+                                  Pay with card ending in 1234
+                                </button>
+                              </li>
+                              <li>
+                                <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalUpgrade">
+                                  Pay with card ending in 5678
+                                </button>
+                              </li>
+                              <li>
+                                <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalUpgrade">
+                                  Pay with card ending in 4242
+                                </button>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="bg-primary-soft solid">
+                        <td class="mobile-credit">
+                          <span class="fw-bold">29966</span> credits
+                        </td>
+                        <td class="mobile-precredit">
+                          <span class="fw-bold">$0.03</span>/credit
+                        </td>
+                        <td class="mobile-price">
+                          $899
+                        </td>
+                        <td>
+                          <div class="dropdown">
+                            <button class="btn btn-primary w-100 btn-block-mobile dropdown-toggle" id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
+                              Upgrade Plan
+                            </button>
+                            <ul class="dropdown-menu dropdown-center" aria-labelledby="upgradePlan">
+                              <li>
+                                <h6 class="dropdown-header">
+                                  Select a payment card
+                                </h6>
+                              </li>
+                              <li>
+                                <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalUpgrade">
+                                  Pay with card ending in 1234
+                                </button>
+                              </li>
+                              <li>
+                                <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalUpgrade">
+                                  Pay with card ending in 5678
+                                </button>
+                              </li>
+                              <li>
+                                <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalUpgrade">
+                                  Pay with card ending in 4242
+                                </button>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="solid">
+                        <td class="mobile-credit">
+                          <span class="fw-bold">95000</span> credits
+                        </td>
+                        <td class="mobile-percredit">
+                          <span class="fw-bold">$0.02</span>/credit
+                        </td>
+                        <td class="mobile-price">
+                          $1899
+                        </td>
+                        <td>
+                          <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle btn-block-mobile d-block d-md-none" type="button" id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
+                              Upgrade Plan
+                            </button>
+                            <ul class="dropdown-menu dropdown-center" aria-labelledby="upgradePlan">
+                              <li>
+                                <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalUpgrade">
+                                  Pay with card ending in 1234
+                                </button>
+                              </li>
+                              <li>
+                                <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalUpgrade">
+                                  Pay with card ending in 5678
+                                </button>
+                              </li>
+                              <li>
+                                <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalUpgrade">
+                                  Pay with card ending in 4242
+                                </button>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                    
+                  </table>
 
                 </div>
 
