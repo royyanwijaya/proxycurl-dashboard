@@ -987,9 +987,15 @@
 
               <div class="row border-bottom pb-2 mb-4">
                 <div class="col-12 col-md-6">
-                  <p class="lead">
+                  <p class="lead mb-2">
                     Payment method
                   </p>
+                  <div class="form-check mb-4">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                    <label class="form-check-label small" for="flexCheckDefault">
+                      Set next payment method as default
+                    </label>
+                  </div>
                 </div>
 
                 <div class="col-12 col-md-6 text-md-end">
@@ -1124,13 +1130,19 @@
               </div>
 
               <div class="row border-bottom pb-2 mb-4">
-                <div class="col-6">
-                  <p class="lead">
+                <div class="col-12 col-md-6">
+                  <p class="lead mb-2">
                     Payment method
                   </p>
+                  <div class="form-check mb-4">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                    <label class="form-check-label small" for="flexCheckDefault">
+                      Set next payment method as default
+                    </label>
+                  </div>
                 </div>
 
-                <div class="col-6 text-end">
+                <div class="col-12 col-md-6 text-md-end">
                   <p class="lead">
                     Visa ending in <span class="fw-bold font-monospace badge bg-light text-black">1234</span>
                   </p>
@@ -1138,7 +1150,7 @@
               </div>
 
               <div class="row mb-4">
-                <div class="col-12 text-end">
+                <div class="col-12 text-md-end">
                   <p class="text-muted mb-0 small">
                     All prices include VAT where applicable
                   </p>
@@ -1551,43 +1563,6 @@
 
                   </div>
 
-                  <!--Save button-->
-                  <script>
-                    // Get checkbox and button elements 
-                    const checkbox = document.getElementById('limitTopup');
-                    const button = document.getElementById('saveButton');
-
-                    // Hide button by default
-                    button.style.display = 'none';
-
-                    // Add click event listener to checkbox
-                    checkbox.addEventListener('click', () => {
-                      if (checkbox.checked) {
-                        button.style.display = 'block';
-                      } else {
-                        button.style.display = 'none';
-                      }
-                    });
-                  </script>
-
-                  <script>
-                    // Get button and content elements
-                    const addButton = document.getElementById('addLimit');
-                    const limit = document.getElementById('limitTrigger');
-
-                    // Hide limit content by default
-                    limit.style.display = 'none';
-
-                    // Add click event to button 
-                    addButton.addEventListener('click', () => {
-                      if (limit.style.display === 'none') {
-                        limit.style.display = 'block';
-                      } else {
-                        limit.style.display = 'none';
-                      }
-                    });
-                  </script>
-
                 </div>
 
               </div>
@@ -1702,13 +1677,33 @@
                                   $588</code>/year
                               </td>
                               <td>
-                                <button type="submit" class="btn btn-primary w-100 btn-block-mobile btn-custom-hide d-block d-lg-none mb-3" data-bs-toggle="modal"
-                                  data-bs-target="#modalNext">
-                                  Buy
-                                </button>
-                                <button class="btn btn-white w-100 btn-block-mobile btn-custom-hide d-block d-lg-none">
-                                  Pay by Wire/ACH
-                                </button>
+                                <div class="dropdown">
+                                  <button class="btn btn-primary w-100 btn-block-mobile dropdown-toggle btn-custom-hide d-block d-lg-none" id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Buy
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-center" aria-labelledby="upgradePlan">
+                                    <li>
+                                      <h6 class="dropdown-header">
+                                        Select a Payment Method
+                                      </h6>
+                                    </li>
+                                    <li>
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNext">
+                                        Pay with card ending in 1234
+                                      </button>
+                                    </li>
+                                    <li>
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNext">
+                                        Pay with card ending in 5678
+                                      </button>
+                                    </li>
+                                    <li>
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNext">
+                                        Pay with card ending in 4242
+                                      </button>
+                                    </li>
+                                  </ul>
+                                </div>
                               </td>
                             </tr>
 
@@ -1731,13 +1726,33 @@
                                   $3,588</code>/year
                               </td>
                               <td>
-                                <button type="submit" class="btn btn-primary w-100 btn-block-mobile btn-custom-hide d-block d-lg-none mb-3" data-bs-toggle="modal"
-                                  data-bs-target="#modalNext">
-                                  Buy
-                                </button>
-                                <button class="btn btn-white w-100 btn-block-mobile btn-custom-hide d-block d-lg-none">
-                                  Pay by Wire/ACH
-                                </button>
+                                <div class="dropdown">
+                                  <button class="btn btn-primary w-100 btn-block-mobile dropdown-toggle btn-custom-hide d-block d-lg-none" id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Buy
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-center" aria-labelledby="upgradePlan">
+                                    <li>
+                                      <h6 class="dropdown-header">
+                                        Select a Payment Method
+                                      </h6>
+                                    </li>
+                                    <li>
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNext">
+                                        Pay with card ending in 1234
+                                      </button>
+                                    </li>
+                                    <li>
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNext">
+                                        Pay with card ending in 5678
+                                      </button>
+                                    </li>
+                                    <li>
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNext">
+                                        Pay with card ending in 4242
+                                      </button>
+                                    </li>
+                                  </ul>
+                                </div>
                               </td>
                             </tr>
 
@@ -1760,13 +1775,33 @@
                                   $10,788</code>/year
                               </td>
                               <td>
-                                <button type="submit" class="btn btn-primary w-100 btn-block-mobile btn-custom-hide d-block d-lg-none mb-3" data-bs-toggle="modal"
-                                  data-bs-target="#modalNext">
-                                  Buy
-                                </button>
-                                <button class="btn btn-white w-100 btn-block-mobile btn-custom-hide d-block d-lg-none">
-                                  Pay by Wire/ACH
-                                </button>
+                                <div class="dropdown">
+                                  <button class="btn btn-primary w-100 btn-block-mobile dropdown-toggle btn-custom-hide d-block d-lg-none" id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Buy
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-center" aria-labelledby="upgradePlan">
+                                    <li>
+                                      <h6 class="dropdown-header">
+                                        Select a Payment Method
+                                      </h6>
+                                    </li>
+                                    <li>
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNext">
+                                        Pay with card ending in 1234
+                                      </button>
+                                    </li>
+                                    <li>
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNext">
+                                        Pay with card ending in 5678
+                                      </button>
+                                    </li>
+                                    <li>
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNext">
+                                        Pay with card ending in 4242
+                                      </button>
+                                    </li>
+                                  </ul>
+                                </div>
                               </td>
                             </tr>
 
@@ -1789,13 +1824,33 @@
                                   $22,788</code>/year
                               </td>
                               <td>
-                                <button type="submit" class="btn btn-primary w-100 btn-block-mobile btn-custom-hide d-block d-lg-none mb-3" data-bs-toggle="modal"
-                                  data-bs-target="#modalNext">
-                                  Buy
-                                </button>
-                                <button class="btn btn-white w-100 btn-block-mobile btn-custom-hide d-block d-lg-none">
-                                  Pay by Wire/ACH
-                                </button>
+                                <div class="dropdown">
+                                  <button class="btn btn-primary w-100 btn-block-mobile dropdown-toggle btn-custom-hide d-block d-lg-none" id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Buy
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-center" aria-labelledby="upgradePlan">
+                                    <li>
+                                      <h6 class="dropdown-header">
+                                        Select a Payment Method
+                                      </h6>
+                                    </li>
+                                    <li>
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNext">
+                                        Pay with card ending in 1234
+                                      </button>
+                                    </li>
+                                    <li>
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNext">
+                                        Pay with card ending in 5678
+                                      </button>
+                                    </li>
+                                    <li>
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNext">
+                                        Pay with card ending in 4242
+                                      </button>
+                                    </li>
+                                  </ul>
+                                </div>
                               </td>
                             </tr>
 
@@ -1810,17 +1865,40 @@
                               </td>
                               <td class="mobile-percredit">
                                 <code class="mobile-percredit h4 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
-                                  < $0.008</code>/credit
+                                  $0.008</code>/credit
                               </td>
                               <td class="mobile-bold-text">
                                 <code class="mobile-price h4 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
                                   $24,000</code>/year
                               </td>
                               <td>
-                                <button type="submit" class="btn btn-primary w-100 mb-3" data-bs-toggle="modal"
-                                  data-bs-target="#modalNext">
-                                  Buy
-                                </button>
+                                <div class="dropdown mb-3">
+                                  <button class="btn btn-primary w-100 btn-block-mobile dropdown-toggle" id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Buy
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-center" aria-labelledby="upgradePlan">
+                                    <li>
+                                      <h6 class="dropdown-header">
+                                        Select a Payment Method
+                                      </h6>
+                                    </li>
+                                    <li>
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNext">
+                                        Pay with card ending in 1234
+                                      </button>
+                                    </li>
+                                    <li>
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNext">
+                                        Pay with card ending in 5678
+                                      </button>
+                                    </li>
+                                    <li>
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNext">
+                                        Pay with card ending in 4242
+                                      </button>
+                                    </li>
+                                  </ul>
+                                </div>
                                 <button class="btn btn-white w-100 d-block">
                                   Pay by Wire/ACH
                                 </button>
@@ -1896,9 +1974,33 @@
                               </code>
                               </td>
                               <td>
-                                <button type="submit" class="btn btn-primary w-100" data-bs-toggle="modal"
-                                  data-bs-target="#modalNextPAYG"> Buy
-                                </button>
+                                <div class="dropdown">
+                                  <button class="btn btn-primary w-100 btn-block-mobile dropdown-toggle" id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Buy
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-center" aria-labelledby="upgradePlan">
+                                    <li>
+                                      <h6 class="dropdown-header">
+                                        Select a Payment Method
+                                      </h6>
+                                    </li>
+                                    <li>
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNextPAYG">
+                                        Pay with card ending in 1234
+                                      </button>
+                                    </li>
+                                    <li>
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNextPAYG">
+                                        Pay with card ending in 5678
+                                      </button>
+                                    </li>
+                                    <li>
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNextPAYG">
+                                        Pay with card ending in 4242
+                                      </button>
+                                    </li>
+                                  </ul>
+                                </div>
                               </td>
                             </tr>
 
@@ -1918,9 +2020,33 @@
                               </code>
                               </td>
                               <td>
-                                <button type="submit" class="btn btn-primary w-100 btn-custom-hide btn-block-mobile d-block d-lg-none" data-bs-toggle="modal"
-                                data-bs-target="#modalNextPAYG"> Buy
-                              </button>
+                                <div class="dropdown">
+                                  <button class="btn btn-primary w-100 btn-block-mobile dropdown-toggle btn-custom-hide d-block d-lg-none" id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Buy
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-center" aria-labelledby="upgradePlan">
+                                    <li>
+                                      <h6 class="dropdown-header">
+                                        Select a Payment Method
+                                      </h6>
+                                    </li>
+                                    <li>
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNextPAYG">
+                                        Pay with card ending in 1234
+                                      </button>
+                                    </li>
+                                    <li>
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNextPAYG">
+                                        Pay with card ending in 5678
+                                      </button>
+                                    </li>
+                                    <li>
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNextPAYG">
+                                        Pay with card ending in 4242
+                                      </button>
+                                    </li>
+                                  </ul>
+                                </div>
                               </td>
                             </tr>
 
@@ -1939,9 +2065,33 @@
                                 $500</code>
                               </td>
                               <td>
-                                <button type="submit" class="btn btn-primary w-100 btn-block-mobile btn-custom-hide d-block d-lg-none" data-bs-toggle="modal"
-                                data-bs-target="#modalNextPAYG"> Buy
-                              </button>
+                                <div class="dropdown">
+                                  <button class="btn btn-primary w-100 btn-block-mobile dropdown-toggle btn-custom-hide d-block d-lg-none" id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Buy
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-center" aria-labelledby="upgradePlan">
+                                    <li>
+                                      <h6 class="dropdown-header">
+                                        Select a Payment Method
+                                      </h6>
+                                    </li>
+                                    <li>
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNextPAYG">
+                                        Pay with card ending in 1234
+                                      </button>
+                                    </li>
+                                    <li>
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNextPAYG">
+                                        Pay with card ending in 5678
+                                      </button>
+                                    </li>
+                                    <li>
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNextPAYG">
+                                        Pay with card ending in 4242
+                                      </button>
+                                    </li>
+                                  </ul>
+                                </div>
                               </td>
                             </tr>
 
@@ -1960,9 +2110,33 @@
                                 $1,000</code>
                               </td>
                               <td>
-                                <button type="submit" class="btn btn-primary w-100 btn-block-mobile btn-custom-hide d-block d-lg-none" data-bs-toggle="modal"
-                                data-bs-target="#modalNextPAYG"> Buy
-                              </button>
+                                <div class="dropdown">
+                                  <button class="btn btn-primary w-100 btn-block-mobile dropdown-toggle btn-custom-hide d-block d-lg-none" id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Buy
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-center" aria-labelledby="upgradePlan">
+                                    <li>
+                                      <h6 class="dropdown-header">
+                                        Select a Payment Method
+                                      </h6>
+                                    </li>
+                                    <li>
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNextPAYG">
+                                        Pay with card ending in 1234
+                                      </button>
+                                    </li>
+                                    <li>
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNextPAYG">
+                                        Pay with card ending in 5678
+                                      </button>
+                                    </li>
+                                    <li>
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNextPAYG">
+                                        Pay with card ending in 4242
+                                      </button>
+                                    </li>
+                                  </ul>
+                                </div>
                               </td>
                             </tr>
 

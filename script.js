@@ -39,3 +39,37 @@ document.addEventListener('DOMContentLoaded', function () {
   // Initial setup based on the default state of the toggle switch for the new code
   handleToggleSwitch();
 });
+
+// Get checkbox and button elements 
+const checkbox = document.getElementById('limitTopup');
+const button = document.getElementById('saveButton');
+
+// Hide button by default
+button.style.display = 'none';
+
+// Add click event listener to checkbox
+checkbox.addEventListener('click', () => {
+  if (checkbox.checked) {
+    button.style.display = 'block';
+  } else {
+    button.style.display = 'none';
+  }
+});
+
+// SAVE BUTTON //
+
+// Get button and content elements
+const addButton = document.getElementById('addLimit');
+const limit = document.getElementById('limitTrigger');
+
+// Hide limit content by default
+limit.style.display = 'none';
+
+// Add click event to button 
+addButton.addEventListener('click', () => {
+  if (limit.style.display === 'none') {
+    limit.style.display = 'block';
+  } else {
+    limit.style.display = 'none';
+  }
+});
