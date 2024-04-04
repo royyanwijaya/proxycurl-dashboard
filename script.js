@@ -1,17 +1,25 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // Get the checkbox element for the existing code
+  // Existing code
   var checkbox = document.getElementById('flexCheckChecked');
-  // Get the alert element for the existing code
   var alertBox = document.getElementById('checkboxAlert');
 
-  // Add an event listener to the checkbox for the existing code
   checkbox.addEventListener('change', function () {
-    // If checkbox is unchecked, display the alert for the existing code
     if (!this.checked) {
       alertBox.style.display = 'block';
     } else {
-      // If checkbox is checked, hide the alert for the existing code
       alertBox.style.display = 'none';
+    }
+  });
+
+  // New code with additional checkbox and alert
+  var confirmCheckbox = document.getElementById('dropdownCheck');
+  var confirmAlertBox = document.getElementById('checkboxAlertConfirm');
+
+  confirmCheckbox.addEventListener('change', function () {
+    if (!this.checked) {
+      confirmAlertBox.style.display = 'block';
+    } else {
+      confirmAlertBox.style.display = 'none';
     }
   });
 
@@ -40,36 +48,39 @@ document.addEventListener('DOMContentLoaded', function () {
   handleToggleSwitch();
 });
 
-// Get checkbox and button elements 
-const checkbox = document.getElementById('limitTopup');
-const button = document.getElementById('saveButton');
+// Another block of code
+document.addEventListener('DOMContentLoaded', function () {
+  // Get checkbox and button elements 
+  const checkbox = document.getElementById('limitTopup');
+  const button = document.getElementById('saveButton');
 
-// Hide button by default
-button.style.display = 'none';
+  // Hide button by default
+  button.style.display = 'none';
 
-// Add click event listener to checkbox
-checkbox.addEventListener('click', () => {
-  if (checkbox.checked) {
-    button.style.display = 'block';
-  } else {
-    button.style.display = 'none';
-  }
-});
+  // Add click event listener to checkbox
+  checkbox.addEventListener('click', () => {
+    if (checkbox.checked) {
+      button.style.display = 'block';
+    } else {
+      button.style.display = 'none';
+    }
+  });
 
-// SAVE BUTTON //
+  // SAVE BUTTON //
 
-// Get button and content elements
-const addButton = document.getElementById('addLimit');
-const limit = document.getElementById('limitTrigger');
+  // Get button and content elements
+  const addButton = document.getElementById('addLimit');
+  const limit = document.getElementById('limitTrigger');
 
-// Hide limit content by default
-limit.style.display = 'none';
+  // Hide limit content by default
+  limit.style.display = 'none';
 
-// Add click event to button 
-addButton.addEventListener('click', () => {
-  if (limit.style.display === 'none') {
-    limit.style.display = 'block';
-  } else {
-    limit.style.display = 'none';
-  }
+  // Add click event to button 
+  addButton.addEventListener('click', () => {
+    if (limit.style.display === 'none') {
+      limit.style.display = 'block';
+    } else {
+      limit.style.display = 'none';
+    }
+  });
 });
