@@ -11,18 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // New code with additional checkbox and alert
-  var confirmCheckbox = document.getElementById('dropdownCheck');
-  var confirmAlertBox = document.getElementById('checkboxAlertConfirm');
-
-  confirmCheckbox.addEventListener('change', function () {
-    if (!this.checked) {
-      confirmAlertBox.style.display = 'block';
-    } else {
-      confirmAlertBox.style.display = 'none';
-    }
-  });
-
   // Get the toggle switch element for the new code
   var toggleSwitch = document.getElementById('toggleSwitch');
   // Get the workEmailAlert element for the new code
