@@ -73,24 +73,71 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-$(document).ready(function(){
-  // Show dropdown menu on hover
-  $('#hover-dropdown').hover(function(){
-    $(this).find('.dropdown-menu').addClass('show');
-    $(this).find('.dropdown-toggle').attr('aria-expanded', 'true');
-  }, function(){
-    $(this).find('.dropdown-menu').removeClass('show');
-    $(this).find('.dropdown-toggle').attr('aria-expanded', 'false');
+//double-click dropdown
+document.addEventListener("DOMContentLoaded", function() {
+  var dropdownToggle = document.getElementById("dropdownMenuButton");
+  var dropdownMenu = document.querySelector("#hover-dropdown .dropdown-menu");
+
+  // Flag to track if dropdown is open
+  var isOpen = false;
+
+  // Add a click event listener to the dropdown toggle button
+  dropdownToggle.addEventListener("click", function(event) {
+    // Prevent the default action of following the href link
+    event.preventDefault();
+
+    // If the dropdown is closed, open it
+    if (!isOpen) {
+      dropdownMenu.classList.add("show");
+      dropdownToggle.setAttribute("aria-expanded", "true");
+      isOpen = true;
+    } else {
+      // If the dropdown is open, follow the href link
+      window.location.href = dropdownToggle.getAttribute("href");
+    }
+  });
+
+  // Add an event listener to close the dropdown when clicking outside
+  document.addEventListener("click", function(event) {
+    if (!event.target.closest("#hover-dropdown")) {
+      dropdownMenu.classList.remove("show");
+      dropdownToggle.setAttribute("aria-expanded", "false");
+      isOpen = false;
+    }
   });
 });
 
-$(document).ready(function(){
-  // Show dropdown menu on hover
-  $('#hover-dropdown-credits-only').hover(function(){
-    $(this).find('.dropdown-menu').addClass('show');
-    $(this).find('.dropdown-toggle').attr('aria-expanded', 'true');
-  }, function(){
-    $(this).find('.dropdown-menu').removeClass('show');
-    $(this).find('.dropdown-toggle').attr('aria-expanded', 'false');
+document.addEventListener("DOMContentLoaded", function() {
+  var dropdownToggle = document.getElementById("dropdownMenuButtonCreditsOnly");
+  var dropdownMenu = document.querySelector("#hover-dropdown-credits-only .dropdown-menu");
+
+  // Flag to track if dropdown is open
+  var isOpen = false;
+
+  // Add a click event listener to the dropdown toggle button
+  dropdownToggle.addEventListener("click", function(event) {
+    // Prevent the default action of following the href link
+    event.preventDefault();
+
+    // If the dropdown is closed, open it
+    if (!isOpen) {
+      dropdownMenu.classList.add("show");
+      dropdownToggle.setAttribute("aria-expanded", "true");
+      isOpen = true;
+    } else {
+      // If the dropdown is open, follow the href link
+      window.location.href = dropdownToggle.getAttribute("href");
+    }
+  });
+
+  // Add an event listener to close the dropdown when clicking outside
+  document.addEventListener("click", function(event) {
+    if (!event.target.closest("#hover-dropdown-credits-only")) {
+      dropdownMenu.classList.remove("show");
+      dropdownToggle.setAttribute("aria-expanded", "false");
+      isOpen = false;
+    }
   });
 });
+
+
