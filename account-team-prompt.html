@@ -470,6 +470,42 @@
       </div>
     </nav>
 
+    <!--MODAL EDIT TEAM NAME-->
+    <div class="modal fade" id="teamEditName" tabindex="-1" aria-labelledby="teamEditNameLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+  
+          <a type="button" class="btn-close h1 ps-4 pt-4 mb-0" data-dismiss="modal" aria-label="Close">
+          </a>
+  
+          <div class="modal-body">
+  
+            <div class="row justify-content-center">
+  
+              <div class="col-12">
+  
+                <h1 class="fw-bold mb-4">
+                  Edit team name
+                </h1>
+  
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Enter team name">
+                </div>
+  
+                <a class="btn btn-lg btn-primary mt-3 w-100" href="account-team-done.html">
+                  Submit
+                </a>
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+      </div>
+    </div>
+
     <!-- MAIN CONTENT -->
     <div class="main-content">
 
@@ -524,7 +560,10 @@
 
                     <!-- Title -->
                     <h1 class="header-title">
-                      Team
+                      Icikiwir Team
+                      <a class="btn btn-sm btn-outline-primary ms-2" type="submit" data-bs-toggle="modal" data-bs-target="#teamEditName">
+                        Edit
+                      </a>
                     </h1>
 
                   </div>

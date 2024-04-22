@@ -471,6 +471,49 @@
       </div>
     </nav>
 
+  <!--MODAL TEAM GET STARTED-->
+  <div class="modal fade" id="teamGetStarted" tabindex="-1" aria-labelledby="teamGetStartedLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <a type="button" class="btn-close h1 ps-4 pt-4 mb-0" data-dismiss="modal" aria-label="Close">
+        </a>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center">
+
+            <div class="col-12">
+
+              <h1 class="fw-bold mb-3">
+                Upgrade to Team Account
+              </h1>
+
+              <p class="mb-4 lead">
+                Provide a unique namespace for your team. You will be the team owner and can always change your team name later.
+              </p>
+
+              <div class="form-group">
+                <input type="text" class="form-control form-control-lg border border-danger" id="teamNameForm" placeholder="Enter team name">
+                <div class="text-danger mt-2">
+                  Team name already exists.
+                </div>
+              </div>
+
+              <a class="btn btn-lg btn-primary mt-3 w-100" href="account-team-done.html">
+                Submit
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
     <!-- MAIN CONTENT -->
     <div class="main-content pb-5">
 
@@ -690,11 +733,11 @@
 
               <div class="col-12">
 
-                <button class="btn btn-primary lift d-none d-sm-block">
+                <button class="btn btn-primary lift d-none d-sm-block" type="submit" data-bs-toggle="modal" data-bs-target="#teamGetStarted">
                   Get started
                 </button>
 
-                <button class="btn btn-primary lift d-sm-none w-100">
+                <button class="btn btn-primary lift d-sm-none w-100" type="submit" data-bs-toggle="modal" data-bs-target="#teamGetStarted">
                   Get started
                 </button>
 
