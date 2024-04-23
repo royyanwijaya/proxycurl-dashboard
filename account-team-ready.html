@@ -493,12 +493,17 @@
                 Provide a unique namespace for your team. You will be the team owner and can always change your team name later.
               </p>
 
-              <div class="form-group">
-                <input type="text" class="form-control form-control-lg border border-danger" id="teamNameForm" placeholder="Enter team name">
-                <div class="text-danger mt-2">
-                  Team name already exists.
+              <form id="teamForm">
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-lg" id="teamNameForm" placeholder="Enter team name">
+                  <div class="text-danger mt-2" id="teamNameError" style="display: none;">
+                    Only alphanumeric characters, spaces, -, _, or @ under 64 characters allowed for the team name.
+                  </div>
+                  <div class="text-danger mt-2" id="teamNameExistsError" style="display: none;">
+                    Team name already exists.
+                  </div>
                 </div>
-              </div>
+              </form>
 
               <a class="btn btn-lg btn-primary mt-3 w-100" href="account-team-done.html">
                 Submit

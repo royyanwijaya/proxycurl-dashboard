@@ -488,9 +488,17 @@
                   Edit team name
                 </h1>
   
-                <div class="form-group">
-                  <input type="text" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Enter team name">
-                </div>
+                <form id="teamForm">
+                  <div class="form-group">
+                    <input type="text" class="form-control form-control-lg" id="teamNameForm" placeholder="Enter team name">
+                    <div class="text-danger mt-2" id="teamNameError" style="display: none;">
+                      Only alphanumeric characters, spaces, -, _, or @ under 64 characters allowed for the team name.
+                    </div>
+                    <div class="text-danger mt-2" id="teamNameExistsError" style="display: none;">
+                      Team name already exists.
+                    </div>
+                  </div>
+                </form>
   
                 <a class="btn btn-lg btn-primary mt-3 w-100" href="account-team-done.html">
                   Submit
@@ -794,6 +802,11 @@
     
     <!-- Theme JS -->
     <script src="./assets/js/theme.bundle.js"></script>
+
+    <!-- Custom JS-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script src="collapse.js"></script>
 
   </body>
 </html>

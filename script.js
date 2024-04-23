@@ -140,4 +140,30 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+// Function to validate team name
+function validateTeamName() {
+  const teamNameInput = document.getElementById('teamNameForm');
+  const teamNameError = document.getElementById('teamNameError');
+  const teamNameExistsError = document.getElementById('teamNameExistsError');
 
+  const regex = /^[a-zA-Z0-9@_\- ]{1,64}$/;
+  const isValid = regex.test(teamNameInput.value);
+  const teamName = teamNameInput.value.toLowerCase();
+
+  if (!isValid) {
+    teamNameInput.classList.add('is-invalid');
+    teamNameError.style.display = 'block';
+    teamNameExistsError.style.display = 'none';
+  } else if (teamName === 'obeng') {
+    teamNameInput.classList.add('is-invalid');
+    teamNameError.style.display = 'none';
+    teamNameExistsError.style.display = 'block';
+  } else {
+    teamNameInput.classList.remove('is-invalid');
+    teamNameError.style.display = 'none';
+    teamNameExistsError.style.display = 'none';
+  }
+}
+
+// Event listener for input on team name field
+document.getElementById('teamNameForm').addEventListener('input', validateTeamName);
